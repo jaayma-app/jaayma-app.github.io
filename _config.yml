@@ -2,3 +2,4 @@ title: Jaayma
 logo: docs/assets/po0BtQ4UBZfQDf6NSqMlAQACyIU2.png
 description: Buy, sell and deliver in a quick and secure way.
 theme: jekyll-theme-minimal
+include: [".well-known"]
