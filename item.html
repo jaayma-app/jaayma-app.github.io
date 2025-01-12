@@ -13,13 +13,8 @@
         const urlParams = new URLSearchParams(window.location.search);
         const itemId = urlParams.get('id');
         
-        // Try to open the app with the deep link
-        window.location.href = `myapp://myhost/login?id=${itemId}`;
-        
-        // Optional: Redirect to Play Store after a short delay if app isn't installed
-        setTimeout(function() {
-            window.location.href = 'https://play.google.com/store/apps/details?id=YOUR_APP_PACKAGE';
-        }, 2000);
+        // Keep using the same URL format that was clicked
+        window.location.href = `https://jaayma-app.github.io/item?id=${itemId}`;
     </script>
 </body>
 </html>
