@@ -1,9 +1,0 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.example.jaaymaadmin",
-    "sha256_cert_fingerprints":
-    ["70:4C:C6:03:3D:5A:76:3B:9C:71:CB:BD:CA:7A:7A:D8:6B:38:E9:33:F7:3E:C3:53:82:9E:A8:66:51:9E:43:B0"]
-  }
-}]
