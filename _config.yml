@@ -1,5 +1,37 @@
+# Site settings
 title: Jaayma
-logo: docs/assets/po0BtQ4UBZfQDf6NSqMlAQACyIU2.png
-description: Buy, sell and deliver in a quick and secure way.
+tagline: Buy, sell and deliver in a quick and secure way
+email: contact@jaayma.com
+description: >- 
+  Jaayma is your trusted platform for seamless buying, selling, and delivery services. 
+  We provide a secure marketplace where users can trade with confidence and enjoy 
+  fast, reliable delivery options for all their needs.
+
+# Theme settings
 theme: jekyll-theme-minimal
-include: [".well-known"]
+logo: docs/assets/po0BtQ4UBZfQDf6NSqMlAQACyIU2.png
+
+# Build settings
+markdown: kramdown
+include: 
+  - ".well-known"
+  - "_pages"
+
+# Navigation
+header_pages:
+  - about.md
+  - services.md
+  - contact.md
+
+# Custom settings
+company:
+  founding_year: 2024
+  location: Your Location
+  social:
+    twitter: jaayma
+    facebook: jaayma
+    instagram: jaayma
+
+# Layout settings
+show_downloads: false
+google_analytics: # Add your GA tracking ID here
