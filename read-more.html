@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Jaayma</title>
+
+    <link href="images/logo.png" rel="icon">
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" >
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" >
+  </head>
+
+  <body>
+    <!-- header design -->
+    <header class="header">
+      <a href="#" class="logo">Jaayma</a>
+
+      <i class='bx bx-menu' id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#app-features">App Features</a>
+        <a href="index.html#contact">Contact Us</a>
+      </nav>
+    </header>
+
+    <section class="detail" id="detail">
+      <div class="detail-header">
+
+        <div class="detail-img" >
+          <img id="detail-img" src="" alt="">
+        </div>
+  
+        <div class="detail-content">
+          <h2  id="title" class="heading">Title</h2>
+  
+          <h3 id="description">Jaayma is transforming Senegalese commerce into a seamless digital experience.</h3>
+  
+        </div>
+      </div>
+
+      <div class="detail-paragraph">
+
+        <p id="paragraph1"><span id="subtitle1">Subtitle</span> <br>Jaayma is transforming Senegalese commerce into a seamless digital experience.</p>
+
+        <p id="paragraph2"><span id="subtitle2">Subtitle</span> <br>Jaayma is transforming Senegalese commerce into a seamless digital experience.</p>
+
+        <p id="paragraph3"> <span id="subtitle3">Subtitle</span> <br> Jaayma is transforming Senegalese commerce into a seamless digital experience.</p>
+
+      </div>
+     </section>
+
+    <!-- footer design -->
+     <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2025 by Jaayma | All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="index.html"><i class='bx bx-arrow-back'></i></a>
+      </div>
+     </footer>
+
+     <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          console.log('Direct script test');
+          const data = JSON.parse(localStorage.getItem('articleData'));
+
+          document.getElementById('title').textContent = data.title;
+
+          document.getElementById('description').textContent = data.description;
+
+          const img = document.getElementById('detail-img');
+
+          const text1 = document.getElementById('paragraph1')
+
+          const text2 = document.getElementById('paragraph2')
+
+          const text3 = document.getElementById('paragraph3')
+
+          switch(data.title) {
+            case 'In person Payments':
+               img.src = 'images/transfer-money.png';
+               text1.innerHTML = "<span id='subtitle1'>Secure Transactions</span><br> Experience a secure and trustworthy transaction process with Jaayma’s in-person payment system. To ensure product safety, deliverers pay sellers directly upon receiving the items, guaranteeing that the transaction is secure before delivery begins.";
+               text2.innerHTML = "<span id='subtitle2'>Peace of Mind for Clients</span><br> Clients benefit from added peace of mind, as payment is only required upon the successful arrival of the order. This approach builds trust among all parties, ensuring a fair and transparent process from start to finish."
+               text3.innerHTML = "<span id='subtitle3'>Safety and Convenience</span><br> With Jaayma, we prioritize safety, convenience, and customer satisfaction, offering a payment system designed to protect both buyers and sellers while streamlining the shopping experience."
+              break;
+            case 'Clear Guidance':
+              img.src = 'images/directions.png';
+              text1.innerHTML = "<span id='subtitle1'>Voice-Guided Navigation</span><br>Ensure smooth and hassle-free deliveries with Jaayma’s clear voice-guided navigation system. Designed specifically for our deliverers, this feature provides step-by-step instructions to their chosen destination, ensuring accurate and timely deliveries every time.";
+              text2.innerHTML = "<span id='subtitle1'>Stay on Track</span><br>Whether navigating through busy city streets or unfamiliar neighborhoods, our reliable voice guidance helps deliverers focus on the road while staying on track. With real-time updates and precise directions, we eliminate guesswork and reduce delays."
+               text3.innerHTML = "<span id='subtitle1'>Efficiency and Safety</span><br>At Jaayma, we prioritize efficiency and safety, equipping our deliverers with the tools they need to succeed while providing customers with a seamless delivery experience."
+              break;
+            case 'Inventory Management':
+              img.src = 'images/inventory.png';
+              text1.innerHTML = "<span id='subtitle1'>Inventory Management Tools</span><br>Simplify the way you manage your inventory with Jaayma's powerful tools. " +
+              "Whether you're a small business owner or a large-scale seller, our inventory management system helps you track stock levels, monitor product performance, and stay organized effortlessly."  
+              text2.innerHTML = "<span id='subtitle2'>Updates and Insights</span><br>Easily update quantities, view real-time stock status, and get notifications when inventory runs low to ensure you never miss a sale. Our intuitive dashboard provides actionable insights, helping you make informed decisions and optimize your operations."
+               text3.innerHTML = "<span id='subtitle3'>Business Growth</span><br> With Jaayma, you can focus on growing your business while we streamline the complexities of " + "inventory tracking and management. Stay in control and maximize your efficiency, all in one place."
+              break;
+            case 'Social-media Monitization':
+              img.src = 'images/social-media.png';
+              text1.innerHTML = "<span id='subtitle1'>Advantages</span><br>Turn your social media influence into a source of income with Jaayma's innovative monetization program. Share your favorite products with your followers, and earn 0.5% of the sale price for every item purchased through your shared link.";
+              
+              text2.innerHTML = `<span id="subtitle2">How it works?</span><br>It's simple: browse Jaayma's wide range of products, choose the ones you love, and share them directly on your social media platforms. Every time someone makes a purchase using your unique link, you earn a commission.`;
+              
+              text3.innerHTML = `<span id="subtitle3">Accessibility</span><br>Whether you're an influencer, a content creator, or just passionate about sharing great finds with your community, Jaayma allows you to monetize your online presence effortlessly. With Jaayma, your social media activity becomes an opportunity to earn while you inspire and connect with others.`;
+              break;
+            case 'Order Traking':
+              img.src = 'images/packages.png';
+              text1.innerHTML = "<span id='subtitle1'>Real Time Tracking</span><br> Easily monitor the progress of your orders with our real-time tracking system. From the moment your package leaves the warehouse to its final delivery, you’ll have complete visibility every step of the way. Enter your tracking number to see the latest updates on your shipment’s location, status, and estimated delivery time."
+              text2.innerHTML = "<span id='subtitle2'>Transparency and Peace of Mind</span><br> At Jaayma, we prioritize transparency and customer satisfaction by providing a simple, reliable way to stay informed about your deliveries. Whether you're shopping for yourself or sending a gift, our tracking tool ensures peace of mind, knowing exactly where your package is and when it will arrive."
+              text3.innerHTML = "<span id='subtitle3'>Reliable Service</span><br> Jaayma is dedicated to revolutionizing commerce in Senegal by integrating technology into everyday transactions. With features like real-time order tracking, we make online shopping more convenient, trustworthy, and efficient for everyone."
+              break;
+            case 'Real-Time Communication':
+              img.src = 'images/call.png';
+              text1.innerHTML = "<span id='subtitle1'>Stay Informed</span><br> Stay connected and informed throughout your shopping and delivery journey with Jaayma’s real-time communication feature. Effortlessly reach out to sellers and delivery personnel through in-app messages and calls, ensuring clarity and convenience every step of the way."
+              text2.innerHTML = "<span id='subtitle2'>Get Instant Feedback</span><br> Need to confirm product details, ask about delivery times, or resolve any concerns? Our integrated messaging system makes it easy to get answers instantly. By enabling direct communication, we bridge the gap between buyers, sellers, and deliverers, fostering trust and a seamless shopping experience."
+              text3.innerHTML = "<span id='subtitle3'>Reliable Chat Experience</span><br> With Jaayma, real-time communication ensures that your needs are met quickly and efficiently, making every transaction smoother and more reliable."
+              break;
+            // Add more cases as needed
+            default:
+              img.src = 'images/default.png';
+          }
+
+          console.log('Data in localStorage:', data);
+      });
+    </script>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Jaayma</title>
+
+    <link href="images/logo.png" rel="icon">
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" >
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" >
+  </head>
+
+  <body>
+    <!-- header design -->
+    <header class="header">
+      <a href="#" class="logo">Jaayma</a>
+
+      <i class='bx bx-menu' id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home
+        </a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">App Features</a>
+        <a href="#contact">Join Us</a>
+      </nav>
+    </header>
+
+    <!-- home section design -->
+     <section class="home" id="home">
+      <div class="home-content">
+        <h3>Be Among the First</h3>
+        <h2>Join Our Marketplace Revolution</h2>
+        <h1><span class="multiple-text"></span> </h1>
+        <p>Get exclusive early access and shape the future of Senegalese commerce</p>
+        <div class="social-media">
+          <a href=""><i class='bx bxl-facebook' ></i></a>
+          <a href=""><i class='bx bxl-twitter' ></i></a>
+          <a href=""><i class='bx bxl-instagram' ></i></a>
+          <a href=""><i class='bx bxl-linkedin-square'></i></a>
+        </div>
+      
+        <a href="#contact" class="btn">Get Early Access</a>
+      </div>
+
+      <div class="home-img">
+        <img src="images/phone.png" alt="Home image">
+      </div>
+     </section>
+
+    <!-- about section design -->
+     <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/about-us.png" alt="">
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Jaayma</span></h2>
+        <h3>Your All-in-One Marketplace</h3>
+        <p>Jaayma is transforming Senegalese commerce into a seamless digital experience. <br><br> We connect local buyers with trusted sellers through reliable delivery partners across the country. <br><br> With integrated payment solutions including <span>Orange Money</span>, <span>Wave</span>, <span>VISA</span> and <span>MasterCard</span> so that every transaction is secure and hassle-free. <br><br> Our real-time tracking system lets you monitor your deliveries every step of the way, from order to arrival.</p>
+        <a href="#contact" class="btn">Join Us</a>
+      </div>
+     </section>
+
+    <!-- services section design -->
+     <section class="services" id="services">
+      <h2 class="heading">Our <span>Services</span></h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <i class='bx bx-lock'></i>
+          <h3>Secure Transfers</h3>
+          <p class="content">
+            Enjoy peace of mind with Orange Money and Wave payment systems. We offer app balances for your in app purchases.
+            <span class="read-more-text" style="display: none;">
+              Our robust security measures and user-friendly interface work together to provide you with a reliable, worry-free payment experience, so you can focus on what matters most.
+          </span>
+          </p>
+          <button class="btn read-more-btn">Read More</button>
+        </div>
+
+        <div class="services-box">
+          <i class='bx bx-conversation'></i>
+          <h3>Customer Service</h3>
+          <p class="content">
+              We are here to help. <br> Our customer support team is available to assist with any questions or issues either by phone email or live chat.
+              <span class="read-more-text" style="display: none;">
+                Our goal is to ensure your experience is seamless and your concerns are addressed quickly. Don’t hesitate to reach out—we’re committed to making things easy for you!
+              </span>
+          </p>
+          <button class="btn read-more-btn">Read More</button>
+      </div>
+
+        <div class="services-box">
+          <i class='bx bx-badge-check'></i>
+          <h3>User Verification</h3>
+          <p class="content">
+            We verify users to ensure a safe and secure experience. This helps prevent scams and protects our community.
+            <span class="read-more-text" style="display: none;">
+              This extra layer of security fosters a reliable environment where you can interact with confidence.
+            </span>
+          </p>
+          <button class="btn read-more-btn">Read More</button>
+        </div>
+      </div>
+     </section>
+
+    <!-- app features section design -->
+     <section class="portfolio" id="portfolio">
+      <h2 class="heading">App <span>Features</span></h2>
+      <div class="portfolio-container">
+
+        <div class="portfolio-box">
+          <img src="images/call.png" alt="">
+          <div class="portfolio-layer">
+            <h4 id="title6">Real-Time Communication</h4>
+            <p id="description6">Communicate in real-time with your seller and deliverer through in app messages and calls.</p>
+            <a href="read-more.html" onclick="setArticleData('6'); return false;"><i class='bx bx-phone'></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/packages.png" alt="">
+          <div class="portfolio-layer">
+            <h4 id="title5">Order Traking</h4>
+            <p id="description5">Stay updated with your package location at all times.</p>
+            <a href="read-more.html" onclick="setArticleData('5'); return false;"><i class='bx bx-search-alt-2'></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/social-media.png" alt="">
+          <div class="portfolio-layer">
+            <h4 id="title4">Social-media Monitization</h4>
+            <p id="description4">With your buyer account, laverage your social-media presence and get paid 0.5% of the price for each item you share per sale.</p>
+            <a href="read-more.html" onclick="setArticleData('4'); return false;"><i class='bx bx-network-chart'></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/inventory.png" alt="">
+          <div class="portfolio-layer">
+            <h4 id="title3">Inventory Management</h4>
+            <p id="description3">Manage and keep track of your inventory.</p>
+            <a href="read-more.html" onclick="setArticleData('3'); return false;"><i class='bx bx-list-check'></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/directions.png" alt="">
+          <div class="portfolio-layer">
+            <h4 id="title2">Clear Guidance</h4>
+            <p id="description2">We assist our deliverers with clear voice guidance to their chosen destination.</p>
+            <a href="read-more.html" onclick="setArticleData('2'); return false;"><i class='bx bx-map-alt'></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/transfer-money.png" alt="">
+          <div class="portfolio-layer">
+            <h4 id="title1">In person Payments</h4>
+            <p id="description1">Sellers get paid by deliverers to guaranty product safety. <br> Clients are only required to pay once the order arrives</p>
+
+            <a href="read-more.html" onclick="setArticleData('1'); return false;">
+              <i class='bx bx-transfer'></i>
+            </a>
+
+          </div>
+        </div>
+        
+      </div>
+     </section>
+
+     <script>
+      function setArticleData(identifier) {
+        console.log('Function called with identifier:', identifier);
+        
+        localStorage.clear();
+        
+        const titleElement = document.getElementById('title' + identifier);
+        const descriptionElement = document.getElementById('description' + identifier);
+        
+        console.log('Title element:', titleElement);
+        console.log('Description element:', descriptionElement);
+        
+        if (!titleElement || !descriptionElement) {
+          console.error('Could not find elements for identifier:', identifier);
+          return;
+        }
+        
+        const titleText = titleElement.textContent;
+        const descriptionText = descriptionElement.textContent;
+        
+        console.log('Title text:', titleText);
+        console.log('Description text:', descriptionText);
+        
+        const data = {
+          title: titleText,
+          description: descriptionText
+        };
+        
+        localStorage.setItem('articleData', JSON.stringify(data));
+        console.log('Data saved to localStorage:', data);
+        
+        window.location.href = 'read-more.html';
+      }
+      </script>
+
+     
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Get <span>Early Access</span></h2>
+
+      <form name="contact-form" action="" method="POST">
+        <div class="input-box">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="input-box">
+          <input type="tel" name="phone" placeholder="Mobile Number" required>
+          <select name="user-type" aria-placeholder="User Type" required>
+            <option value="">Select User Type</option>
+            <option value="buyer">Buyer</option>
+            <option value="seller">Seller</option>
+            <option value="deliverer">Deliverer</option>
+          </select>
+        </div>
+
+        <textarea cols="30" rows="10" name="message" placeholder="Message"></textarea>
+
+        <button type="submit" class="btn">Join Now</button>
+      </form>
+    </section>
+
+    <!-- footer design -->
+     <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2025 by Jaayma | All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+      </div>
+     </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
