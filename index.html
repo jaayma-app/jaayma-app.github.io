@@ -20,13 +20,11 @@
     <script src="js/language.js"></script>
 
   </head>
-  
+
   <body>
     <!-- header design -->
     <header class="header">
       <a href="#" class="logo" data-lang="title">Jaayma</a>
-
-      <i class='bx bx-menu' id="menu-icon"></i>
 
       <nav class="navbar">
         <a href="#home" data-lang="home" class="active">Home
@@ -45,6 +43,8 @@
         <a href="#" class="lang-btn" onclick="changeLanguage('wo'); return false;">WO</a>
 
       </div>
+
+      <i class='bx bx-menu' id="menu-icon"></i>
       
 
     </header>
@@ -210,7 +210,44 @@
         
       </div>
      </section>
-    
+
+     <script>
+      // function setArticleData(identifier) {
+      //   console.log('Function called with identifier:', identifier);
+        
+      //   localStorage.clear();
+        
+      //   const titleElement = document.getElementById('title' + identifier);
+      //   const descriptionElement = document.getElementById('description' + identifier);
+        
+      //   console.log('Title element:', titleElement);
+      //   console.log('Description element:', descriptionElement);
+        
+      //   if (!titleElement || !descriptionElement) {
+      //     console.error('Could not find elements for identifier:', identifier);
+      //     return;
+      //   }
+        
+      //   const titleText = titleElement.textContent;
+      //   const descriptionText = descriptionElement.textContent;
+        
+      //   console.log('Title text:', titleText);
+      //   console.log('Description text:', descriptionText);
+        
+      //   const data = {
+      //     title: titleText,
+      //     description: descriptionText
+      //   };
+        
+      //   localStorage.setItem('articleData', JSON.stringify(data));
+      //   console.log('Data saved to localStorage:', data);
+        
+      //   window.location.href = 'read-more.html';
+      // }
+      </script>
+
+     
+
     <!-- contact section design -->
     <section class="contact" id="contact">
       <h2 class="heading" data-lang="get">Get <span data-lang="early-access">Early Access</span></h2>
