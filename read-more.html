@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
@@ -13,6 +13,11 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" >
+
+    <script src="languages/en.js"></script>
+    <script src="languages/fr.js"></script>
+    <script src="languages/wo.js"></script>
+    <script src="js/language.js"></script>
   </head>
 
   <body>
@@ -23,12 +28,15 @@
       <i class='bx bx-menu' id="menu-icon"></i>
 
       <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="index.html#about">About Us</a>
-        <a href="index.html#services">Services</a>
-        <a href="index.html#app-features">App Features</a>
-        <a href="index.html#contact">Contact Us</a>
+        <a href="index.html#home" data-lang="home" class="active">Home
+        </a>
+        <a href="index.html#about" data-lang="about-us">About Us</a>
+        <a href="index.html#services" data-lang="services">Services</a>
+        <a href="index.html#portfolio" data-lang="app-features">App Features</a>
+        <a href="index.html#contact" data-lang="join">Join Us</a>
+    
       </nav>
+
     </header>
 
     <section class="detail" id="detail">
@@ -64,7 +72,7 @@
       </div>
 
       <div class="footer-iconTop">
-        <a href="index.html"><i class='bx bx-arrow-back'></i></a>
+        <a href="index.html#portfolio"><i class='bx bx-arrow-back'></i></a>
       </div>
      </footer>
 
@@ -86,26 +94,62 @@
           const text3 = document.getElementById('paragraph3')
 
           switch(data.title) {
-            case 'In person Payments':
+            case 'In person Payments': // en
                img.src = 'images/transfer-money.png';
                text1.innerHTML = "<span id='subtitle1'>Secure Transactions</span><br> Experience a secure and trustworthy transaction process with Jaayma’s in-person payment system. To ensure product safety, deliverers pay sellers directly upon receiving the items, guaranteeing that the transaction is secure before delivery begins.";
                text2.innerHTML = "<span id='subtitle2'>Peace of Mind for Clients</span><br> Clients benefit from added peace of mind, as payment is only required upon the successful arrival of the order. This approach builds trust among all parties, ensuring a fair and transparent process from start to finish."
                text3.innerHTML = "<span id='subtitle3'>Safety and Convenience</span><br> With Jaayma, we prioritize safety, convenience, and customer satisfaction, offering a payment system designed to protect both buyers and sellers while streamlining the shopping experience."
               break;
-            case 'Clear Guidance':
+            case 'Paiements en Personne': // fr
+               img.src = 'images/transfer-money.png';
+               text1.innerHTML = "<span id='subtitle1'>Transactions Sécurisées</span><br> Profitez d'un processus de transaction sécurisé et fiable avec le système de paiement en personne de Jaayma. Pour garantir la sécurité des produits, les livreurs paient directement les vendeurs lors de la réception des articles, garantissant que la transaction est sécurisée avant le début de la livraison.";
+               text2.innerHTML = "<span id='subtitle2'>Tranquillité d'Esprit pour les Clients</span><br> Les clients bénéficient d'une tranquillité d'esprit accrue, car le paiement n'est requis qu'à l'arrivée réussie de la commande. Cette approche établit la confiance entre toutes les parties, assurant un processus équitable et transparent du début à la fin."
+               text3.innerHTML = "<span id='subtitle3'>Sécurité et Commodité</span><br> Avec Jaayma, nous priorisons la sécurité, la commodité et la satisfaction client, offrant un système de paiement conçu pour protéger à la fois les acheteurs et les vendeurs tout en simplifiant l'expérience d'achat."
+              break;
+            case 'Fey ci bu Yegge': // wo
+               img.src = 'images/transfer-money.png';
+               text1.innerHTML = "<span id='subtitle1'>Peyum yu Wóor</span><br> Jaayma dafay def peyum yi wóor te am kóolute. Ngir aar alal yi, way jot yi dañuy fey way jaay yi bu ñu jotee alal yi, ngir mu wóor ne peyum bi wóor laay bala ñuy door yóbbu bi.";
+               text2.innerHTML = "<span id='subtitle2'>Dalal Xel ngir Kiliyãŋ yi</span><br> Kiliyãŋ yi am nañu dalal xel ndax dañuy fey bu alal bi agsee rekk. Lii day tax ñépp am kóolute ci seen digante, te lépp leer na."
+               text3.innerHTML = "<span id='subtitle3'>Kaarange ak Yombal</span><br> Ci Jaayma, kaarange, yombalu ak contaanug kiliyãŋ yi ñoo gën di soxal. Sunu sistem buy fey dafa aar way jënd yi ak way jaay yi te yombal jënd bi."
+              break;
+            case 'Clear Guidance': // en
               img.src = 'images/directions.png';
               text1.innerHTML = "<span id='subtitle1'>Voice-Guided Navigation</span><br>Ensure smooth and hassle-free deliveries with Jaayma’s clear voice-guided navigation system. Designed specifically for our deliverers, this feature provides step-by-step instructions to their chosen destination, ensuring accurate and timely deliveries every time.";
               text2.innerHTML = "<span id='subtitle1'>Stay on Track</span><br>Whether navigating through busy city streets or unfamiliar neighborhoods, our reliable voice guidance helps deliverers focus on the road while staying on track. With real-time updates and precise directions, we eliminate guesswork and reduce delays."
                text3.innerHTML = "<span id='subtitle1'>Efficiency and Safety</span><br>At Jaayma, we prioritize efficiency and safety, equipping our deliverers with the tools they need to succeed while providing customers with a seamless delivery experience."
               break;
-            case 'Inventory Management':
+            case 'Guidage Précis': // fr
+              img.src = 'images/directions.png';
+              text1.innerHTML = "<span id='subtitle1'>Navigation guidée par la voix</span><br>Assurez des livraisons fluides et sans tracas grâce au système de navigation guidée par la voix de Jaayma. Conçu spécialement pour nos livreurs, cette fonctionnalité fournit des instructions étape par étape vers leur destination choisie, garantissant des livraisons précises et ponctuelles à chaque fois.";
+              text2.innerHTML = "<span id='subtitle1'>Restez sur la bonne voie</span><br>Que ce soit pour naviguer dans les rues animées de la ville ou dans des quartiers inconnus, notre guidage vocal fiable aide les livreurs à se concentrer sur la route tout en restant sur la bonne trajectoire. Avec des mises à jour en temps réel et des indications précises, nous éliminons les approximations et réduisons les retards."
+               text3.innerHTML = "<span id='subtitle1'>Efficacité et sécurité</span><br>Chez Jaayma, nous donnons la priorité à l'efficacité et à la sécurité, en équipant nos livreurs des outils nécessaires pour réussir tout en offrant aux clients une expérience de livraison sans faille."
+              break;
+            case 'Wommat bu Leer': // wo
+              img.src = 'images/directions.png';
+              text1.innerHTML = "<span id='subtitle1'>Ñakkal bopp bi ak jàppante gi</span><br>Jógalal luy jur yoonu neex ak ñakk jàppante ci delsiin bi ak Jaayma’s jàppant bi, jumtukaay bu leen di jàppante ci yoonu dal ci diggantey diggante bi. Tëral na ndaje, li ngi ci jàppoon ay diggante bu dëgër ak ci yoon bi.";
+              text2.innerHTML = "<span id='subtitle1'>Dugg ci yoonu jubal</span><br>Manée nga dem ci dal yenn ñàkk njaaxum, ndaje yi ci yoonu dëgg ci yoon bu set man toog ci diggante jàppante gi.  Jox na jumtukaay bu baax jaay, bu la ci topp ci yoon bi tudd; man toog, wu jox ñaawle njaaxum yi. Bul jokk, bu delsiin xaat."
+               text3.innerHTML = "<span id='subtitle1'>Saabër ak Njaaxum</span><br>Ci Jaayma, nu ngi xamni teer bi ak saabër bi. Man na dem bët bu baax ci jamono bu neex te digante ay kilifee te am njublaay ci."
+              break;
+            case 'Inventory Management': // en
               img.src = 'images/inventory.png';
               text1.innerHTML = "<span id='subtitle1'>Inventory Management Tools</span><br>Simplify the way you manage your inventory with Jaayma's powerful tools. " +
               "Whether you're a small business owner or a large-scale seller, our inventory management system helps you track stock levels, monitor product performance, and stay organized effortlessly."  
               text2.innerHTML = "<span id='subtitle2'>Updates and Insights</span><br>Easily update quantities, view real-time stock status, and get notifications when inventory runs low to ensure you never miss a sale. Our intuitive dashboard provides actionable insights, helping you make informed decisions and optimize your operations."
                text3.innerHTML = "<span id='subtitle3'>Business Growth</span><br> With Jaayma, you can focus on growing your business while we streamline the complexities of " + "inventory tracking and management. Stay in control and maximize your efficiency, all in one place."
               break;
-            case 'Social-media Monitization':
+            case 'Gestion des Stocks': // fr
+              img.src = 'images/inventory.png';
+              text1.innerHTML = "<span id='subtitle1'>Outils de gestion des stocks</span><br>Simplifiez la gestion de vos stocks grâce aux puissants outils de Jaayma. Que vous soyez propriétaire d'une petite entreprise ou un vendeur à grande échelle, notre système de gestion des stocks vous aide à suivre les niveaux de stock, surveiller les performances des produits et rester organisé sans effort."  
+              text2.innerHTML = "<span id='subtitle2'>Mises à jour et informations</span><br>Mettez facilement à jour les quantités, consultez l'état des stocks en temps réel et recevez des notifications lorsque le stock est bas pour ne jamais manquer une vente. Notre tableau de bord intuitif fournit des informations exploitables, vous aidant à prendre des décisions éclairées et à optimiser vos opérations."
+               text3.innerHTML = "<span id='subtitle3'>Croissance de l'entreprise</span><br> Avec Jaayma, vous pouvez vous concentrer sur le développement de votre entreprise pendant que nous simplifions les complexités du suivi et de la gestion des stocks. Gardez le contrôle et maximisez votre efficacité, le tout en un seul endroit."
+              break;
+            case 'Saytu sa Yëf yi': // wo
+              img.src = 'images/inventory.png';
+              text1.innerHTML = "<span id='subtitle1'>Jumtukaay yu nuy doxalal añs bi</span><br>Defal nu la neex ci doxal añs bi ak jumtukaay yu am solo yu Jaayma. Su fekkee nga liggéeykat bu ndaw walla yaay jaaykat bu mag, sunuy jumtukaay doxalal añs bi di la dimbali ci seet lu bëgg fi togg, taxaw ci màndargaay yuy neex, ak dox ci taxaw wi ñakk sax jafe-jafe."
+              text2.innerHTML = "<span id='subtitle2'>Yennde ak xeet</span><br>Man na nga soppiku ci kucc, gis xaalis bi ci waxtu wi, ak nanu liggéeykat te faaya, sunu tuuru bu melo tay yi man naa la yokk xeet bi te mu neexal na ngay jaar ci dooleem bu baax."
+               text3.innerHTML = "<span id='subtitle3'>Yokk bu bëgg yu tekki</span><br> Ak Jaayma, nga war a ñuy jëkkal bët ci yokku say liggéey yi di mbindaan ci doole yi ñëw doxal añs bi. Kaweel sa doole te laajaat sa way-jëf, ñu ngi foog ci soxal bu neex."
+              break;
+            case 'Social-media Monitization': // en
               img.src = 'images/social-media.png';
               text1.innerHTML = "<span id='subtitle1'>Advantages</span><br>Turn your social media influence into a source of income with Jaayma's innovative monetization program. Share your favorite products with your followers, and earn 0.5% of the sale price for every item purchased through your shared link.";
               
@@ -113,17 +157,57 @@
               
               text3.innerHTML = `<span id="subtitle3">Accessibility</span><br>Whether you're an influencer, a content creator, or just passionate about sharing great finds with your community, Jaayma allows you to monetize your online presence effortlessly. With Jaayma, your social media activity becomes an opportunity to earn while you inspire and connect with others.`;
               break;
-            case 'Order Traking':
+            case 'Monétisation des Réseaux Sociaux': // fr
+              img.src = 'images/social-media.png';
+              text1.innerHTML = "<span id='subtitle1'>Avantages</span><br>Transformez votre influence sur les réseaux sociaux en une source de revenus grâce au programme innovant de monétisation de Jaayma. Partagez vos produits préférés avec vos abonnés et gagnez 0,5 % du prix de vente pour chaque article acheté via votre lien partagé.";
+              
+              text2.innerHTML = `<span id="subtitle2">Comment ça fonctionne?</span><br>C'est simple : parcourez la large gamme de produits de Jaayma, choisissez ceux que vous aimez et partagez-les directement sur vos plateformes de réseaux sociaux. À chaque fois qu'une personne effectue un achat en utilisant votre lien unique, vous gagnez une commission.`;
+              
+              text3.innerHTML = `<span id="subtitle3">Accessibilité</span><br>Que vous soyez influenceur, créateur de contenu ou simplement passionné par le partage de belles trouvailles avec votre communauté, Jaayma vous permet de monétiser votre présence en ligne sans effort. Avec Jaayma, votre activité sur les réseaux sociaux devient une opportunité de gagner tout en inspirant et en vous connectant avec les autres.`;
+              break;
+            case 'Jëfandikoo Réseaux Sociaux yi': // wo
+              img.src = 'images/social-media.png';
+              text1.innerHTML = "<span id='subtitle1'>Ay Bineen yi</span><br>Defal sa njaayle ci réseaux sociaux di génne xaalis ci yokku Jaayma, jumtukaay bi mu doon doxal ci. Seenal say njariñ yi ak seen xeet, nga jaar ci yokk sax 0,5% ci xaalis buñ ko faaxal ci sa lien bu sowal.";
+              
+              text2.innerHTML = `<span id="subtitle2">Naka laay jëm?</span><br>Am nañ koo def: Gën na nga dékku Jaayma ci say xeet yi, tanqal sa way di la neex ak sa njariñ yi, nga yeesal leen ci réseaux sociaux yi. Benn la kan mooy yokk sa njaay ci say njariñ yi ak sa lien bi ñuy wóoral.`;
+              
+              text3.innerHTML = `<span id="subtitle3">Dafay Jeexal</span><br>Buñ la taxaw di waareer walla taxaw ci sa mbindaan, Jaayma yokkal say xarala ci xeet, fi la ñu dul gën ca sa njariñ yi. Ak Jaayma, kenn jaadu doxal ak guu sax.`;
+              break;
+            case 'Order Traking': // en
               img.src = 'images/packages.png';
               text1.innerHTML = "<span id='subtitle1'>Real Time Tracking</span><br> Easily monitor the progress of your orders with our real-time tracking system. From the moment your package leaves the warehouse to its final delivery, you’ll have complete visibility every step of the way. Enter your tracking number to see the latest updates on your shipment’s location, status, and estimated delivery time."
               text2.innerHTML = "<span id='subtitle2'>Transparency and Peace of Mind</span><br> At Jaayma, we prioritize transparency and customer satisfaction by providing a simple, reliable way to stay informed about your deliveries. Whether you're shopping for yourself or sending a gift, our tracking tool ensures peace of mind, knowing exactly where your package is and when it will arrive."
               text3.innerHTML = "<span id='subtitle3'>Reliable Service</span><br> Jaayma is dedicated to revolutionizing commerce in Senegal by integrating technology into everyday transactions. With features like real-time order tracking, we make online shopping more convenient, trustworthy, and efficient for everyone."
               break;
-            case 'Real-Time Communication':
+            case 'Suivi de Commande': // fr
+              img.src = 'images/packages.png';
+              text1.innerHTML = "<span id='subtitle1'>Suivi en temps réel</span><br> Surveillez facilement l'avancement de vos commandes grâce à notre système de suivi en temps réel. Dès que votre colis quitte l'entrepôt jusqu'à sa livraison finale, vous avez une visibilité complète à chaque étape. Entrez votre numéro de suivi pour voir les dernières mises à jour sur la localisation, l'état et l'heure estimée de livraison de votre envoi."
+              text2.innerHTML = "<span id='subtitle2'>Transparence et tranquillité d'esprit</span><br>Chez Jaayma, nous priorisons la transparence et la satisfaction de nos clients en offrant un moyen simple et fiable de rester informé sur vos livraisons. Que vous fassiez des achats pour vous-même ou envoyiez un cadeau, notre outil de suivi garantit une tranquillité d'esprit en sachant exactement où se trouve votre colis et quand il arrivera."
+              text3.innerHTML = "<span id='subtitle3'>Service fiable</span><br> Jaayma s'engage à révolutionner le commerce au Sénégal en intégrant la technologie dans les transactions quotidiennes. Avec des fonctionnalités comme le suivi des commandes en temps réel, nous rendons le shopping en ligne plus pratique, fiable et efficace pour tous."
+              break;
+            case 'Toppu sa Komaand': // wo
+              img.src = 'images/packages.png';
+              text1.innerHTML = "<span id='subtitle1'>Suivi ci waxtu wi</span><br> Seetlual ci wàllu say jumtukaay ci waxtu bi mu nekk ak sunu jumtukaay bu seet ci waxtu wi. Su fekke ne sa paakat génn ci diggante ba ak jamonoy jot, nga am firi bu suufe ci kan bi. Jokkale sa way mooy jox ndimbal suufal ko lu mel sax ku bëgg."
+              text2.innerHTML = "<span id='subtitle2'>Xeet ak Taxaw bu Dëgër</span><br> Ci Jaayma, danuy làqu ci xeet ak sa ngóor gi muy doonal bu ci nuy bàyyi xool, man sax tugal ci làqu yi, xeet ci say jumtukaay yi. Ci nguur googu, lu mel sax ndimbal, ay nopp ku ci wépp paaka yi, xeet ak taxaw wi du jot."
+              text3.innerHTML = "<span id='subtitle3'>Jàppante bu dëgër</span><br>Jaayma di liggéey ci yokk xeet ci Sénégal nga mana yokk xeet bu metti ci diggante di doole dof nguur googu. Sunuy jumtukaay yokk ci njaal yi wóor sax ci diggante yi ci sa njekk-bët, bu neex sax."
+              break;
+            case 'Real-Time Communication': // en
               img.src = 'images/call.png';
               text1.innerHTML = "<span id='subtitle1'>Stay Informed</span><br> Stay connected and informed throughout your shopping and delivery journey with Jaayma’s real-time communication feature. Effortlessly reach out to sellers and delivery personnel through in-app messages and calls, ensuring clarity and convenience every step of the way."
               text2.innerHTML = "<span id='subtitle2'>Get Instant Feedback</span><br> Need to confirm product details, ask about delivery times, or resolve any concerns? Our integrated messaging system makes it easy to get answers instantly. By enabling direct communication, we bridge the gap between buyers, sellers, and deliverers, fostering trust and a seamless shopping experience."
               text3.innerHTML = "<span id='subtitle3'>Reliable Chat Experience</span><br> With Jaayma, real-time communication ensures that your needs are met quickly and efficiently, making every transaction smoother and more reliable."
+              break;
+            case 'Communication en Temps Réel': // fr
+              img.src = 'images/call.png';
+              text1.innerHTML = "<span id='subtitle1'>Restez informé</span><br> Restez connecté et informé tout au long de votre parcours d'achat et de livraison grâce à la fonctionnalité de communication en temps réel de Jaayma. Contactez facilement les vendeurs et les livreurs via des messages et appels intégrés à l'application, garantissant clarté et commodité à chaque étape."
+              text2.innerHTML = "<span id='subtitle2'>Obtenez des réponses instantanées</span><br> Besoin de confirmer des détails sur un produit, de demander les délais de livraison ou de résoudre un problème ? Notre système de messagerie intégré vous permet d'obtenir des réponses instantanément. En facilitant la communication directe, nous comblons le fossé entre acheteurs, vendeurs et livreurs, renforçant la confiance et une expérience d'achat fluide."
+              text3.innerHTML = "<span id='subtitle3'>Expérience de chat fiable</span><br> Avec Jaayma, la communication en temps réel garantit que vos besoins sont satisfaits rapidement et efficacement, rendant chaque transaction plus fluide et plus fiable."
+              break;
+            case 'Jokkoo gu Gaaw': // wo
+              img.src = 'images/call.png';
+              text1.innerHTML = "<span id='subtitle1'>Séetal ci kanamam</span><br> Bokk ci nguur gi te gëstu ci say mbindaan ak delsiin yi ak jumtukaay Jaayma bu xeet ci waxtu wi. Dugal ci àjjox ci nopp ak jaaykat walla faatu ci jokko yi ci app bi, gënal xeet ak neex ci màndargaay bu ne."
+              text2.innerHTML = "<span id='subtitle2'>Joxe ndimbal ci diggante</span><br>Ndax dama bëgg xam sa yaram di réew ci kanam, walla sax mbindaan bi ci topp sa ne, mooy fàttaliku sa màndargaay ak yokk. Ak Jaayma sunuy xeet bu jóge sax ci ñi di gëstu mbindaan bi nguur gi xeet wante sax saxalal, man sax na."
+              text3.innerHTML = "<span id='subtitle3'>Dokkale bu xeet ci wiir</span><br> Ak Jaayma, ño ngi man sax xeet bu wóor ci ngay jox nguur gi, mu neex ak xeet yi sax ci fan yi ngay mana wax neexal njappu."
               break;
             // Add more cases as needed
             default:
