@@ -19,13 +19,16 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 55.5%;
     overflow-x: hidden;
+    width: 100%;
 }
 
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    width: 100%; /* Add this */
+    overflow-x: hidden;
 }
 
 section {
@@ -38,12 +41,13 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 1rem 9%;
     background: var(--second-bg-color);
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     z-index: 100;
+    max-width: 100vw;
 }
 
 .header.sticky {
@@ -400,7 +404,7 @@ span {
 
 .portfolio-layer a i {
     font-size: 2rem;
-    color: var(--second-bg-color);
+    color: var(--main-color);
 }
 
 .contact h2 {
@@ -479,13 +483,14 @@ span {
 /* BREAKPOINTS */
 @media (max-width: 1200px){
     html{
-        font-size: 55%;
+        font-size: 45%;
     }
 }
 
 @media (max-width: 991px){
     .header {
-        padding: 2rem 3%;
+        padding: 1rem 3%;
+        align-items: center;
     }
 
     section {
@@ -505,11 +510,14 @@ span {
     }
 
     .footer {
-        padding: 2rem 3%;
+        padding: 1rem 3%;
     }
 }
 
 @media (max-width: 768px){
+    .header {
+        padding: 1rem 2%;
+    }
     #menu-icon{
         display: block;
     }
@@ -579,6 +587,19 @@ span {
     .portfolio-container {
         grid-template-columns: 1fr;
     }
+
+    .detail-header {
+        flex-direction: column;
+    }
+
+    .detail-header h2,
+    .detail-header h3 {
+        text-align: center;
+    }
+
+    .detail-paragraph {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 450px){
@@ -586,8 +607,17 @@ span {
         font-size: 50%;
     }
 
-    .contact form .input-box input{
+    .contact form .input-box input, .input-box select{
         width: 100%;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
     }
 }
 
@@ -598,14 +628,5 @@ span {
 
     .about-img img{
         width: 90vw;
-    }
-
-    .footer {
-        flex-direction: column-reverse;
-    }
-
-    .footer p {
-        text-align: center;
-        margin-top: 2rem;
     }
 }
