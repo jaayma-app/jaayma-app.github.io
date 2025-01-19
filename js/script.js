@@ -52,13 +52,13 @@ ScrollReveal().reveal('.home-content h1, .about-content h3, .about-content a, .d
 ScrollReveal().reveal('.home-content p, .about-content p, .detail-content h3',{ origin: 'right' });
 
 /*==================== typed js ====================*/
-const typed = new Typed('.multiple-text',{
-    strings: ['Buy', 'Sell', 'Deliver', 'Share'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-});
+// const typed = new Typed('.multiple-text',{
+//     strings: ['Buy', 'Sell', 'Deliver', 'Share'],
+//     typeSpeed: 100,
+//     backSpeed: 100,
+//     backDelay: 1000,
+//     loop: true
+// });
 
 /*==================== pass data between screens ====================*/
 function displayData() {
@@ -104,20 +104,3 @@ form.addEventListener('submit', e => {
     .then(() => { window.location.reload();})
     .catch(error => console.error('Error!', error.message))
 })
-
-/*==================== show more====================*/
-document.querySelectorAll('.read-more-btn').forEach(button => {
-    button.addEventListener('click', function() {
-        // Find the closest parent services-box and then find the content within it
-        const servicesBox = this.closest('.services-box');
-        const content = servicesBox.querySelector('.content');
-        
-        content.classList.toggle('expanded');
-        
-        if (content.classList.contains('expanded')) {
-            this.textContent = 'Read Less';
-        } else {
-            this.textContent = 'Read More';
-        }
-    });
-});
