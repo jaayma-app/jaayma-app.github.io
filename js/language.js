@@ -22,6 +22,7 @@ function initializeLanguage() {
     // Apply the language
     applyLanguage();
     updateActiveLanguage();
+    initializeReadMoreButtons();
 }
 
 // Function to apply language to the page
@@ -97,6 +98,7 @@ function changeLanguage(lang) {
         localStorage.setItem('lang', lang);
         applyLanguage();
         updateActiveLanguage();
+        initializeReadMoreButtons();
     }
 }
 
@@ -139,6 +141,12 @@ function initializeTypedText() {
 
 /*==================== read more====================*/
 function initializeReadMoreButtons() {
+    // First, remove existing event listeners to prevent duplicates
+    document.querySelectorAll('.read-more-btn').forEach(button => {
+        const newButton = button.cloneNode(true);
+        button.parentNode.replaceChild(newButton, button);
+    });
+
     const currentLang = localStorage.getItem('lang');
     let translations;
     
@@ -158,8 +166,14 @@ function initializeReadMoreButtons() {
         button.addEventListener('click', function() {
             const servicesBox = this.closest('.services-box');
             const content = servicesBox.querySelector('.content');
+            const readMoreText = servicesBox.querySelector('.read-more-text');
             
             content.classList.toggle('expanded');
+            
+            // Toggle visibility of read-more-text
+            if (readMoreText) {
+                readMoreText.style.display = content.classList.contains('expanded') ? 'block' : 'none';
+            }
             
             if (content.classList.contains('expanded')) {
                 this.textContent = translations['service-button-less'];
