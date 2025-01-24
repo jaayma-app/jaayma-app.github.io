@@ -20,7 +20,7 @@ const fr = {
 
     "about-paragraph-2": "Nous connectons les acheteurs locaux avec des vendeurs de confiance à travers des partenaires de livraison fiables dans tout le pays.",
 
-    "groupe-1": "Avec des solutions de paiement intégrées incluant notamment",
+    "groupe-1": "Avec des solutions de paiement incluant notamment",
     "groupe-2": "et",
     "groupe-3": "pour des transactions sécurisées.",
     "orange":"Orange Money",
@@ -43,7 +43,7 @@ const fr = {
     "service-2-description-reveal": "Notre objectif est de garantir que votre expérience soit fluide et que vos préoccupations soient traitées rapidement. N'hésitez pas à nous contacter - nous nous engageons à vous faciliter la vie !",
     
     "service-3": "Vérification des Utilisateurs",
-    "service-3-description": "Nous collectons les renseignements de nos utilisateurs pour garantir une expérience sécurisée à tous. Cela aide à prévenir les arnaques et protège notre communauté.",
+    "service-3-description": "Nous collectons les renseignements de nos utilisateurs pour garantir une expérience sécurisée à tous.",
     "service-3-description-reveal": "Ces dispositions sécuritaires supplémentaires favorisent un environnement fiable où vous pouvez interagir en toute confiance.",
     "service-button": "En Savoir Plus",
     "service-button-less": "Lire Moins",
