@@ -53,7 +53,7 @@ const fr = {
     "feature-1": "Communication en Temps Réel",
     "feature-1-description": "Nous integrons des liens direct avec les messageries WhatsApp, vous permettant de communiquer en temps réel avec votre client, vendeur ou livreur.",
     
-    "feature-2": "Suivi de Commande",
+    "feature-2": "Suivi des Commandes",
     "feature-2-description": "Restez informé de la localisation de votre colis tout en bénéficiant d'une livraison gratuite.",
 
     "feature-3": "Rentabilisez votre Présence en ligne",
