@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Jaayma</title>
+
+    <link href="images/logo.ico" rel="icon">
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" >
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" >
+
+    <script src="languages/en.js"></script>
+    <script src="languages/fr.js"></script>
+    <script src="languages/wo.js"></script>
+    <script src="js/language.js"></script>
+
+  </head>
+
+  <body>
+    <!-- header design -->
+    <header class="header">
+      <a href="#" class="logo" data-lang="title">Jaayma</a>
+
+      <nav class="navbar">
+        <a href="#home" data-lang="home" class="active">Home
+        </a>
+        <a href="#about" data-lang="about-us">About Us</a>
+        <a href="#services" data-lang="services">Services</a>
+        <a href="#portfolio" data-lang="app-features">App Features</a>
+        <a href="#contact" data-lang="join">Join Us</a>
+    
+      </nav>
+
+      <div class="lang-switches">
+
+        <a href="#" class="lang-btn" onclick="changeLanguage('en'); return false;">EN</a>
+        <a href="#" class="lang-btn" onclick="changeLanguage('fr'); return false;">FR</a>
+        <a href="#" class="lang-btn" onclick="changeLanguage('wo'); return false;">WO</a>
+
+      </div>
+
+      <i class='bx bx-menu' id="menu-icon"></i>
+      
+
+    </header>
+
+    <!-- policy section design -->
+    <section class="policy" id="policy">
+        <div class="policy-img">
+          <img src="images/policy-us.png" alt="">
+        </div>
+  
+        <div class="policy-content">
+          <h2 class="heading" data-lang="policy-title"><span>Privacy Policy</span></h2>
+          <h3 data-lang="policy-subtitle">This privacy policy applies to the Jaayma app (hereby referred to as "Application") for mobile devices that was created by JaaymaDev (hereby referred to as "Service Provider") as a Commercial service. This service is intended for use "AS IS".</h3>
+  
+          <p data-lang="policy-paragraph-1">
+            Information Collection and Use <br>The Application collects information when you download and use it. This information may include information such as
+          </p>
+          <p data-lang="policy-paragraph-2">
+            Your device's Internet Protocol address (e.g. IP address) <br>The pages of the Application that you visit, the time and date of your visit, the time spent on those pages <br>The time spent on the Application <br>The operating system you use on your mobile device
+          </p> 
+          <p data-lang="policy-paragraph-3">
+            The Application collects your device's location, which helps the Service Provider determine your <br> approximate geographical location and make use of in below ways:
+          </p> 
+          <p data-lang="policy-paragraph-4">
+            Geolocation Services: The Service Provider utilizes location data to provide features such as personalized content, relevant recommendations, and location-based services. <br>Analytics and Improvements: Aggregated and anonymized location data helps the Service Provider to analyze user behavior, identify trends, and improve the overall performance and functionality of the Application. <br>Third-Party Services: Periodically, the Service Provider may transmit anonymized location data to externalservices. <br>These services assist them in enhancing the Application and optimizing their offerings.
+          </p> 
+          <p data-lang="policy-paragraph-5">
+            The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices and marketing promotions.
+          </p> 
+          <p data-lang="policy-paragraph-6">
+            For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information, including but not limited to Name, Email, Address, Id, vehicle insurance, phone number and drivers' license. The information that the Service Provider request will be retained by them and used as described in this privacy policy.
+          </p> 
+          <p data-lang="policy-paragraph-7">
+            Third Party Access <br>Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.
+          </p> 
+          <p data-lang="policy-paragraph-8">
+            Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party service providers used by the Application: <br>Google Play Services <br>Google Analytics for Firebase <br>Firebase Crashlytics <br>StartApp
+          </p> 
+          <p data-lang="policy-paragraph-9">
+            The Service Provider may disclose User Provided and Automatically Collected Information: <br> <br>as required by law, such as to comply with a subpoena, or similar legal process; <br>when they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request; <br>with their trusted services providers who work on their behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.
+          </p> 
+          <p data-lang="policy-paragraph-10">
+            Opt-Out Rights <br>You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network. <br> <br>Data Retention Policy <br>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data that you have provided via the Application, please contact them at jaayma.application@gmail.com and they will respond in a reasonable time.
+
+          </p> 
+          <p data-lang="policy-paragraph-11">
+            Children <br>The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13. <br> <br>The Application does not address anyone under the age of 13. The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age. In the case the Service Provider discover that a child under 13 has provided personal information, the Service Provider will immediately delete this from their servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact the Service Provider (jaayma.application@gmail.com) so that they will be able to take the necessary actions.
+
+          </p> 
+          <p data-lang="policy-paragraph-12">
+            Security <br>The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains.
+
+          </p> 
+          <p data-lang="policy-paragraph-13">
+            Camera Usage <br>The Application requires access to your device's camera to take photos of items or security information like photos of ID and License. Any photos or videos captured through the Application are used for security or promotion of items or store. The Service Provider does not collect or store any images or videos without your explicit consent.
+
+          </p> 
+          <p data-lang="policy-paragraph-14">
+            Changes <br>This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.
+          </p> 
+          <p data-lang="policy-paragraph-15">
+            This privacy policy is effective as of 2025-02-13
+          </p> 
+          <p data-lang="policy-paragraph-16">
+            Your Consent <br>By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by us. <br> <br>Contact Us <br>If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at jaayma.application@gmail.com.
+          </p> 
+          
+        </div>
+       </section>
+
+    <!-- footer design -->
+     <footer class="footer">
+      <div class="footer-text">
+        <p data-lang="copyright">Copyright &copy; 2025 by Jaayma | All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+      </div>
+     </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
