@@ -9,4 +9,18 @@
       "DF:BB:C7:AF:AF:A1:E0:BE:F9:7E:BD:F9:60:0A:2E:FF:74:6D:4B:92:01:C3:48:48:33:FB:79:6E:A0:70:7C:DF"
     ]
   }
-}]
+},
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.jaayma.project1",
+      "sha256_cert_fingerprints": [
+        "DF:BB:C7:AF:AF:A1:E0:BE:F9:7E:BD:F9:60:0A:2E:FF:74:6D:4B:92:01:C3:48:48:33:FB:79:6E:A0:70:7C:DF"
+      ]
+    }
+  }
+]
