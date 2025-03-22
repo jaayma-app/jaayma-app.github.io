@@ -19,7 +19,7 @@
 }
 
 html {
-    font-size: 45.5%;
+    font-size: 55.5%;
     overflow-x: hidden;
     width: 100%;
 }
@@ -131,11 +131,13 @@ span {
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.2;
+    margin: 2rem;
 }
 
-.home-img img {
+.video-container iframe {
     width: 40vw;
-    animation: floatImage 4s ease-in-out infinite;
+    aspect-ratio: 16/9;
+    /* animation: floatImage 4s ease-in-out infinite; */
 }
 
 @keyframes floatImage {
@@ -556,9 +558,10 @@ span {
         font-size: 5rem;
     }
 
-    .home-img img{
+    .video-container iframe {
         width: 70vw;
-        margin-top: 4rem;
+        aspect-ratio: 16/9;
+        margin-top: 2rem;
     }
 
     .about {
@@ -622,8 +625,9 @@ span {
 }
 
 @media (max-width: 365px){
-    .home-img img {
+    .video-container iframe {
         width: 90vw;
+        aspect-ratio: 16/9;
     }
 
     .about-img img{
