@@ -137,6 +137,7 @@ span {
 .video-container iframe {
     width: 40vw;
     aspect-ratio: 16/9;
+    margin-left: 2rem;
     /* animation: floatImage 4s ease-in-out infinite; */
 }
 
