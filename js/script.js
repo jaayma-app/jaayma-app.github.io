@@ -94,13 +94,47 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /*==================== upload data ====================*/
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwTXE1gOIYs8ieCWtTKYYtA2Dxm0eeO6wYZow-Dm5BnYNYTwmlxOHJP_YnUGZcUzplr/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwBc8TBdy9rkTm3wtpyv4X25EyRPJxSZ_Co0bPRIE92mZ7TWuh8aA4mCiecxmi_HmPi/exec'
 
 const form = document.forms['contact-form']
 
 form.addEventListener('submit', e => {
     e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)}).then(response => alert("Thank you for applying! Our customer service will reach you soon."))
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)}).then(response => {
+        
+        // Get the current language
+        const currentLang = localStorage.getItem('lang') || 'fr';
+        
+        // Get appropriate translation object based on current language
+        let translations;
+        switch(currentLang) {
+            case 'bs':
+                translations = bs;
+                break;
+            case 'en':
+                translations = en;
+                break;
+            case 'wo':
+                translations = wo;
+                break;
+            default:
+                translations = fr;
+        }
+        
+        // Use the translated thank you message
+        const thankYouKey = 'thank-you-message';
+        const thankYouMessage = translations[thankYouKey] || 
+            "Thank you for applying! Our customer service will reach you soon.";
+        const networkKey = 'network-error';
+        const networkMessage = translations[networkKey] || "Network Error"
+            
+        if (!response.ok) {
+            throw new Error(networkMessage);
+        }
+
+        alert(thankYouMessage);
+    }
+    )
     .then(() => { window.location.reload();})
     .catch(error => console.error('Error!', error.message))
 })
