@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /*==================== upload data ====================*/
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyiT1AWL96whrgtB3tDuemJhfCHy-EwMh65oyf5cCyq8Zwq_5g-dScvVcDoetexPBsT/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwf1kA4v1PQaExB6WIN2VQ8shfORMad5qZj0hid0KhokO6KbxS7qi00nPQJm71EFKdi/exec'
 
 const form = document.forms['contact-form']
 
