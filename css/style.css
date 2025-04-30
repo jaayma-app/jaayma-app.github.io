@@ -426,6 +426,59 @@ span {
     flex-wrap: wrap;
 }
 
+.mobile-type-selection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .mobile-type-selection label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 35%;
+    transition: all 0.3s ease;
+  }
+  
+  .mobile-type-selection label:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .mobile-type-selection input[type="radio"]:checked + img + span {
+    font-weight: bold;
+    color: var(--main-color);
+  }
+  
+  .mobile-type-selection label:has(input[type="radio"]:checked) {
+    border-color: var(--main-color);
+    background-color: var(--second-bg-color);
+  }
+  
+  .mobile-type-selection img {
+    width: 30%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+  
+  .mobile-type-selection span {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--text-color);
+  }
+  
+  /* Hide the default radio button */
+  .mobile-type-selection input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+  }
+
 .contact form .input-box input,.input-box select,
 .contact form textarea {
     width: 100%;
