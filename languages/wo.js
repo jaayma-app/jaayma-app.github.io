@@ -7,6 +7,7 @@ const wo = {
     "join": "Bokkal ci ñun",
     "payment": "Feeyal Fi",
     "network-error": "Connectiong bi dialoul",
+    "appstoreMessage": "Baal nga nu, Jaayma duñu ko jot ci iPhone. Jéemal jàpp njël Android ngir mën jéemal kanam.",
     "thank-you-message": "Jërëjëf ci sa ñaan! Sarwiisub jëfandikukat dina la jooxe ndimbal ba keneen.",
     "home-top": "Ñëkkënte si!",
     "home-title": "Bokkal ci sunu révolution lëjum bi te tambalel",
@@ -73,6 +74,8 @@ const wo = {
 
     "get": "Jot",
     "early-access": "Jot bu Ñëkk",
+    "android": "Amm na Android",
+    "iphone": "Amm na Iphone",
     "phone-placeholder": "Téléfoon",  
     "email-placeholder": "Imeel",  
     "name-placeholder": "Tur",
