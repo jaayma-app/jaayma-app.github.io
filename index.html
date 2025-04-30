@@ -265,6 +265,19 @@
       <h2 class="heading" data-lang="get">Get <span data-lang="early-access">Early Access</span></h2>
 
       <form name="contact-form" action="" method="POST">
+        <div class="mobile-type-selection">
+          <label>
+            <input type="radio" name="transfer-method" value="android" checked>
+            <img src="images/android.png" alt="Android">
+            <span data-lang="android">Je dispose d'un Android</span>
+          </label>
+          <label>
+            <input type="radio" name="transfer-method" value="i-phone" >
+            <img src="images/iphone.png" alt="Iphone">
+            <span data-lang="iphone">Je dispose d'un Iphone</span>
+          </label>
+        </div>
+
         <div class="input-box">
           <input type="text" name="name" data-lang="name-placeholder" placeholder="Full Name" required>
           <input type="email" name="email" data-lang="email-placeholder" placeholder="Email Address" required>
@@ -281,7 +294,7 @@
         </div>
 
         <textarea cols="30" rows="10" name="message" data-lang="message-placeholder" placeholder="Message"></textarea>
-
+        
         <button type="submit" class="btn" data-lang="join-now">Join Now</button>
       </form>
     </section>
