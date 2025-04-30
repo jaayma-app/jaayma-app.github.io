@@ -7,6 +7,7 @@ const en = {
    "join": "Join Us",
    "payment": "Payments",
    "network-error": "Network Error",
+   "appstoreMessage": "Sorry, Jaayma is not yet available on Iphone. Please find an Android in order to move forward.",
    "thank-you-message": "Thank you for applying! Our customer service will reach you soon.",
    "home-top": "Be Among the First!",
    "home-title": "Join Our Marketplace Revolution and",
@@ -73,6 +74,8 @@ const en = {
 
    "get":"Get ",
    "early-access":"Early Access",
+   "android": "I have an Android",
+   "iphone": "I have an Iphone",
    "phone-placeholder": "Phone Number",
    "email-placeholder": "Email",
    "name-placeholder": "Name",
