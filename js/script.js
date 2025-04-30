@@ -93,48 +93,59 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /*==================== upload data ====================*/
+// Get your form and radio buttons
+const form = document.forms['contact-form'];
+const androidRadio = document.querySelector('input[value="android"]');
+const iphoneRadio = document.querySelector('input[value="i-phone"]');
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwf1kA4v1PQaExB6WIN2VQ8shfORMad5qZj0hid0KhokO6KbxS7qi00nPQJm71EFKdi/exec'
-
-const form = document.forms['contact-form']
+// Define the script URL for Android submissions
+const androidScriptURL = 'https://script.google.com/macros/s/AKfycbwf1kA4v1PQaExB6WIN2VQ8shfORMad5qZj0hid0KhokO6KbxS7qi00nPQJm71EFKdi/exec';
 
 form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)}).then(response => {
-        
-        // Get the current language
-        const currentLang = localStorage.getItem('lang') || 'fr';
-        
-        // Get appropriate translation object based on current language
-        let translations;
-        switch(currentLang) {
-            case 'bs':
-                translations = bs;
-                break;
-            case 'en':
-                translations = en;
-                break;
-            case 'wo':
-                translations = wo;
-                break;
-            default:
-                translations = fr;
-        }
-        
-        // Use the translated thank you message
-        const thankYouKey = 'thank-you-message';
-        const thankYouMessage = translations[thankYouKey] || 
-            "Thank you for applying! Our customer service will reach you soon.";
-        const networkKey = 'network-error';
-        const networkMessage = translations[networkKey] || "Network Error"
-            
+    e.preventDefault();
+    
+    // Get the current language
+    const currentLang = localStorage.getItem('lang') || 'fr';
+    
+    // Get appropriate translation object based on current language
+    let translations;
+    switch(currentLang) {
+        case 'bs':
+            translations = bs;
+            break;
+        case 'en':
+            translations = en;
+            break;
+        case 'wo':
+            translations = wo;
+            break;
+        default:
+            translations = fr;
+    }
+    
+    // Use the translated messages
+    const thankYouKey = 'thank-you-message';
+    const thankYouMessage = translations[thankYouKey] || "Thank you for applying! Our customer service will reach you soon.";
+    const networkKey = 'network-error';
+    const networkMessage = translations[networkKey] || "Network Error";
+    const appstoreKey = 'appstoreMessage'
+    const appstoreMessage = translations[appstoreKey] || "Sorry, Jaayma is not yet available on Iphone. Please find an Android in order to move forward."
+    
+    // Only fetch the script URL if Android is selected
+    fetch(androidScriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
         if (!response.ok) {
             throw new Error(networkMessage);
         }
-
-        alert(thankYouMessage);
-    }
-    )
-    .then(() => { window.location.reload();})
-    .catch(error => console.error('Error!', error.message))
-})
+        // Check if Android is selected
+        if (androidRadio.checked) {
+            alert(thankYouMessage);
+        } else {
+            // For iPhone, just show the message 
+            alert(appstoreMessage);
+        }
+    })
+    .then(() => { window.location.reload(); })
+    .catch(error => console.error('Error!', error.message));
+    
+});
