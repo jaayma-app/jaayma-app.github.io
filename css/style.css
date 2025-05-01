@@ -507,6 +507,40 @@ span {
 .contact form .btn{
     margin-top: 2rem;
     cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.btn {
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.btn.loading {
+    color: transparent !important;  /* Hide text while loading, with higher specificity */
+    cursor: not-allowed !important;
+}
+
+.btn.loading:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    border-top-color: transparent;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .footer {
