@@ -449,8 +449,12 @@ span {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
   
-  .mobile-type-selection input[type="radio"]:checked + img + span {
+  .mobile-type-selection input[type="radio"]:checked + a + span {
     font-weight: bold;
+    color: var(--main-color);
+  }
+
+  .mobile-type-selection input[type="radio"]:checked + a {
     color: var(--main-color);
   }
   
@@ -459,11 +463,13 @@ span {
     background-color: var(--second-bg-color);
   }
   
-  .mobile-type-selection img {
-    width: 30%;
-    height: auto;
-    margin: 10px 0;
-    border-radius: 8px;
+  .mobile-type-selection a {
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    font-size: 4rem;
+    color: var(--text-color);
+    margin: 2rem 1.5rem 3rem 0;
   }
   
   .mobile-type-selection span {
