@@ -78,7 +78,7 @@ const en = {
    "iphone": "I have an Iphone",
    "phone-placeholder": "Phone Number",
    "email-placeholder": "Email",
-   "name-placeholder": "Name",
+   "name-placeholder": "Full Name",
    "select-user-type": "Select User Type",
    "buyer": "Buyer",
    "seller": "Seller",
