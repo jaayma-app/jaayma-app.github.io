@@ -78,7 +78,7 @@ const fr = {
     "iphone": "Je dispose d'un Iphone",
     "phone-placeholder": "Téléphone",
     "email-placeholder": "Email",
-    "name-placeholder": "Nom",
+    "name-placeholder": "Nom Complet",
     "select-user-type": "Sélectionnez le type d'utilisateur",  
     "buyer": "Acheteur",  
     "seller": "Vendeur",  
