@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const iphoneRadio = document.querySelector('input[value="i-phone"]');
     const submitButton = form.querySelector('button[type="submit"]');
 
-    const androidScriptURL = 'https://script.google.com/macros/s/AKfycbwf1kA4v1PQaExB6WIN2VQ8shfORMad5qZj0hid0KhokO6KbxS7qi00nPQJm71EFKdi/exec';
+    const androidScriptURL = 'https://script.google.com/macros/s/AKfycbzJDz3WRu-dRCHwAqq58yjMFOwzstxyXpLSvxYnGVcDinvWM-JwxbH-VHT9jW-EvUPu/exec';
 
     form.addEventListener('submit', e => {
         e.preventDefault();
