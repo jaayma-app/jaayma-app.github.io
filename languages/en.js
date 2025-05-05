@@ -17,6 +17,7 @@ const en = {
    "home-multi-4": "Share",
    "home-description": "Get exclusive early access and shape the future of Senegalese commerce with this innovative app, Jaayma.",
    "home-button": "Get Early Access",
+   "whatsapp-text": "Chat on WhatsApp",
    "about-title": "About ",
    "about-subtitle": "Your All-in-One Marketplace",
    "about-paragraph-1": "Jaayma is transforming Senegalese commerce into a seamless digital experience.",
