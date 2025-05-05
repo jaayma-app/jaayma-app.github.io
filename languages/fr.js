@@ -17,6 +17,7 @@ const fr = {
     "home-multi-4": "Partage",
     "home-description": "Obtenez un accès anticipé exclusif et façonnez l'avenir du commerce sénégalais avec la nouvelle application, Jaayma.",
     "home-button": "Obtenir un Accès",
+    "whatsapp-text": "Discuter sur WhatsApp",
     "about-title": "À Propos de ",
     "about-subtitle": "Votre Marché Tout-en-Un",
 
