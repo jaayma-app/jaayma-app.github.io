@@ -17,6 +17,7 @@ const wo = {
     "home-multi-4": "Seddoo",
     "home-description": "Amal accès bu jëkk te exclusif te bokkalé ci réforme bi ñuy defar ci commerce Sénégalais bi ak aplikasiong bu bess bi di Jaayma.",
     "home-button": "Bokk ci ñi Ñëkk",
+    "whatsapp-text": "Waxtaan ci WhatsApp",
     "about-title": "Xamm ",
     "about-subtitle": "Sa Lëjum bu Mat Sëkk",
 
