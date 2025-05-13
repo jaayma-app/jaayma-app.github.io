@@ -35,3 +35,6 @@ company:
 # Layout settings
 show_downloads: false
 google_analytics: # Add your GA tracking ID here
+
+plugins:
+  - jekyll-sitemap
