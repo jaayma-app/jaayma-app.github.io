@@ -102,6 +102,136 @@ section {
     display: none;
 }
 
+.account-deletion {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+  
+.account-deletion .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+  
+.account-deletion .heading {
+    text-align: center;
+    font-size: 6rem;
+    margin-bottom: 4rem;
+    color: var(--main-color);
+}
+  
+.deletion-process {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+  
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.05);
+    transition: 0.5s ease;
+}
+  
+.step:hover {
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    transform: scale(1.02);
+}
+  
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 50%;
+}
+  
+.step:hover .step-number {
+    background: var(--second-bg-color);
+    color: var(--main-color);
+}
+  
+.step-content {
+    flex: 1;
+}
+  
+.step-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+  
+.step-content p {
+    font-size: 1.2rem;
+}
+  
+.step-icon {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+  
+.deletion-info {
+    padding: 2rem;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.05);
+}
+  
+.deletion-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--main-color);
+}
+  
+.deletion-info ul {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+  
+.deletion-info li {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+  
+.deletion-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+  
+.deletion-info a {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .account-deletion {
+      padding: 8rem 4% 2rem;
+    }
+    
+    .account-deletion .heading {
+      font-size: 2.5rem;
+    }
+    
+    .step {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+    }
+    
+    .step-content h3 {
+      font-size: 1.6rem;
+    }
+}
+
 .home {
     display: flex;
     justify-content: center;
