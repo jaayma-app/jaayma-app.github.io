@@ -1,20 +1,69 @@
 <html>
 <head>
     <title>Opening Item</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div style="text-align: center; padding: 20px;">
+    <div style="text-align: center; padding: 20px; font-family: Arial, sans-serif;">
         <h2>Opening in App...</h2>
-        <p>If the app doesn't open automatically, <a href="https://play.google.com/store/apps/details?id=YOUR_APP_PACKAGE">click here to install it</a></p>
+        <p id="status">Trying to open app...</p>
+        <p style="margin-top: 20px;">
+            <a href="https://play.google.com/store/apps/details?id=com.jaayma.project1">
+                If the app doesn't open automatically, click here to install it
+            </a>
+        </p>
     </div>
-
+    
     <script>
         // Get the item ID from URL
         const urlParams = new URLSearchParams(window.location.search);
         const itemId = urlParams.get('id');
         
-        // Keep using the same URL format that was clicked
-        window.location.href = `https://jaayma-app.github.io/item?id=${itemId}`;
+        let hasRedirected = false;
+        
+        // Function to redirect to Play Store
+        function redirectToPlayStore() {
+            if (!hasRedirected) {
+                hasRedirected = true;
+                document.getElementById('status').textContent = 'App not found. Redirecting to Play Store...';
+                setTimeout(() => {
+                    window.location.href = "https://play.google.com/store/apps/details?id=com.jaayma.project1";
+                }, 1000);
+            }
+        }
+        
+        // Set up visibility change listener to detect if user switches away from page
+        // (which would indicate the app opened successfully)
+        let startTime = Date.now();
+        
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) {
+                // User switched away - likely means app opened
+                hasRedirected = true; // Prevent Play Store redirect
+            }
+        });
+        
+        // Set up blur event as additional detection
+        window.addEventListener('blur', function() {
+            if (Date.now() - startTime < 5000) {
+                // If blur happens soon after redirect, likely app opened
+                hasRedirected = true;
+            }
+        });
+        
+        // Try the deep link first
+        try {
+            window.location.href = `https://jaayma-app.github.io/item?id=${itemId}`;
+        } catch (e) {
+            // If immediate error, go to Play Store
+            redirectToPlayStore();
+        }
+        
+        // Set timeout to redirect to Play Store if app doesn't open
+        setTimeout(() => {
+            redirectToPlayStore();
+        }, 3000); // Wait 3 seconds for app to open
+        
     </script>
 </body>
 </html>
