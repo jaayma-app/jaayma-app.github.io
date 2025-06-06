@@ -14,12 +14,18 @@
         const itemId = urlParams.get('id');
         
         // Keep using the same URL format that was clicked
-        try{
-            window.location.href = `https://jaayma-app.github.io/item?id=${itemId}`;
-        } catch (e) {
-            // If immediate error, go to Play Store
-            window.location.href = `https://play.google.com/store/apps/details?id=com.jaayma.project1`;
-        }
+        let redirected = false;
+
+        // Set up fallback timer
+        setTimeout(() => {
+            if (!redirected) {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.jaayma.project1";
+            }
+        }, 2000);
+        
+        // Try to open app
+        window.location.href = `https://jaayma-app.github.io/item?id=${itemId}`;
+        redirected = true;
     </script>
 </body>
 </html>
