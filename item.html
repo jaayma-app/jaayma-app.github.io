@@ -1,42 +1,25 @@
 <html>
 <head>
     <title>Opening Item</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div style="text-align: center; padding: 20px; font-family: Arial, sans-serif;">
+    <div style="text-align: center; padding: 20px;">
         <h2>Opening in App...</h2>
-        <p id="status">Trying to open app...</p>
-        <p style="margin-top: 20px;">
-            <a href="https://play.google.com/store/apps/details?id=com.jaayma.project1">
-                If the app doesn't open automatically, click here to install it
-            </a>
-        </p>
+        <p>If the app doesn't open automatically, <a href="https://play.google.com/store/apps/details?id=com.jaayma.project1">click here to install it</a></p>
     </div>
-    
+
     <script>
         // Get the item ID from URL
         const urlParams = new URLSearchParams(window.location.search);
         const itemId = urlParams.get('id');
         
-        let hasRedirected = false;
-        
-        // Function to redirect to Play Store
-        function redirectToPlayStore() {
-            if (!hasRedirected) {
-                hasRedirected = true;
-                window.location.href = "https://play.google.com/store/apps/details?id=com.jaayma.project1";
-            }
+        // Keep using the same URL format that was clicked
+        try{
+            window.location.href = `https://jaayma-app.github.io/item?id=${itemId}`;
+        } catch (e) {
+            // If immediate error, go to Play Store
+            window.location.href = `https://play.google.com/store/apps/details?id=com.jaayma.project1`;
         }
-        
-        // Try the deep link first
-        window.location.href = `https://jaayma-app.github.io/item?id=${itemId}`;
-        
-        // Always set timeout to redirect to Play Store - this will be the fallback
-        setTimeout(() => {
-            redirectToPlayStore();
-        }, 2000); // Wait 2 seconds then redirect to Play Store
-        
     </script>
 </body>
 </html>
