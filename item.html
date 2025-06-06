@@ -13,19 +13,25 @@
         const urlParams = new URLSearchParams(window.location.search);
         const itemId = urlParams.get('id');
         
-        // Keep using the same URL format that was clicked
-        let redirected = false;
-
-        // Set up fallback timer
-        setTimeout(() => {
-            if (!redirected) {
-                window.location.href = "https://play.google.com/store/apps/details?id=com.jaayma.project1";
-            }
-        }, 2000);
+        function tryAppThenStore() {
+            const startTime = Date.now();
+            
+            document.addEventListener('visibilitychange', () => {
+                if (document.hidden) {
+                    // App likely opened
+                    return;
+                }
+                
+                // Check if we returned quickly (app didn't open)
+                if (Date.now() - startTime < 3000) {
+                    window.location.href = "https://play.google.com/store/apps/details?id=com.jaayma.project1";
+                }
+            });
+            
+            window.location.href = `https://jaayma-app.github.io/item?id=${itemId}`;
+        }
         
-        // Try to open app
-        window.location.href = `https://jaayma-app.github.io/item?id=${itemId}`;
-        redirected = true;
+        tryAppThenStore();
     </script>
 </body>
 </html>
