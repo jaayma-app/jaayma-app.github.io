@@ -25,10 +25,7 @@
         function redirectToPlayStore() {
             if (!hasRedirected) {
                 hasRedirected = true;
-                document.getElementById('status').textContent = 'App not found. Redirecting to Play Store...';
-                setTimeout(() => {
-                    window.location.href = "https://play.google.com/store/apps/details?id=com.jaayma.project1";
-                }, 1000);
+                window.location.href = "https://play.google.com/store/apps/details?id=com.jaayma.project1";
             }
         }
         
