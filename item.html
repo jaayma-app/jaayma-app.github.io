@@ -1,18 +1,84 @@
-<html>
-<head>
-    <title>Opening Item</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <div style="text-align: center; padding: 20px; font-family: Arial, sans-serif;">
-        <h2>Opening Item...</h2>
-        <p id="status">Checking if app is available...</p>
-        <a href="https://play.google.com/store/apps/details?id=com.jaayma.project1" 
-           id="playstore-link" 
-           style="background: #4285f4; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px; display: inline-block;">
-           Install App from Play Store
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Jaayma</title>
+
+    <link href="images/logo.ico" rel="icon">
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" >
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" >
+
+    <script src="languages/en.js"></script>
+    <script src="languages/fr.js"></script>
+    <script src="languages/wo.js"></script>
+    <script src="js/language.js"></script>
+
+  </head>
+
+  <body>
+    <!-- header design -->
+    <header class="header">
+      <a href="policy.html" class="logo" data-lang="title">Jaayma</a>
+
+      <nav class="navbar">
+        <a href="#home" data-lang="home" class="active">Home
         </a>
-    </div>
+        <a href="#about" data-lang="about-us">About Us</a>
+        <a href="#services" data-lang="services">Services</a>
+        <a href="#portfolio" data-lang="app-features">App Features</a>
+        <a href="#contact" data-lang="join">Join Us</a>
+        <a href="account-deletion.html" data-lang="payment">Payments</a>
+    
+      </nav>
+
+      <div class="lang-switches">
+
+        <a href="#" class="lang-btn" onclick="changeLanguage('en'); return false;">EN</a>
+        <a href="#" class="lang-btn" onclick="changeLanguage('fr'); return false;">FR</a>
+        <a href="#" class="lang-btn" onclick="changeLanguage('wo'); return false;">WO</a>
+
+      </div>
+
+      <i class='bx bx-menu' id="menu-icon"></i>
+      
+
+    </header>
+    <!-- home section design -->
+     <section class="home" id="home">
+      <div class="home-content">
+        <h3 data-lang="home-top">Be Among the First</h3>
+        <h2 data-lang="home-title">Join Our Marketplace Revolution</h2>
+        <h1><span class="multiple-text"></span> </h1>
+        <p data-lang="home-description">Get exclusive early access and shape the future of Senegalese commerce</p>
+        <div class="social-media">
+          <a href="https://www.youtube.com/channel/UCEzKaaJk7iv1VzMz2pDtpzQ"><i class='bx bxl-youtube'></i></a>
+        </div>
+      
+        <a href="https://play.google.com/store/apps/details?id=com.jaayma.project1" data-lang="home-button" class="btn">Install Jaayma from Play Store</a>
+        
+      </div>
+      
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/LHZzCfhvD5c"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+    </section>
+
+    <a href="https://wa.me/+221772512564" target="_blank" class="whatsapp-float">
+      <i class='bx bxl-whatsapp'></i>
+      <span data-lang="whatsapp-text">Chat on WhatsApp</span>
+    </a>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const itemId = urlParams.get('id');
