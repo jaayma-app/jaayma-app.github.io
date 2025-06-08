@@ -5,67 +5,80 @@
 </head>
 <body>
     <div style="text-align: center; padding: 20px; font-family: Arial, sans-serif;">
-        <h2>Opening in App...</h2>
-        <p id="status">Attempting to open the app...</p>
-        <p><a href="https://play.google.com/store/apps/details?id=com.jaayma.project1" id="playstore-link" style="display: none;">Click here to install the app</a></p>
+        <h2>Opening Item...</h2>
+        <p id="status">Checking if app is available...</p>
+        <a href="https://play.google.com/store/apps/details?id=com.jaayma.project1" 
+           id="playstore-link" 
+           style="display: none; background: #4285f4; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+           Install App from Play Store
+        </a>
     </div>
     <script>
-        // Get the item ID from URL
         const urlParams = new URLSearchParams(window.location.search);
         const itemId = urlParams.get('id');
         const statusEl = document.getElementById('status');
         const playstoreLink = document.getElementById('playstore-link');
         
-        // Prevent infinite loops by checking if we've already tried
-        const hasTriedAlready = sessionStorage.getItem('appLinkAttempted');
-        
-        if (!hasTriedAlready && itemId) {
-            sessionStorage.setItem('appLinkAttempted', 'true');
-            
-            // Try to open the app with a custom scheme or intent
-            const appUrl = `intent://item?id=${itemId}#Intent;scheme=https;package=com.jaayma.project1;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.jaayma.project1;end`;
-            
-            // For iOS/other browsers, try direct deep link
-            const directUrl = `https://jaayma-app.github.io/item?id=${itemId}`;
-            
-            // Try the Android intent first
-            window.location.href = appUrl;
-            
-            // Fallback: wait and then show Play Store link
-            setTimeout(() => {
-                statusEl.textContent = "App not installed or couldn't open.";
-                playstoreLink.style.display = 'inline';
-                
-                // Clear the session storage for next time
-                sessionStorage.removeItem('appLinkAttempted');
-            }, 2000);
-            
-        } else if (!itemId) {
+        if (!itemId) {
             statusEl.textContent = "No item ID provided.";
-            playstoreLink.style.display = 'inline';
-        } else {
-            statusEl.textContent = "App not installed.";
-            playstoreLink.style.display = 'inline';
+            playstoreLink.style.display = 'inline-block';
+            return;
         }
         
-        // Alternative approach: Use page visibility to detect if app opened
+        // Method 1: Try Android Intent (most reliable)
+        const intentUrl = `intent://jaayma-app.github.io/item?id=${itemId}#Intent;scheme=https;package=com.jaayma.project1;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.jaayma.project1;end`;
+        
+        // Method 2: Try custom scheme
+        const customScheme = `jaayma://item?id=${itemId}`;
+        
+        let hasAppOpened = false;
         let startTime = Date.now();
         
+        // Track if user leaves the page (app likely opened)
+        window.addEventListener('blur', () => {
+            hasAppOpened = true;
+        });
+        
+        // Track page visibility
         document.addEventListener('visibilitychange', () => {
             if (document.hidden) {
-                // Page became hidden, likely app opened
-                sessionStorage.removeItem('appLinkAttempted');
-            } else {
-                // Page became visible again, app likely didn't open
-                let timeAway = Date.now() - startTime;
-                if (timeAway < 1000) {
-                    setTimeout(() => {
-                        statusEl.textContent = "App not installed or couldn't open.";
-                        playstoreLink.style.display = 'inline';
-                    }, 500);
-                }
+                hasAppOpened = true;
             }
         });
+        
+        // Try to open the app
+        function tryOpenApp() {
+            // Try Android Intent first
+            window.location.href = intentUrl;
+            
+            // Fallback after 2 seconds
+            setTimeout(() => {
+                if (!hasAppOpened) {
+                    // Try custom scheme as backup
+                    window.location.href = customScheme;
+                    
+                    // Final fallback after another 1 second
+                    setTimeout(() => {
+                        if (!hasAppOpened) {
+                            statusEl.textContent = "App not installed. Install from Play Store:";
+                            playstoreLink.style.display = 'inline-block';
+                        }
+                    }, 1000);
+                }
+            }, 2000);
+        }
+        
+        // Start the process
+        tryOpenApp();
+        
+        // Backup check using focus/blur events
+        setTimeout(() => {
+            const timeElapsed = Date.now() - startTime;
+            if (timeElapsed > 3000 && !hasAppOpened) {
+                statusEl.textContent = "App not installed. Install from Play Store:";
+                playstoreLink.style.display = 'inline-block';
+            }
+        }, 3500);
     </script>
 </body>
 </html>
