@@ -105,6 +105,6 @@ const fr = {
     "deletion-info-line-four":"Le processus de suppression peut prendre jusqu'à 30 jours pour être finalisé",
     "deletion-info-line-five":"Si vous changez d'avis, vous pouvez créer un nouveau compte après la suppression",
     "deletion-info-support":"Si vous rencontrez des problèmes avec le processus de suppression de compte, veuillez contacter notre équipe de support à",
-    "download-prompt":"Télécharge Jaayma, disponible maintenant sur le Play Store.",
+    "download-prompt":"Télécharge Jaayma, disponible maintenant sur Play Store.",
     "play-store-download":"Installer Jaayma"
  };
