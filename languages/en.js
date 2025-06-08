@@ -105,4 +105,6 @@ const en = {
    "deletion-info-line-four":"The deletion process may take up to 30 days to complete",
    "deletion-info-line-five":"If you change your mind, you can create a new account after deletion",
    "deletion-info-support":"If you're experiencing any issues with the account deletion process, please contact our support team at",
+   "download-prompt":"Download Jaayma, available now on Play Store.",
+   "play-store-download":"Install Jaayma"
 };
