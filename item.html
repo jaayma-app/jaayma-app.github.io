@@ -1,20 +1,71 @@
 <html>
 <head>
     <title>Opening Item</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div style="text-align: center; padding: 20px;">
+    <div style="text-align: center; padding: 20px; font-family: Arial, sans-serif;">
         <h2>Opening in App...</h2>
-        <p>If the app doesn't open automatically, <a href="https://play.google.com/store/apps/details?id=com.jaayma.project1">click here to install it</a></p>
+        <p id="status">Attempting to open the app...</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.jaayma.project1" id="playstore-link" style="display: none;">Click here to install the app</a></p>
     </div>
-
     <script>
         // Get the item ID from URL
         const urlParams = new URLSearchParams(window.location.search);
         const itemId = urlParams.get('id');
+        const statusEl = document.getElementById('status');
+        const playstoreLink = document.getElementById('playstore-link');
         
-        // Keep using the same URL format that was clicked
-        window.location.href = `https://jaayma-app.github.io/item?id=${itemId}`;
+        // Prevent infinite loops by checking if we've already tried
+        const hasTriedAlready = sessionStorage.getItem('appLinkAttempted');
+        
+        if (!hasTriedAlready && itemId) {
+            sessionStorage.setItem('appLinkAttempted', 'true');
+            
+            // Try to open the app with a custom scheme or intent
+            const appUrl = `intent://item?id=${itemId}#Intent;scheme=https;package=com.jaayma.project1;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.jaayma.project1;end`;
+            
+            // For iOS/other browsers, try direct deep link
+            const directUrl = `https://jaayma-app.github.io/item?id=${itemId}`;
+            
+            // Try the Android intent first
+            window.location.href = appUrl;
+            
+            // Fallback: wait and then show Play Store link
+            setTimeout(() => {
+                statusEl.textContent = "App not installed or couldn't open.";
+                playstoreLink.style.display = 'inline';
+                
+                // Clear the session storage for next time
+                sessionStorage.removeItem('appLinkAttempted');
+            }, 2000);
+            
+        } else if (!itemId) {
+            statusEl.textContent = "No item ID provided.";
+            playstoreLink.style.display = 'inline';
+        } else {
+            statusEl.textContent = "App not installed.";
+            playstoreLink.style.display = 'inline';
+        }
+        
+        // Alternative approach: Use page visibility to detect if app opened
+        let startTime = Date.now();
+        
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                // Page became hidden, likely app opened
+                sessionStorage.removeItem('appLinkAttempted');
+            } else {
+                // Page became visible again, app likely didn't open
+                let timeAway = Date.now() - startTime;
+                if (timeAway < 1000) {
+                    setTimeout(() => {
+                        statusEl.textContent = "App not installed or couldn't open.";
+                        playstoreLink.style.display = 'inline';
+                    }, 500);
+                }
+            }
+        });
     </script>
 </body>
 </html>
