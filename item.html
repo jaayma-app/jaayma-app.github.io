@@ -34,51 +34,26 @@
         let hasAppOpened = false;
         let startTime = Date.now();
         
-        // Track if user leaves the page (app likely opened)
-        window.addEventListener('blur', () => {
-            hasAppOpened = true;
-        });
-        
-        // Track page visibility
-        document.addEventListener('visibilitychange', () => {
-            if (document.hidden) {
-                hasAppOpened = true;
-            }
-        });
-        
-        // Try to open the app
+        // Simplified approach - just try to open app and show button after delay
         function tryOpenApp() {
-            // Try Android Intent first
-            window.location.href = intentUrl;
+            statusEl.textContent = "Attempting to open app...";
             
-            // Fallback after 2 seconds
+            // Try Android Intent first
+            try {
+                window.location.href = intentUrl;
+            } catch(e) {
+                console.log("Intent failed:", e);
+            }
+            
+            // Always show the Play Store button after 3 seconds
             setTimeout(() => {
-                if (!hasAppOpened) {
-                    // Try custom scheme as backup
-                    window.location.href = customScheme;
-                    
-                    // Final fallback after another 1 second
-                    setTimeout(() => {
-                        if (!hasAppOpened) {
-                            statusEl.textContent = "App not installed. Install from Play Store:";
-                            playstoreLink.style.display = 'inline-block';
-                        }
-                    }, 1000);
-                }
-            }, 2000);
+                statusEl.textContent = "If the app didn't open, install it from Play Store:";
+                playstoreLink.style.display = 'inline-block';
+            }, 3000);
         }
         
         // Start the process
         tryOpenApp();
-        
-        // Backup check using focus/blur events
-        setTimeout(() => {
-            const timeElapsed = Date.now() - startTime;
-            if (timeElapsed > 3000 && !hasAppOpened) {
-                statusEl.textContent = "App not installed. Install from Play Store:";
-                playstoreLink.style.display = 'inline-block';
-            }
-        }, 3500);
     </script>
 </body>
 </html>
