@@ -105,4 +105,6 @@ const wo = {
     "deletion-info-line-four":"Leen gi ci féete bi du laata ñetti fan njang, bu mu fekk!",
     "deletion-info-line-five":"Su ñëwël dafa jaam rekk nga def sa bopp bi, nga defal weneen compte",
     "deletion-info-support":"Su am nga seen yool gu rafet ak njàngat bi, dig ci sunuy ngir digal ci",
+    "download-prompt": "Telechargeel Jaayma, fékk na léegi ci Play Store.",
+    "play-store-download": "Tógal Jaayma."
  };
