@@ -17,12 +17,14 @@
         const urlParams = new URLSearchParams(window.location.search);
         const itemId = urlParams.get('id');
         const statusEl = document.getElementById('status');
-        const playstoreLink = document.getElementById('playstore-link');
         
         if (!itemId) {
             statusEl.textContent = "No item ID provided.";
             return;
         }
+        
+        // Method 1: Try Android Intent (most reliable)
+        const intentUrl = `intent://jaayma-app.github.io/item?id=${itemId}#Intent;scheme=https;package=com.jaayma.project1;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.jaayma.project1;end`;
         
         // Simplified approach - try to open app
         function tryOpenApp() {
