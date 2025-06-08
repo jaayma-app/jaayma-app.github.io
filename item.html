@@ -9,7 +9,7 @@
         <p id="status">Checking if app is available...</p>
         <a href="https://play.google.com/store/apps/details?id=com.jaayma.project1" 
            id="playstore-link" 
-           style="display: none; background: #4285f4; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+           style="background: #4285f4; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px; display: inline-block;">
            Install App from Play Store
         </a>
     </div>
@@ -21,34 +21,23 @@
         
         if (!itemId) {
             statusEl.textContent = "No item ID provided.";
-            playstoreLink.style.display = 'inline-block';
             return;
         }
         
-        // Method 1: Try Android Intent (most reliable)
-        const intentUrl = `intent://jaayma-app.github.io/item?id=${itemId}#Intent;scheme=https;package=com.jaayma.project1;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.jaayma.project1;end`;
-        
-        // Method 2: Try custom scheme
-        const customScheme = `jaayma://item?id=${itemId}`;
-        
-        let hasAppOpened = false;
-        let startTime = Date.now();
-        
-        // Simplified approach - just try to open app and show button after delay
+        // Simplified approach - try to open app
         function tryOpenApp() {
             statusEl.textContent = "Attempting to open app...";
             
-            // Try Android Intent first
+            // Try Android Intent
             try {
                 window.location.href = intentUrl;
             } catch(e) {
                 console.log("Intent failed:", e);
             }
             
-            // Always show the Play Store button after 3 seconds
+            // Update status after attempt
             setTimeout(() => {
-                statusEl.textContent = "If the app didn't open, install it from Play Store:";
-                playstoreLink.style.display = 'inline-block';
+                statusEl.textContent = "If the app didn't open automatically, use the button below:";
             }, 3000);
         }
         
