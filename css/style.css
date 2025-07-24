@@ -323,6 +323,11 @@ span {
     margin-top: 1rem;
 }
 
+.home-content li{
+    font-size: 2.3rem;
+    margin-top: 1rem;
+}
+
 .social-media a {
     display: inline-flex;
     justify-content: center;
