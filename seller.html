@@ -1,0 +1,141 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Vendeur Jaayma - Voir le Profil dans l'App</title>
+    <meta name="description" content="Voir le profil de ce vendeur sur Jaayma. Téléchargez l'application pour voir ses produits et faire vos achats.">
+
+    <link href="images/logo.ico" rel="icon">
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" >
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" >
+
+    <script src="languages/en.js"></script>
+    <script src="languages/fr.js"></script>
+    <script src="languages/wo.js"></script>
+    <script src="js/language.js"></script>
+
+  </head>
+
+  <body>
+    <!-- header design -->
+    <header class="header">
+      <a href="policy.html" class="logo" data-lang="title">Jaayma</a>
+
+      <nav class="navbar">
+        <a href="index.html#home" data-lang="home">Home</a>
+        <a href="index.html#about" data-lang="about-us">About Us</a>
+        <a href="index.html#services" data-lang="services">Services</a>
+        <a href="index.html#portfolio" data-lang="app-features">App Features</a>
+        <a href="index.html#contact" data-lang="join">Join Us</a>
+        <a href="account-deletion.html" data-lang="payment">Payments</a>
+      </nav>
+
+      <div class="lang-switches">
+        <a href="#" class="lang-btn" onclick="changeLanguage('en'); return false;">EN</a>
+        <a href="#" class="lang-btn" onclick="changeLanguage('fr'); return false;">FR</a>
+        <a href="#" class="lang-btn" onclick="changeLanguage('wo'); return false;">WO</a>
+      </div>
+
+      <i class='bx bx-menu' id="menu-icon"></i>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Decouvrez votre vendeur sur Jaayma</h1>        
+        <div class="social-media">
+          <a href="https://www.youtube.com/channel/UCEzKaaJk7iv1VzMz2pDtpzQ"><i class='bx bxl-youtube'></i></a>
+        </div>
+
+        <div class="seo-text">
+            <p>Ayez acces aux produits de votre vendeur sur Jaayma</p>
+            <p>
+                <strong style="color: var(--main-color)">Jaayma</strong> vous permet de découvrir les 
+                <strong style="color: var(--main-color)">meilleurs vendeurs</strong> aux allantours et 
+                <strong style="color: var(--main-color)">acheter leurs produits</strong> avec une 
+                <strong style="color: var(--main-color)">livraison rapide</strong>.
+            </p>
+            <ul>
+                <li>🛍️ Voir tous les produits de ce vendeur</li>
+                <li>⭐ Consulter les avis et évaluations</li>
+                <li>📱 Contacter directement le vendeur</li>
+                <li>🚀 Commander avec livraison gratuite et sécurisée</li>
+            </ul>
+            <p>
+                Téléchargez Jaayma pour accéder au profil complet du vendeur.
+            </p>
+        </div>
+      
+        <a href="https://play.google.com/store/apps/details?id=com.jaayma.project1" data-lang="play-store-download" class="btn">Installer Jaayma</a>
+      </div>
+      
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/LHZzCfhvD5c"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <a href="https://wa.me/+221772512564" target="_blank" class="whatsapp-float">
+      <i class='bx bxl-whatsapp'></i>
+      <span data-lang="whatsapp-text">Chat on WhatsApp</span>
+    </a>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const sellerId = urlParams.get('id');
+        const statusEl = document.getElementById('status');
+        
+        if (!sellerId) {
+            statusEl.textContent = "Aucun ID de vendeur fourni.";
+            statusEl.style.color = "red";
+            return;
+        }
+        
+        // Method 1: Try Android Intent (most reliable)
+        const intentUrl = `intent://jaayma-app.github.io/seller?id=${sellerId}#Intent;scheme=https;package=com.jaayma.project1;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.jaayma.project1;end`;
+        
+        // Method 2: Custom URL scheme fallback
+        const customSchemeUrl = `jaayma://seller?id=${sellerId}`;
+        
+        function tryOpenApp() {
+            statusEl.textContent = "Tentative d'ouverture de l'application...";
+            statusEl.style.color = "var(--main-color)";
+            
+            // Try Android Intent first
+            try {
+                window.location.href = intentUrl;
+            } catch(e) {
+                console.log("Intent failed:", e);
+                // Fallback to custom scheme
+                try {
+                    window.location.href = customSchemeUrl;
+                } catch(e2) {
+                    console.log("Custom scheme failed:", e2);
+                }
+            }
+            
+            // Update status after attempt
+            setTimeout(() => {
+                statusEl.textContent = "Si l'application ne s'est pas ouverte automatiquement, utilisez le bouton ci-dessous :";
+                statusEl.style.color = "var(--text-color)";
+            }, 3000);
+        }
+        
+        // Start the process when page loads
+        window.addEventListener('load', tryOpenApp);
+        
+        // Also try immediately
+        tryOpenApp();
+    </script>
+</body>
+</html>
