@@ -24,13 +24,11 @@ header_pages:
   - contact.md
 
 # Custom settings
-company:
+company: JaaymaDev
   founding_year: 2024
   location: Your Location
   social:
-    twitter: jaayma
-    facebook: jaayma
-    instagram: jaayma
+    youtube: jaayma
 
 # Layout settings
 show_downloads: false
