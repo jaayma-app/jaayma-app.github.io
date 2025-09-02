@@ -7,4 +7,5 @@
   setTimeout(() => {
     window.location.href = 'https://play.google.com/store/apps/details?id=your.app.id';
   }, 2000);
+
 </script>
