@@ -1,109 +1,18 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>Jaayma - Achat, Vente et Livraison au Sénégal</title>
-    <meta name="description" content="Jaayma est l'application de shopping tout-en-un au Sénégal. Achetez, vendez et recevez vos produits avec livraison rapide. Téléchargez sur le Play Store.">
-
-
-    <link href="images/logo.ico" rel="icon">
-
-    <!-- box icons -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" >
-
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css" >
-
-    <script src="languages/en.js"></script>
-    <script src="languages/fr.js"></script>
-    <script src="languages/wo.js"></script>
-    <script src="js/language.js"></script>
-
-  </head>
-
-  <body>
-    <!-- header design -->
-    <header class="header">
-      <a href="policy.html" class="logo" data-lang="title">Jaayma</a>
-
-      <nav class="navbar">
-        <a href="index.html#home" data-lang="home" class="active">Home
-        </a>
-        <a href="index.html#about" data-lang="about-us">About Us</a>
-        <a href="index.html#services" data-lang="services">Services</a>
-        <a href="index.html#portfolio" data-lang="app-features">App Features</a>
-        <a href="index.html#contact" data-lang="join">Join Us</a>
-        <a href="account-deletion.html" data-lang="payment">Payments</a>
-    
-      </nav>
-
-      <div class="lang-switches">
-
-        <a href="#" class="lang-btn" onclick="changeLanguage('en'); return false;">EN</a>
-        <a href="#" class="lang-btn" onclick="changeLanguage('fr'); return false;">FR</a>
-        <a href="#" class="lang-btn" onclick="changeLanguage('wo'); return false;">WO</a>
-
-      </div>
-
-      <i class='bx bx-menu' id="menu-icon"></i>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment Success</title>
+</head>
+<body>
+  <script>
+      const urlParams = new URLSearchParams(window.location.search);
       
-
-    </header>
-    <!-- home section design -->
-     <section class="home" id="home">
-      <div class="home-content">
-        <h1>Télécharge Jaayma, disponible maintenant sur Play Store.</h1>
-        <div class="social-media">
-          <a href="https://www.youtube.com/channel/UCEzKaaJk7iv1VzMz2pDtpzQ"><i class='bx bxl-youtube'></i></a>
-        </div>
-
-        <div class="seo-text" >
-            <p>Shopping, Vente et Livraison au Sénégal avec Jaayma</p>
-            <p>
-                <strong style="color: var(--main-color)">Jaayma</strong> vous permet de <strong style="color: var(--main-color)">vendre facilement vos produits</strong>, 
-                <strong style="color: var(--main-color)">acheter en ligne</strong> depuis des boutiques locales, et profiter d’une <strong style="color: var(--main-color)">livraison rapide</strong> où que vous soyez au Sénégal.
-            </p>
-            <ul>
-                <li>🛒 Produits : vêtements, gadgets, cosmétiques, alimentation…</li>
-                <li>📍 Achetez local, soutenez les commerçants près de chez vous</li>
-                <li>🚀 Livraison suivie et sécurisée avec nos livreurs partenaires</li>
-            </ul>
-            <p>
-                Téléchargez maintenant sur Google Play pour une expérience fluide de <strong style="color: var(--main-color)">shopping mobile</strong> au Sénégal.
-            </p>
-        </div>
+      window.location.href = 'jaayma://payment/success';
       
-        <a href="https://play.google.com/store/apps/details?id=com.jaayma.project1" data-lang="play-store-download" class="btn">Installer Jaayma</a>
-        
-      </div>
-      
-        <div class="video-container">
-          <iframe
-            src="https://www.youtube.com/embed/LHZzCfhvD5c"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-        </div>
-        
-
-    </section>
-
-    <a href="https://wa.me/+221772512564" target="_blank" class="whatsapp-float">
-      <i class='bx bxl-whatsapp'></i>
-      <span data-lang="whatsapp-text">Chat on WhatsApp</span>
-    </a>
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-  
-        window.location.href = 'jaayma://payment/success';
-        
-        // Fallback for users who don't have the app
-        setTimeout(() => {
-          window.location.href = 'https://play.google.com/store/apps/details?id=your.app.id';
-        }, 2000);
-    </script>
+      // Fallback for users who don't have the app
+      setTimeout(() => {
+        window.location.href = 'https://play.google.com/store/apps/details?id=your.app.id';
+      }, 2000);
+  </script>
 </body>
 </html>
