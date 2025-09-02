@@ -24,7 +24,8 @@ header_pages:
   - contact.md
 
 # Custom settings
-company: JaaymaDev
+company:
+  name: JaaymaDev
   founding_year: 2024
   location: Your Location
   social:
