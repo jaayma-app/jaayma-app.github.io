@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Donation Successful</title>
+</head>
+<body>
+  <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      
+      window.location.href = 'jaayma://donation/success';
+      
+      // Fallback for users who don't have the app
+      setTimeout(() => {
+        window.location.href = 'https://play.google.com/store/apps/details?id=com.jaayma.project1';
+      }, 2000);
+  </script>
+</body>
+</html>
