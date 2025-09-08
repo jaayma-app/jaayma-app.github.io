@@ -79,7 +79,7 @@ const fr = {
     "iphone": "Je dispose d'un Iphone",
     "phone-placeholder": "Téléphone",
     "email-placeholder": "Email",
-    "name-placeholder": "Nom Complet",
+    "name-placeholder": "Nom",
     "select-user-type": "Sélectionnez le type d'utilisateur",  
     "buyer": "Acheteur",  
     "seller": "Vendeur",  
@@ -106,5 +106,41 @@ const fr = {
     "deletion-info-line-five":"Si vous changez d'avis, vous pouvez créer un nouveau compte après la suppression",
     "deletion-info-support":"Si vous rencontrez des problèmes avec le processus de suppression de compte, veuillez contacter notre équipe de support à",
     "download-prompt":"Télécharge Jaayma, disponible maintenant sur Play Store.",
-    "play-store-download":"Installer Jaayma"
+    "play-store-download":"Installer Jaayma",
+    "help_title":"Centre Aide Jaayma",
+    "buyers":"Acheteurs",  
+    "sellers":"Vendeurs",
+    "deliverers":"Livreurs",
+    'hero-title': 'Bienvenue au Centre d\'Aide Jaayma',
+    'hero-subtitle': 'Trouvez des guides étape par étape pour acheteurs, vendeurs et livreurs',
+    'buyers-title': 'Aide Acheteurs',
+    'sellers-title': 'Aide Vendeurs',
+    'deliverers-title': 'Aide Livreurs',
+    'copyright': 'Copyright © 2025 par Jaayma | Tous Droits Réservés.',
+    
+    // Buyers
+    'create-package': 'Comment créer un colis?',
+    'create-package-desc': 'Apprenez à créer et personnaliser vos colis de livraison',
+    'place-order': 'Comment passer une commande?',
+    'place-order-desc': 'Guide étape par étape pour passer vos commandes de livraison',
+    'perform-payments': 'Comment effectuer des paiements?',
+    'perform-payments-desc': 'Méthodes de paiement sécurisées et guides de transaction',
+    
+    // Sellers
+    'add-items': 'Comment ajouter de nouveaux articles?',
+    'add-items-desc': 'Ajoutez et gérez votre inventaire sur Jaayma',
+    'manage-orders': 'Comment gérer les commandes?',
+    'manage-orders-desc': 'Suivez et gérez les commandes de vos clients',
+    'upload-auth': 'Comment obtenir les autorisations de téléchargement?',
+    'upload-auth-desc': 'Vérifiez votre compte pour les privilèges de vente',
+    'seller-payment': 'Comment être payé?',
+    'seller-payment-desc': 'Configurez les paiements et retirez vos gains',
+    
+    // Deliverers
+    'apply-orders': 'Comment postuler aux commandes?',
+    'apply-orders-desc': 'Trouvez et postulez pour des opportunités de livraison',
+    'perform-deliveries': 'Comment effectuer les livraisons de commandes?',
+    'perform-deliveries-desc': 'Effectuez des livraisons en toute sécurité et efficacité',
+    'deliverer-payment': 'Comment être payé?',
+    'deliverer-payment-desc': 'Processus de paiement pour les livraisons terminées'
  };
