@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>Jaayma - Achat, Vente et Livraison au Sénégal</title>
-    <meta name="description" content="Jaayma est l'application de shopping tout-en-un au Sénégal. Achetez, vendez et recevez vos produits avec livraison rapide. Téléchargez sur le Play Store.">
-
+    <title>Jaayma</title>
 
     <link href="images/logo.ico" rel="icon">
 
-    
     <!-- box icons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" >
 
@@ -27,7 +24,7 @@
   <body>
     <!-- header design -->
     <header class="header">
-      <a href="policy.html" class="logo" data-lang="title">Jaayma</a>
+      <a class="logo" data-lang="title">Jaayma</a>
 
       <nav class="navbar">
         <a href="#home" data-lang="home" class="active">Home
@@ -36,6 +33,7 @@
         <a href="#services" data-lang="services">Services</a>
         <a href="#portfolio" data-lang="app-features">App Features</a>
         <a href="#contact" data-lang="join">Join Us</a>
+        <a href="help.html" data-lang="help_center">Help</a>
     
       </nav>
 
@@ -60,15 +58,12 @@
         <h1><span class="multiple-text"></span> </h1>
         <p data-lang="home-description">Get exclusive early access and shape the future of Senegalese commerce</p>
         <div class="social-media">
-          <!--<a href="https://www.youtube.com/channel/UCEzKaaJk7iv1VzMz2pDtpzQ"><i class='bx bxl-youtube'></i></a>-->
-          <a href="https://play.google.com/store/apps/details?id=com.orange.mobile.orangemoney"><i class='bx bxl-youtube'></i></a>
+          <a href="https://www.youtube.com/channel/UCEzKaaJk7iv1VzMz2pDtpzQ"><i class='bx bxl-youtube'></i></a>
         </div>
       
         <a href="#contact" data-lang="home-button" class="btn">Get Early Access</a>
-
         
       </div>
-
       
         <div class="video-container">
           <iframe
@@ -84,7 +79,7 @@
           <img src="images/phone.png" alt="Home image">
         </div> -->
 
-     </section>
+    </section>
 
     <a href="https://wa.me/+221772512564" target="_blank" class="whatsapp-float">
       <i class='bx bxl-whatsapp'></i>
@@ -231,43 +226,7 @@
       </div>
      </section>
 
-     <script>
-      // function setArticleData(identifier) {
-      //   console.log('Function called with identifier:', identifier);
-        
-      //   localStorage.clear();
-        
-      //   const titleElement = document.getElementById('title' + identifier);
-      //   const descriptionElement = document.getElementById('description' + identifier);
-        
-      //   console.log('Title element:', titleElement);
-      //   console.log('Description element:', descriptionElement);
-        
-      //   if (!titleElement || !descriptionElement) {
-      //     console.error('Could not find elements for identifier:', identifier);
-      //     return;
-      //   }
-        
-      //   const titleText = titleElement.textContent;
-      //   const descriptionText = descriptionElement.textContent;
-        
-      //   console.log('Title text:', titleText);
-      //   console.log('Description text:', descriptionText);
-        
-      //   const data = {
-      //     title: titleText,
-      //     description: descriptionText
-      //   };
-        
-      //   localStorage.setItem('articleData', JSON.stringify(data));
-      //   console.log('Data saved to localStorage:', data);
-        
-      //   window.location.href = 'read-more.html';
-      // }
-      </script>
-
-     
-
+    
     <!-- contact section design -->
     <section class="contact" id="contact">
       <h2 class="heading" data-lang="get">Get <span data-lang="early-access">Early Access</span></h2>
@@ -277,13 +236,13 @@
           <label>
             <input type="radio" name="transfer-method" value="android" checked>
             <a><i class='bx bxl-android'></i></a>
-<!--             <img src="images/android.png" alt="Android"> -->
+            <!-- <img src="images/android.png" alt="Android"> -->
             <span data-lang="android">Je dispose d'un Android</span>
           </label>
           <label>
             <input type="radio" name="transfer-method" value="i-phone" >
             <a><i class='bx bxl-apple' ></i></a>
-<!--             <img src="images/iphone.png" alt="Iphone"> -->
+            <!-- <img src="images/iphone.png" alt="Iphone"> -->
             <span data-lang="iphone">Je dispose d'un Iphone</span>
           </label>
         </div>
@@ -303,7 +262,7 @@
           </select>
         </div>
 
-        <textarea cols="30" rows="10" name="message" data-lang="message-placeholder" placeholder="Message"></textarea>
+        <textarea cols="30" rows="10" name="message" data-lang="message-placeholder" placeholder="Message">
         
         <button type="submit" class="btn" data-lang="join-now">Join Now</button>
       </form>
