@@ -79,7 +79,7 @@ const en = {
    "iphone": "I have an Iphone",
    "phone-placeholder": "Phone Number",
    "email-placeholder": "Email",
-   "name-placeholder": "Full Name",
+   "name-placeholder": "Name",
    "select-user-type": "Select User Type",
    "buyer": "Buyer",
    "seller": "Seller",
@@ -106,5 +106,41 @@ const en = {
    "deletion-info-line-five":"If you change your mind, you can create a new account after deletion",
    "deletion-info-support":"If you're experiencing any issues with the account deletion process, please contact our support team at",
    "download-prompt":"Download Jaayma, available now on Play Store.",
-   "play-store-download":"Install Jaayma"
+   "play-store-download":"Install Jaayma",
+   "help_title":"Jaayma Help Center",
+   "buyers":"Buyers",  
+   "sellers":"Sellers",
+   "deliverers":"Deliverers",
+   'hero-title': 'Welcome to Jaayma Help Center',
+   'hero-subtitle': 'Find step-by-step guides for buyers, sellers, and deliverers',
+   'buyers-title': 'Buyers Help',
+   'sellers-title': 'Sellers Help',
+   'deliverers-title': 'Deliverers Help',
+   'copyright': 'Copyright © 2025 by Jaayma | All Rights Reserved.',
+   
+   // Buyers
+   'create-package': 'How to create a package?',
+   'create-package-desc': 'Learn how to create and customize your delivery packages',
+   'place-order': 'How to place an Order?',
+   'place-order-desc': 'Step-by-step guide to placing your delivery orders',
+   'perform-payments': 'How to perform payments?',
+   'perform-payments-desc': 'Secure payment methods and transaction guides',
+   
+   // Sellers
+   'add-items': 'How to add new items?',
+   'add-items-desc': 'Add and manage your inventory on Jaayma',
+   'manage-orders': 'How to manage Orders?',
+   'manage-orders-desc': 'Track and manage your customer orders',
+   'upload-auth': 'How to get upload authorizations?',
+   'upload-auth-desc': 'Verify your account for selling privileges',
+   'seller-payment': 'How to get Paid?',
+   'seller-payment-desc': 'Set up payments and withdraw earnings',
+   
+   // Deliverers
+   'apply-orders': 'How to apply to orders?',
+   'apply-orders-desc': 'Find and apply for delivery opportunities',
+   'perform-deliveries': 'How to perform Order Deliveries?',
+   'perform-deliveries-desc': 'Complete deliveries safely and efficiently',
+   'deliverer-payment': 'How to get Paid?',
+   'deliverer-payment-desc': 'Payment process for completed deliveries'
 };
