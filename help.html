@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaayma Help Center</title>
+    
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/help.css" >
+
+    <script src="languages/en.js"></script>
+    <script src="languages/fr.js"></script>
+    <script src="languages/wo.js"></script>
+    <script src="js/language.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo" data-lang="help_title">Jaayma Help Center</a>
+        
+        <nav class="navbar">
+            <a href="#buyers" class="active" data-lang="buyers">Buyers</a>
+            <a href="#sellers" data-lang="sellers">Sellers</a>
+            <a href="#deliverers" data-lang="deliverers">Deliverers</a>
+        </nav>
+        
+        <div class="lang-switches">
+            <a href="#" class="lang-btn" onclick="changeLanguage('en'); return false;">EN</a>
+            <a href="#" class="lang-btn" onclick="changeLanguage('fr'); return false;">FR</a>
+            <a href="#" class="lang-btn" onclick="changeLanguage('wo'); return false;">WO</a>
+        </div>
+        
+        <i class='bx bx-menu' id="menu-icon"></i>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <h1 data-lang="hero-title">Welcome to Jaayma Help Center</h1>
+                <p data-lang="hero-subtitle">Find step-by-step guides for buyers, sellers, and deliverers</p>
+            </section>
+
+            <!-- Buyers Section -->
+            <section id="buyers" class="help-section">
+                <h2 class="section-title" data-lang="buyers-title">
+                    <i class='bx bx-shopping-bag'></i> Buyers Help
+                </h2>
+                <div class="help-grid">
+                    <div class="help-card">
+                        <h3><i class='bx bx-package'></i> <span data-lang="create-package">How to create a package?</span></h3>
+                        <p data-lang="create-package-desc">Learn how to create and customize your delivery packages</p>
+                        <button class="expand-btn" onclick="window.location.href='steps.html'">View Steps</button>
+                        <div id="create-package-steps" class="steps-content">
+                            <ol class="steps-list">
+                                <li data-lang="create-package-step1">Log into your Jaayma buyer account</li>
+                                <li data-lang="create-package-step2">Click on "Create Package" from your dashboard</li>
+                                <li data-lang="create-package-step3">Fill in package details (dimensions, weight, fragility)</li>
+                                <li data-lang="create-package-step4">Add pickup and delivery addresses</li>
+                                <li data-lang="create-package-step5">Set your preferred delivery timeframe</li>
+                                <li data-lang="create-package-step6">Review and save your package information</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="help-card">
+                        <h3><i class='bx bx-cart'></i> <span data-lang="place-order">How to place an Order?</span></h3>
+                        <p data-lang="place-order-desc">Step-by-step guide to placing your delivery orders</p>
+                        <button class="expand-btn" onclick="window.location.href='steps.html'">View Steps</button>
+                        <div id="place-order-steps" class="steps-content">
+                            <ol class="steps-list">
+                                <li data-lang="place-order-step1">Select your created package or create a new one</li>
+                                <li data-lang="place-order-step2">Choose your delivery speed (standard, express, or urgent)</li>
+                                <li data-lang="place-order-step3">Browse available deliverers and their ratings</li>
+                                <li data-lang="place-order-step4">Select your preferred deliverer</li>
+                                <li data-lang="place-order-step5">Review order details and pricing</li>
+                                <li data-lang="place-order-step6">Confirm and submit your order</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="help-card">
+                        <h3><i class='bx bx-credit-card'></i> <span data-lang="perform-payments">How to perform payments?</span></h3>
+                        <p data-lang="perform-payments-desc">Secure payment methods and transaction guides</p>
+                        <button class="expand-btn" onclick="window.location.href='steps.html'">View Steps</button>
+                        <div id="perform-payments-steps" class="steps-content">
+                            <ol class="steps-list">
+                                <li data-lang="perform-payments-step1">Go to your order summary page</li>
+                                <li data-lang="perform-payments-step2">Select your preferred payment method (card, mobile money, bank transfer)</li>
+                                <li data-lang="perform-payments-step3">Enter payment details securely</li>
+                                <li data-lang="perform-payments-step4">Review the total amount and fees</li>
+                                <li data-lang="perform-payments-step5">Confirm payment authorization</li>
+                                <li data-lang="perform-payments-step6">Receive payment confirmation and order tracking details</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sellers Section -->
+            <section id="sellers" class="help-section">
+                <h2 class="section-title" data-lang="sellers-title">
+                    <i class='bx bx-store'></i> Sellers Help
+                </h2>
+                <div class="help-grid">
+                    <div class="help-card">
+                        <h3><i class='bx bx-plus-circle'></i> <span data-lang="add-items">How to add new items?</span></h3>
+                        <p data-lang="add-items-desc">Add and manage your inventory on Jaayma</p>
+                        <button class="expand-btn" onclick="window.location.href='steps.html'">View Steps</button>
+                        <div id="add-items-steps" class="steps-content">
+                            <ol class="steps-list">
+                                <li data-lang="add-items-step1">Access your seller dashboard</li>
+                                <li data-lang="add-items-step2">Click "Add New Item" or "Add Product"</li>
+                                <li data-lang="add-items-step3">Upload high-quality product images</li>
+                                <li data-lang="add-items-step4">Fill in product details (name, description, category)</li>
+                                <li data-lang="add-items-step5">Set pricing and inventory quantities</li>
+                                <li data-lang="add-items-step6">Add shipping information and publish item</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="help-card">
+                        <h3><i class='bx bx-list-ul'></i> <span data-lang="manage-orders">How to manage Orders?</span></h3>
+                        <p data-lang="manage-orders-desc">Track and manage your customer orders</p>
+                        <button class="expand-btn" onclick="window.location.href='steps.html'">View Steps</button>
+                        <div id="manage-orders-steps" class="steps-content">
+                            <ol class="steps-list">
+                                <li data-lang="manage-orders-step1">Navigate to "Orders" section in your dashboard</li>
+                                <li data-lang="manage-orders-step2">View incoming orders and their status</li>
+                                <li data-lang="manage-orders-step3">Accept or decline orders based on availability</li>
+                                <li data-lang="manage-orders-step4">Update order status (processing, packed, shipped)</li>
+                                <li data-lang="manage-orders-step5">Communicate with buyers through messaging system</li>
+                                <li data-lang="manage-orders-step6">Mark orders as completed once delivered</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="help-card">
+                        <h3><i class='bx bx-shield-check'></i> <span data-lang="upload-auth">How to get upload authorizations?</span></h3>
+                        <p data-lang="upload-auth-desc">Verify your account for selling privileges</p>
+                        <button class="expand-btn" onclick="window.location.href='steps.html'">View Steps</button>
+                        <div id="upload-auth-steps" class="steps-content">
+                            <ol class="steps-list">
+                                <li data-lang="upload-auth-step1">Go to "Account Verification" in settings</li>
+                                <li data-lang="upload-auth-step2">Upload government-issued ID document</li>
+                                <li data-lang="upload-auth-step3">Provide business registration documents (if applicable)</li>
+                                <li data-lang="upload-auth-step4">Submit tax identification number</li>
+                                <li data-lang="upload-auth-step5">Wait for document review (1-3 business days)</li>
+                                <li data-lang="upload-auth-step6">Receive verification confirmation and selling access</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="help-card">
+                        <h3><i class='bx bx-money'></i> <span data-lang="seller-payment">How to get Paid?</span></h3>
+                        <p data-lang="seller-payment-desc">Set up payments and withdraw earnings</p>
+                        <button class="expand-btn" onclick="window.location.href='steps.html'">View Steps</button>
+                        <div id="seller-payment-steps" class="steps-content">
+                            <ol class="steps-list">
+                                <li data-lang="seller-payment-step1">Complete account verification process</li>
+                                <li data-lang="seller-payment-step2">Add bank account or mobile money details</li>
+                                <li data-lang="seller-payment-step3">Set up automatic or manual payout preferences</li>
+                                <li data-lang="seller-payment-step4">Complete orders and wait for buyer confirmation</li>
+                                <li data-lang="seller-payment-step5">Funds released after successful delivery (2-7 days)</li>
+                                <li data-lang="seller-payment-step6">Request withdrawal or receive automatic payout</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Deliverers Section -->
+            <section id="deliverers" class="help-section">
+                <h2 class="section-title" data-lang="deliverers-title">
+                    <i class='bx bx-cycling'></i> Deliverers Help
+                </h2>
+                <div class="help-grid">
+                    <div class="help-card">
+                        <h3><i class='bx bx-search'></i> <span data-lang="apply-orders">How to apply to orders?</span></h3>
+                        <p data-lang="apply-orders-desc">Find and apply for delivery opportunities</p>
+                        <button class="expand-btn" onclick="window.location.href='steps.html'">View Steps</button>
+                        <div id="apply-orders-steps" class="steps-content">
+                            <ol class="steps-list">
+                                <li data-lang="apply-orders-step1">Open the deliverer dashboard</li>
+                                <li data-lang="apply-orders-step2">Browse available delivery orders in your area</li>
+                                <li data-lang="apply-orders-step3">Check order details (distance, payment, timeline)</li>
+                                <li data-lang="apply-orders-step4">Submit your delivery proposal with competitive rates</li>
+                                <li data-lang="apply-orders-step5">Wait for buyer selection and approval</li>
+                                <li data-lang="apply-orders-step6">Accept the order and begin delivery process</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="help-card">
+                        <h3><i class='bx bx-package'></i> <span data-lang="perform-deliveries">How to perform Order Deliveries?</span></h3>
+                        <p data-lang="perform-deliveries-desc">Complete deliveries safely and efficiently</p>
+                        <button class="expand-btn" onclick="window.location.href='steps.html'">View Steps</button>
+                        <div id="perform-deliveries-steps" class="steps-content">
+                            <ol class="steps-list">
+                                <li data-lang="perform-deliveries-step1">Confirm order acceptance and review pickup details</li>
+                                <li data-lang="perform-deliveries-step2">Navigate to pickup location using GPS</li>
+                                <li data-lang="perform-deliveries-step3">Verify package details and take photos</li>
+                                <li data-lang="perform-deliveries-step4">Update status to "Package Collected"</li>
+                                <li data-lang="perform-deliveries-step5">Deliver to destination and confirm with recipient</li>
+                                <li data-lang="perform-deliveries-step6">Complete delivery confirmation and photo proof</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="help-card">
+                        <h3><i class='bx bx-wallet'></i> <span data-lang="deliverer-payment">How to get Paid?</span></h3>
+                        <p data-lang="deliverer-payment-desc">Payment process for completed deliveries</p>
+                        <button class="expand-btn" onclick="window.location.href='steps.html'">View Steps</button>
+                        <div id="deliverer-payment-steps" class="steps-content">
+                            <ol class="steps-list">
+                                <li data-lang="deliverer-payment-step1">Complete delivery and get buyer confirmation</li>
+                                <li data-lang="deliverer-payment-step2">Submit delivery completion report</li>
+                                <li data-lang="deliverer-payment-step3">Wait for payment processing (24-48 hours)</li>
+                                <li data-lang="deliverer-payment-step4">Check earnings in your deliverer wallet</li>
+                                <li data-lang="deliverer-payment-step5">Request payout to your preferred payment method</li>
+                                <li data-lang="deliverer-payment-step6">Receive payment within 1-3 business days</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p data-lang="copyright">Copyright &copy; 2025 by Jaayma | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#buyers"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  
+    </body>
+</html>
