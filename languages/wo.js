@@ -106,5 +106,33 @@ const wo = {
     "deletion-info-line-five":"Su ñëwël dafa jaam rekk nga def sa bopp bi, nga defal weneen compte",
     "deletion-info-support":"Su am nga seen yool gu rafet ak njàngat bi, dig ci sunuy ngir digal ci",
     "download-prompt": "Telechargeel Jaayma, fékk na léegi ci Play Store.",
-    "play-store-download": "Tógal Jaayma."
+    "play-store-download": "Tógal Jaayma.",
+    "help_title":"Jaayma Ndimbal",
+    "buyers":"Jeundkat",  
+    "sellers":"Jaaykat",
+    "deliverers":"Yoobukat",
+    'hero-title': 'Dalal ak Jaayma Help Center',
+    'hero-subtitle': 'Wutal guide yu bees bees ngir jënd-jënd, jaay ak yëglent',
+    'buyers-title': 'Ndimbal Jënd-jënd yi',
+    'sellers-title': 'Ndimbal Jaay yi',
+    'deliverers-title': 'Ndimbal Yëglent yi',
+    'copyright': 'Copyright © 2025 ci Jaayma | Yëpp jot naa koy am.',
+    
+    // Buyers
+    'create-package': 'Naka la leen paquet?',
+    'create-package-desc': 'Jang nga leen ak soppi sa paquet yu yëgle',
+    'place-order': 'Naka la leen commande?',
+    'place-order-desc': 'Guide bees ba bees ngir leen sa commande yu yëgle',
+    'perform-payments': 'Naka la fey paiement?',
+    'perform-payments-desc': 'Yoon yu sàf ak guide yu transaction',
+    
+    // Sellers
+    'add-items': 'Naka la yokk luy bees?',
+    'add-items-desc': 'Yokk te gérer sa inventaire ci Jaayma',
+    'manage-orders': 'Naka la gérer commande yi?',
+    'manage-orders-desc': 'Suqali te gérer commande yu sa client yi',
+    'upload-auth': 'Naka la jot autorisations yu upload?',
+    'upload-auth-desc': 'Vérifiez votre compte pour les privilèges de vente',
+    'seller-payment': 'Comment être payé?',
+    'seller-payment-desc': 'Configurez les paiements et retirez vos gains',
  };
