@@ -26,9 +26,22 @@
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-2'
             },
-            'perform-payments': {
-                title: 'perform-payments',
-                subtitle: 'perform-payments-desc',
+            'perform-paytech-payments': {
+                title: 'perform-paytech-payments',
+                subtitle: 'perform-paytech-payments-desc',
+                steps: [
+                    "perform-payments-step1",
+                    "perform-payments-step2",
+                    "perform-payments-step3",
+                    "perform-payments-step4",
+                    "perform-payments-step5",
+                    "perform-payments-step6",
+                ],
+                videoUrl: 'https://www.youtube.com/embed/example-video-3'
+            },
+            'perform-paypal-payments': {
+                title: 'perform-paypal-payments',
+                subtitle: 'perform-paypal-payments-desc',
                 steps: [
                     "perform-payments-step1",
                     "perform-payments-step2",
@@ -65,9 +78,22 @@
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-5'
             },
-            'upload-auth': {
-                title: 'upload-auth',
-                subtitle: 'upload-auth-desc',
+            'paytech-upload-auth': {
+                title: 'paytech-upload-auth',
+                subtitle: 'paytech-upload-auth-desc',
+                steps: [
+                    "upload-auth-step1",
+                    "upload-auth-step2",
+                    "upload-auth-step3",
+                    "upload-auth-step4",
+                    "upload-auth-step5",
+                    "upload-auth-step6",
+                ],
+                videoUrl: 'https://www.youtube.com/embed/example-video-6'
+            },
+            'paypal-upload-auth': {
+                title: 'paypal-upload-auth',
+                subtitle: 'paypal-upload-auth-desc',
                 steps: [
                     "upload-auth-step1",
                     "upload-auth-step2",
