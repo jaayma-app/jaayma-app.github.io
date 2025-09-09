@@ -111,12 +111,16 @@ const fr = {
     "buyers":"Acheteurs",  
     "sellers":"Vendeurs",
     "deliverers":"Livreurs",
+    "help_center":"Aide",
+    "view-steps":"Voir les Etapes",
     'hero-title': 'Bienvenue au Centre d\'Aide Jaayma',
     'hero-subtitle': 'Trouvez des guides étape par étape pour acheteurs, vendeurs et livreurs',
     'buyers-title': 'Aide Acheteurs',
     'sellers-title': 'Aide Vendeurs',
     'deliverers-title': 'Aide Livreurs',
     'copyright': 'Copyright © 2025 par Jaayma | Tous Droits Réservés.',
+    "back":"Retour au Centre d'Aide",
+    "tutorial":"Video Tutoriel",
     
     // Buyers
     'create-package': 'Comment créer un colis?',
@@ -125,6 +129,26 @@ const fr = {
     'place-order-desc': 'Guide étape par étape pour passer vos commandes de livraison',
     'perform-payments': 'Comment effectuer des paiements?',
     'perform-payments-desc': 'Méthodes de paiement sécurisées et guides de transaction',
+    "perform-payments-step1": "Allez sur la page récapitulative de votre commande",
+    "perform-payments-step2": "Sélectionnez votre mode de paiement préféré (carte, mobile money, virement bancaire)",
+    "perform-payments-step3": "Saisissez vos informations de paiement en toute sécurité",
+    "perform-payments-step4": "Vérifiez le montant total et les frais",
+    "perform-payments-step5": "Confirmez l’autorisation de paiement",
+    "perform-payments-step6": "Recevez la confirmation du paiement et les détails de suivi de la commande",
+
+    "place-order-step1": "Sélectionnez votre colis créé ou créez-en un nouveau",
+    "place-order-step2": "Choisissez votre vitesse de livraison (standard, express ou urgent)",
+    "place-order-step3": "Parcourez les livreurs disponibles et leurs évaluations",
+    "place-order-step4": "Sélectionnez votre livreur préféré",
+    "place-order-step5": "Vérifiez les détails et le prix de la commande",
+    "place-order-step6": "Confirmez et soumettez votre commande",
+
+    "create-package-step1": "Connectez-vous à votre compte acheteur Jaayma",
+    "create-package-step2": "Cliquez sur « Créer un colis » depuis votre tableau de bord",
+    "create-package-step3": "Remplissez les détails du colis (dimensions, poids, fragilité)",
+    "create-package-step4": "Ajoutez les adresses de retrait et de livraison",
+    "create-package-step5": "Définissez votre délai de livraison préféré",
+    "create-package-step6": "Vérifiez et enregistrez les informations de votre colis",
     
     // Sellers
     'add-items': 'Comment ajouter de nouveaux articles?',
@@ -135,6 +159,34 @@ const fr = {
     'upload-auth-desc': 'Vérifiez votre compte pour les privilèges de vente',
     'seller-payment': 'Comment être payé?',
     'seller-payment-desc': 'Configurez les paiements et retirez vos gains',
+    "seller-payment-step1": "Complétez le processus de vérification de compte",
+    "seller-payment-step2": "Ajoutez les informations de compte bancaire ou mobile money",
+    "seller-payment-step3": "Configurez vos préférences de paiement (automatique ou manuel)",
+    "seller-payment-step4": "Complétez les commandes et attendez la confirmation de l’acheteur",
+    "seller-payment-step5": "Fonds libérés après livraison réussie (2-7 jours)",
+    "seller-payment-step6": "Demandez un retrait ou recevez un paiement automatique",
+
+    "upload-auth-step1": "Allez dans « Vérification de compte » dans les paramètres",
+    "upload-auth-step2": "Téléversez une pièce d’identité officielle",
+    "upload-auth-step3": "Fournissez les documents d’enregistrement de l’entreprise (si applicable)",
+    "upload-auth-step4": "Soumettez votre numéro d’identification fiscale",
+    "upload-auth-step5": "Attendez l’examen des documents (1-3 jours ouvrables)",
+    "upload-auth-step6": "Recevez la confirmation de vérification et l’accès à la vente",
+
+    "manage-orders-step1": "Allez dans la section « Commandes » de votre tableau de bord",
+    "manage-orders-step2": "Consultez les commandes reçues et leur statut",
+    "manage-orders-step3": "Acceptez ou refusez les commandes selon la disponibilité",
+    "manage-orders-step4": "Mettez à jour le statut de la commande (en traitement, emballée, expédiée)",
+    "manage-orders-step5": "Communiquez avec les acheteurs via le système de messagerie",
+    "manage-orders-step6": "Marquez les commandes comme complétées une fois livrées",
+
+    "add-items-step1": "Accédez à votre tableau de bord vendeur",
+    "add-items-step2": "Cliquez sur « Ajouter un nouvel article » ou « Ajouter un produit »",
+    "add-items-step3": "Téléversez des images de produit de haute qualité",
+    "add-items-step4": "Remplissez les détails du produit (nom, description, catégorie)",
+    "add-items-step5": "Définissez les prix et les quantités en stock",
+    "add-items-step6": "Ajoutez les informations d’expédition et publiez l’article",
+
     
     // Deliverers
     'apply-orders': 'Comment postuler aux commandes?',
@@ -142,5 +194,26 @@ const fr = {
     'perform-deliveries': 'Comment effectuer les livraisons de commandes?',
     'perform-deliveries-desc': 'Effectuez des livraisons en toute sécurité et efficacité',
     'deliverer-payment': 'Comment être payé?',
-    'deliverer-payment-desc': 'Processus de paiement pour les livraisons terminées'
+    'deliverer-payment-desc': 'Processus de paiement pour les livraisons terminées',
+    "deliverer-payment-step1": "Terminez la livraison et obtenez la confirmation de l’acheteur",
+    "deliverer-payment-step2": "Soumettez le rapport de livraison complétée",
+    "deliverer-payment-step3": "Attendez le traitement du paiement (24-48 heures)",
+    "deliverer-payment-step4": "Vérifiez vos gains dans votre portefeuille de livreur",
+    "deliverer-payment-step5": "Demandez un retrait vers votre moyen de paiement préféré",
+    "deliverer-payment-step6": "Recevez le paiement sous 1 à 3 jours ouvrables",
+
+    "perform-deliveries-step1": "Confirmez l’acceptation de la commande et vérifiez les détails du retrait",
+    "perform-deliveries-step2": "Naviguez jusqu’au lieu de retrait avec le GPS",
+    "perform-deliveries-step3": "Vérifiez les détails du colis et prenez des photos",
+    "perform-deliveries-step4": "Mettez à jour le statut en « Colis récupéré »",
+    "perform-deliveries-step5": "Livrez à la destination et confirmez avec le destinataire",
+    "perform-deliveries-step6": "Complétez la confirmation de livraison avec une preuve photo",
+
+    "apply-orders-step1": "Ouvrez le tableau de bord du livreur",
+    "apply-orders-step2": "Consultez les commandes de livraison disponibles dans votre zone",
+    "apply-orders-step3": "Vérifiez les détails de la commande (distance, paiement, délai)",
+    "apply-orders-step4": "Soumettez votre proposition de livraison avec des tarifs compétitifs",
+    "apply-orders-step5": "Attendez la sélection et l’approbation de l’acheteur",
+    "apply-orders-step6": "Acceptez la commande et commencez le processus de livraison"
+
  };
