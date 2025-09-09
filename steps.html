@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaayma Help Center - Steps</title>
+
+    <link href="images/logo.ico" rel="icon">
+    
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/help.css" >
+    <link rel="stylesheet" href="css/steps.css" >
+
+    <script src="languages/en.js"></script>
+    <script src="languages/fr.js"></script>
+    <script src="languages/wo.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/steps.js"></script>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="logo" data-lang="help_title">Jaayma Help Center</a>
+        
+        <nav class="navbar">
+            <a href="help.html#buyers" data-lang="buyers">Buyers</a>
+            <a href="help.html#sellers" data-lang="sellers">Sellers</a>
+            <a href="help.html#deliverers" data-lang="deliverers">Deliverers</a>
+        </nav>
+        
+        <div class="lang-switches">
+            <a href="#" class="lang-btn" onclick="changeLanguage('en'); return false;">EN</a>
+            <a href="#" class="lang-btn" onclick="changeLanguage('fr'); return false;">FR</a>
+            <a href="#" class="lang-btn" onclick="changeLanguage('wo'); return false;">WO</a>
+        </div>
+        
+        <i class='bx bx-menu' id="menu-icon"></i>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <a href="help.html" class="back-button">
+                <i class='bx bx-arrow-back'></i>
+                <span data-lang="back">Back to Help Center</span>
+            </a>
+
+            <!-- Steps Header -->
+            <section class="hero">
+                <h1 id="steps-title">Step-by-Step Guide</h1>
+                <p id="steps-subtitle">Follow these steps to complete your task</p>
+            </section>
+
+            <!-- Steps Content -->
+            <section class="steps-section">
+                <div id="steps-content" class="steps-content">
+                    <!-- Steps will be loaded here dynamically -->
+                </div>
+
+                <!-- Video Container -->
+                <div id="video-container" class="video-container">
+                    <h3 data-lang="tutorial">Tutorial Video</h3>
+                    <iframe id="tutorial-iframe" src="" title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p data-lang="copyright">Copyright &copy; 2025 by Jaayma | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
