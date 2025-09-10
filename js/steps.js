@@ -52,6 +52,19 @@
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-3'
             },
+            'buyer-referral-program': {
+                title: 'buyer-referral-program',
+                subtitle: 'buyer-referral-program-desc',
+                steps: [
+                    "perform-payments-step1",
+                    "perform-payments-step2",
+                    "perform-payments-step3",
+                    "perform-payments-step4",
+                    "perform-payments-step5",
+                    "perform-payments-step6",
+                ],
+                videoUrl: 'https://www.youtube.com/embed/example-video-3'
+            },
             'add-items': {
                 title: 'add-items',
                 subtitle: 'add-items-desc',
@@ -104,18 +117,18 @@
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-6'
             },
-            'seller-payment': {
-                title: 'seller-payment',
-                subtitle: 'seller-payment-desc',
+            'seller-referral-program': {
+                title: 'seller-referral-program',
+                subtitle: 'seller-referral-program-desc',
                 steps: [
-                    "seller-payment-step1",
-                    "seller-payment-step2",
-                    "seller-payment-step3",
-                    "seller-payment-step4",
-                    "seller-payment-step5",
-                    "seller-payment-step6",
+                    "perform-payments-step1",
+                    "perform-payments-step2",
+                    "perform-payments-step3",
+                    "perform-payments-step4",
+                    "perform-payments-step5",
+                    "perform-payments-step6",
                 ],
-                videoUrl: 'https://www.youtube.com/embed/example-video-7'
+                videoUrl: 'https://www.youtube.com/embed/example-video-3'
             },
             'apply-orders': {
                 title: 'apply-orders',
