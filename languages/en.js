@@ -147,13 +147,12 @@ const en = {
    "place-order-step4":"Select your preferred deliverer",
    "place-order-step5":"Review order details and pricing",
    "place-order-step6":"Confirm and submit your order",
-   "create-package-step1":"Log into your Jaayma buyer account",
-   "create-package-step2":"Click on 'Create Package' from your dashboard",
-   "create-package-step3":"Fill in package details (dimensions, weight, fragility)",
-   "create-package-step4":"Add pickup and delivery addresses",
-   "create-package-step5":"Set your preferred delivery timeframe",
-   "create-package-step6":"Review and save your package information",
-   
+   "create-package-step1": "Find an article or product you would like to purchase.",
+   "create-package-step2": "Click on the green package button at the bottom right of the article image or product page.\nYou will be redirected to the store to set up your package.",
+   "create-package-step3": "Inside the store, your package will appear at the bottom right of the store page. It unlocks when the total price of your selected items reaches the required threshold (to cover delivery).",
+   "create-package-step4": "Once unlocked, click on the package button to view the details of your order.",
+   "create-package-step5": "When you confirm and create the package, the package dialog will reset and your order will be transferred to your cart.",
+      
    // Sellers
    'add-items': 'How to add new items?',
    'add-items-desc': 'Add and manage your inventory on Jaayma',

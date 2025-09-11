@@ -149,12 +149,12 @@ const fr = {
     "place-order-step5": "Vérifiez les détails et le prix de la commande",
     "place-order-step6": "Confirmez et soumettez votre commande",
 
-    "create-package-step1": "Connectez-vous à votre compte acheteur Jaayma",
-    "create-package-step2": "Cliquez sur « Créer un colis » depuis votre tableau de bord",
-    "create-package-step3": "Remplissez les détails du colis (dimensions, poids, fragilité)",
-    "create-package-step4": "Ajoutez les adresses de retrait et de livraison",
-    "create-package-step5": "Définissez votre délai de livraison préféré",
-    "create-package-step6": "Vérifiez et enregistrez les informations de votre colis",
+    "create-package-step1": "Trouvez un article ou un produit que vous souhaitez acheter.",
+    "create-package-step2": "Cliquez sur le bouton vert du colis en bas à droite de l’image de l’article ou de la page produit.\nVous serez redirigé vers la boutique pour configurer votre colis.",
+    "create-package-step3": "Dans la boutique, votre colis apparaîtra en bas à droite de la page de la boutique. Il se déverrouille lorsque le prix total des articles sélectionnés atteint le seuil requis (pour couvrir la livraison).",
+    "create-package-step4": "Une fois déverrouillé, cliquez sur le bouton du colis pour voir les détails de votre commande.",
+    "create-package-step5": "Lorsque vous confirmez et créez le colis, la fenêtre de colis sera réinitialisée et votre commande sera transférée dans votre panier.",
+
     
     // Sellers
     'add-items': 'Comment ajouter de nouveaux articles?',

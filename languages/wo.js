@@ -149,12 +149,12 @@ const wo = {
     "place-order-step5": "Seetal detall yu commande bi ak xaalisam",
     "place-order-step6": "Dëggal te yóbbu sa commande",
 
-    "create-package-step1": "Dugg ci sa konto u jàngatukaay Jaayma",
-    "create-package-step2": "Bës « Sos Paket » ci sa dashboard",
-    "create-package-step3": "Bindal detall yu paket bi (njaxu, njàmm, lu yëewul)",
-    "create-package-step4": "Yokk ay adrès bu jël ak bu yónnee",
-    "create-package-step5": "Def sa waxtu bu la gën a neex ci jéggi ji",
-    "create-package-step6": "Seetal te aar sa detall yu paket bi",
+    "create-package-step1": "Seetal benn artikuul walla benn produkt nga bëgg jënd.",
+    "create-package-step2": "Bësal ci boton bu verd bu ‘package’ bi nekk ci ndeyjoor ndijoor bu suuf ci xët wi walla ci banqaasu produkt bi.\nDina lay yóbbu ci butik bi ngir sos sa package.",
+    "create-package-step3": "Ci butik bi, sa package dina feeñ ci ndeyjoor ndijoor bu suuf ci xët butik bi. Dina ubbi suñu ndijoor bu yàgg, su bari bu ñu tànn yi agsi ci prii bu war (ngir feesal njàngat).",
+    "create-package-step4": "Su ko ubbee, bësal ci boton bu package bi ngir gis benn benn ci sa ordër.",
+    "create-package-step5": "Su ko seetlu te sos package bi, palanteer bu package bi dina tàggat, sa ordër dina yóbbu ci sa panier.",
+
     
     // Sellers
     'add-items': 'Naka la yokk luy bees?',

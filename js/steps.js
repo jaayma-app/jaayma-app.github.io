@@ -9,7 +9,6 @@
                     "create-package-step3",
                     "create-package-step4",
                     "create-package-step5",
-                    "create-package-step6",
                 ],
                 videoUrl: 'https://www.youtube.com/embed/GDJIujgRkLc'
             },
