@@ -20,8 +20,6 @@
                     "place-order-step2",
                     "place-order-step3",
                     "place-order-step4",
-                    "place-order-step5",
-                    "place-order-step6",
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-2'
             },
@@ -73,7 +71,6 @@
                     "add-items-step3",
                     "add-items-step4",
                     "add-items-step5",
-                    "add-items-step6",
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-4'
             },

@@ -142,12 +142,11 @@ const wo = {
     "perform-payments-step5": "Dëggal ndigal u payman",
     "perform-payments-step6": "Jël dëggal bu payman ak detall yu suuxu commande",
 
-    "place-order-step1": "Fal sa paket bu nga defoon walla defal bu bees",
-    "place-order-step2": "Fal sa gaaw gi ci jéggi ji (standard, express walla urgent)",
-    "place-order-step3": "Xool ay livreur yu am te gis seen notation",
-    "place-order-step4": "Fal sa livreur bu la gën a neex",
-    "place-order-step5": "Seetal detall yu commande bi ak xaalisam",
-    "place-order-step6": "Dëggal te yóbbu sa commande",
+    "place-order-step1": "Bu nga sos sa package yi, demal ci xët bu 'panier' bi.",
+    "place-order-step2": "Bësal ci boton 'Commander' bi nekk ci suuf. Palanteer bu bees dina ubbi, nga mana fal sa diggantey joxukaay.",
+    "place-order-step3": "Bu nga fal, xët bu joxukaay dina ubbi, nga mana fayal xaraj Jaayma (ci gune 5% ci prii bu yépp).",
+    "place-order-step4": "Bu ñu settantaloo sa fay, sa ordër dina sos boppam, di feeñ ci xët bu 'commandes' bi.",
+
 
     "create-package-step1": "Seetal benn artikuul walla benn produkt nga bëgg jënd.",
     "create-package-step2": "Bësal ci boton bu verd bu ‘package’ bi nekk ci ndeyjoor ndijoor bu suuf ci xët wi walla ci banqaasu produkt bi.\nDina lay yóbbu ci butik bi ngir sos sa package.",
@@ -188,12 +187,11 @@ const wo = {
     "manage-orders-step5": "Waxtaan ak jàngatukaay yi ci mbir mesaj yi",
     "manage-orders-step6": "Bind commandes yi « sotti » bu ñu yónnee na",
 
-    "add-items-step1": "Ubbi sa dashboard u jaaykat",
-    "add-items-step2": "Bës « Yokk benn artikul » walla « Yokk produkt »",
-    "add-items-step3": "Yóbbu foto yu sell yu produkt bi",
-    "add-items-step4": "Bindal detall yu produkt bi (tur, nattu, kategori)",
-    "add-items-step5": "Defar xaalis ak lim u stock",
-    "add-items-step6": "Yokk detal yu yónnee te toppu artikul bi",
+    "add-items-step1": "Bësal ci ikon bu list bi nekk ci ndeyjoor ndijooru teksu 'Inventaire'.",
+    "add-items-step2": "Menu bu wàcc dina feeñ. Bësal ci 'Yokk produkt bu bees'.",
+    "add-items-step3": "Xët produkt bi dina ubbi, nga man a taxawal seeni champ te jox ay xibaar yu jub ju gën ci produkt bi.",
+    "add-items-step4": "Man nga yokk ay nataal ci bësal ci place-holder '+1'.",
+    "add-items-step5": "Ci yennini, bësal ci boton 'Yokk' ngir taxawal sa produkt bu bees.",
 
     // Deliverers
     'apply-orders': 'Comment postuler aux commandes?',
