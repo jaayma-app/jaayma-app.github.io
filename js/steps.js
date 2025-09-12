@@ -90,32 +90,34 @@
             //     ],
             //     videoUrl: 'https://www.youtube.com/embed/example-video-5'
             // },
-            // 'paytech-upload-auth': {
-            //     title: 'paytech-upload-auth',
-            //     subtitle: 'paytech-upload-auth-desc',
-            //     steps: [
-            //         "upload-auth-step1",
-            //         "upload-auth-step2",
-            //         "upload-auth-step3",
-            //         "upload-auth-step4",
-            //         "upload-auth-step5",
-            //         "upload-auth-step6",
-            //     ],
-            //     videoUrl: 'https://www.youtube.com/embed/example-video-6'
-            // },
-            // 'paypal-upload-auth': {
-            //     title: 'paypal-upload-auth',
-            //     subtitle: 'paypal-upload-auth-desc',
-            //     steps: [
-            //         "upload-auth-step1",
-            //         "upload-auth-step2",
-            //         "upload-auth-step3",
-            //         "upload-auth-step4",
-            //         "upload-auth-step5",
-            //         "upload-auth-step6",
-            //     ],
-            //     videoUrl: 'https://www.youtube.com/embed/example-video-6'
-            // },
+            'paytech-upload-auth': {
+                title: 'paytech-upload-auth',
+                subtitle: 'paytech-upload-auth-desc',
+                steps: [
+                    "paytech-upload-auth-step1",
+                    "paytech-upload-auth-step2",
+                    "paytech-upload-auth-step3",
+                    "paytech-upload-auth-step4",
+                    "paytech-upload-auth-step5",
+                    "paytech-upload-auth-step6",
+                    "paytech-upload-auth-step7",
+                ],
+                videoUrl: 'https://www.youtube.com/embed/example-video-6'
+            },
+            'paypal-upload-auth': {
+                title: 'paypal-upload-auth',
+                subtitle: 'paypal-upload-auth-desc',
+                steps: [
+                    "paypal-upload-auth-step1",
+                    "paypal-upload-auth-step2",
+                    "paypal-upload-auth-step3",
+                    "paypal-upload-auth-step4",
+                    "paypal-upload-auth-step5",
+                    "paypal-upload-auth-step6",
+                    "paypal-upload-auth-step7",
+                ],
+                videoUrl: 'https://www.youtube.com/embed/example-video-6'
+            },
             // 'seller-referral-program': {
             //     title: 'seller-referral-program',
             //     subtitle: 'seller-referral-program-desc',
