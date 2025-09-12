@@ -168,19 +168,20 @@
             //     ],
             //     videoUrl: 'https://www.youtube.com/embed/example-video-9'
             // },
-            // 'deliverer-payment': {
-            //     title: 'deliverer-payment',
-            //     subtitle: 'deliverer-payment-desc',
-            //     steps: [
-            //         "deliverer-payment-step1",
-            //         "deliverer-payment-step2",
-            //         "deliverer-payment-step3",
-            //         "deliverer-payment-step4",
-            //         "deliverer-payment-step5",
-            //         "deliverer-payment-step6",
-            //     ],
-            //     videoUrl: 'https://www.youtube.com/embed/example-video-10'
-            // }
+            'deliverer-payment': {
+                title: 'deliverer-payment',
+                subtitle: 'deliverer-payment-desc',
+                steps: [
+                    "deliverer-payment-step1",
+                    "deliverer-payment-step2",
+                    "deliverer-payment-step3",
+                    "deliverer-payment-step4",
+                    "deliverer-payment-step5",
+                    "deliverer-payment-step6",
+                    "deliverer-payment-step7",
+                ],
+                videoUrl: 'https://www.youtube.com/embed/example-video-10'
+            }
         };
 
         // Function to get URL parameter
