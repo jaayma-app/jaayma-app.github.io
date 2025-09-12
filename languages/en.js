@@ -121,6 +121,10 @@ const en = {
    'copyright': 'Copyright © 2025 by Jaayma | All Rights Reserved.',
    "back":"Back to Help Center",
    "tutorial":"Tutorial Video",
+   "guide":"Step-by-Step Guide",
+   "follow":"Follow these steps to complete your task",
+   "steps-not-found":"Steps not found",
+   "request-not-found":"The requested step guide could not be found.",
    
    // Buyers
    'create-package': 'How to create a package?',

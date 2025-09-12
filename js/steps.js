@@ -77,97 +77,97 @@
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-4'
             },
-            'manage-orders': {
-                title: 'manage-orders',
-                subtitle: 'manage-orders-desc',
-                steps: [
-                    "manage-orders-step1",
-                    "manage-orders-step2",
-                    "manage-orders-step3",
-                    "manage-orders-step4",
-                    "manage-orders-step5",
-                    "manage-orders-step6",
-                ],
-                videoUrl: 'https://www.youtube.com/embed/example-video-5'
-            },
-            'paytech-upload-auth': {
-                title: 'paytech-upload-auth',
-                subtitle: 'paytech-upload-auth-desc',
-                steps: [
-                    "upload-auth-step1",
-                    "upload-auth-step2",
-                    "upload-auth-step3",
-                    "upload-auth-step4",
-                    "upload-auth-step5",
-                    "upload-auth-step6",
-                ],
-                videoUrl: 'https://www.youtube.com/embed/example-video-6'
-            },
-            'paypal-upload-auth': {
-                title: 'paypal-upload-auth',
-                subtitle: 'paypal-upload-auth-desc',
-                steps: [
-                    "upload-auth-step1",
-                    "upload-auth-step2",
-                    "upload-auth-step3",
-                    "upload-auth-step4",
-                    "upload-auth-step5",
-                    "upload-auth-step6",
-                ],
-                videoUrl: 'https://www.youtube.com/embed/example-video-6'
-            },
-            'seller-referral-program': {
-                title: 'seller-referral-program',
-                subtitle: 'seller-referral-program-desc',
-                steps: [
-                    "perform-payments-step1",
-                    "perform-payments-step2",
-                    "perform-payments-step3",
-                    "perform-payments-step4",
-                    "perform-payments-step5",
-                    "perform-payments-step6",
-                ],
-                videoUrl: 'https://www.youtube.com/embed/example-video-3'
-            },
-            'apply-orders': {
-                title: 'apply-orders',
-                subtitle: 'apply-orders-desc',
-                steps: [
-                    "apply-orders-step1",
-                    "apply-orders-step2",
-                    "apply-orders-step3",
-                    "apply-orders-step4",
-                    "apply-orders-step5",
-                    "apply-orders-step6",
-                ],
-                videoUrl: 'https://www.youtube.com/embed/example-video-8'
-            },
-            'perform-deliveries': {
-                title: 'perform-deliveries',
-                subtitle: 'perform-deliveries-desc',
-                steps: [
-                    "perform-deliveries-step1",
-                    "perform-deliveries-step2",
-                    "perform-deliveries-step3",
-                    "perform-deliveries-step4",
-                    "perform-deliveries-step5",
-                    "perform-deliveries-step6",
-                ],
-                videoUrl: 'https://www.youtube.com/embed/example-video-9'
-            },
-            'deliverer-payment': {
-                title: 'deliverer-payment',
-                subtitle: 'deliverer-payment-desc',
-                steps: [
-                    "deliverer-payment-step1",
-                    "deliverer-payment-step2",
-                    "deliverer-payment-step3",
-                    "deliverer-payment-step4",
-                    "deliverer-payment-step5",
-                    "deliverer-payment-step6",
-                ],
-                videoUrl: 'https://www.youtube.com/embed/example-video-10'
-            }
+            // 'manage-orders': {
+            //     title: 'manage-orders',
+            //     subtitle: 'manage-orders-desc',
+            //     steps: [
+            //         "manage-orders-step1",
+            //         "manage-orders-step2",
+            //         "manage-orders-step3",
+            //         "manage-orders-step4",
+            //         "manage-orders-step5",
+            //         "manage-orders-step6",
+            //     ],
+            //     videoUrl: 'https://www.youtube.com/embed/example-video-5'
+            // },
+            // 'paytech-upload-auth': {
+            //     title: 'paytech-upload-auth',
+            //     subtitle: 'paytech-upload-auth-desc',
+            //     steps: [
+            //         "upload-auth-step1",
+            //         "upload-auth-step2",
+            //         "upload-auth-step3",
+            //         "upload-auth-step4",
+            //         "upload-auth-step5",
+            //         "upload-auth-step6",
+            //     ],
+            //     videoUrl: 'https://www.youtube.com/embed/example-video-6'
+            // },
+            // 'paypal-upload-auth': {
+            //     title: 'paypal-upload-auth',
+            //     subtitle: 'paypal-upload-auth-desc',
+            //     steps: [
+            //         "upload-auth-step1",
+            //         "upload-auth-step2",
+            //         "upload-auth-step3",
+            //         "upload-auth-step4",
+            //         "upload-auth-step5",
+            //         "upload-auth-step6",
+            //     ],
+            //     videoUrl: 'https://www.youtube.com/embed/example-video-6'
+            // },
+            // 'seller-referral-program': {
+            //     title: 'seller-referral-program',
+            //     subtitle: 'seller-referral-program-desc',
+            //     steps: [
+            //         "perform-payments-step1",
+            //         "perform-payments-step2",
+            //         "perform-payments-step3",
+            //         "perform-payments-step4",
+            //         "perform-payments-step5",
+            //         "perform-payments-step6",
+            //     ],
+            //     videoUrl: 'https://www.youtube.com/embed/example-video-3'
+            // },
+            // 'apply-orders': {
+            //     title: 'apply-orders',
+            //     subtitle: 'apply-orders-desc',
+            //     steps: [
+            //         "apply-orders-step1",
+            //         "apply-orders-step2",
+            //         "apply-orders-step3",
+            //         "apply-orders-step4",
+            //         "apply-orders-step5",
+            //         "apply-orders-step6",
+            //     ],
+            //     videoUrl: 'https://www.youtube.com/embed/example-video-8'
+            // },
+            // 'perform-deliveries': {
+            //     title: 'perform-deliveries',
+            //     subtitle: 'perform-deliveries-desc',
+            //     steps: [
+            //         "perform-deliveries-step1",
+            //         "perform-deliveries-step2",
+            //         "perform-deliveries-step3",
+            //         "perform-deliveries-step4",
+            //         "perform-deliveries-step5",
+            //         "perform-deliveries-step6",
+            //     ],
+            //     videoUrl: 'https://www.youtube.com/embed/example-video-9'
+            // },
+            // 'deliverer-payment': {
+            //     title: 'deliverer-payment',
+            //     subtitle: 'deliverer-payment-desc',
+            //     steps: [
+            //         "deliverer-payment-step1",
+            //         "deliverer-payment-step2",
+            //         "deliverer-payment-step3",
+            //         "deliverer-payment-step4",
+            //         "deliverer-payment-step5",
+            //         "deliverer-payment-step6",
+            //     ],
+            //     videoUrl: 'https://www.youtube.com/embed/example-video-10'
+            // }
         };
 
         // Function to get URL parameter
@@ -194,6 +194,7 @@
                     </div>
                 `;
                 document.getElementById('video-container').style.display = 'none';
+                applyLanguage();
                 return;
             }
 

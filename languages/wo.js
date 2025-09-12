@@ -121,6 +121,10 @@ const wo = {
     'copyright': 'Copyright © 2025 ci Jaayma | Yëpp jot naa koy am.',
     "back":"Delu si Ndimbal",
     "tutorial":"Video Wane",
+    "guide":"Njàngum jàng ci yeneen jàng",
+    "follow":"Toppalal yeneen jàng yi ngir sotti sa liggéey",
+    "steps-not-found":"Yeneen jàng yi kenn gisuwul",
+    "request-not-found":"Njàngum yeneen jàng bi nga laaj kenn gisuwul.",
     
     // Buyers
     'create-package': 'Naka la leen paquet?',

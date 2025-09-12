@@ -121,6 +121,10 @@ const fr = {
     'copyright': 'Copyright © 2025 par Jaayma | Tous Droits Réservés.',
     "back":"Retour au Centre d'Aide",
     "tutorial":"Video Tutoriel",
+    "guide":"Guide étape par étape",
+    "follow":"Suivez ces étapes pour terminer votre tâche",
+    "steps-not-found":"Aucune étape trouvée",
+    "request-not-found":"Le guide d’étapes demandé est introuvable.",
     
     // Buyers
     'create-package': 'Comment créer un colis?',
@@ -163,7 +167,7 @@ const fr = {
     "create-package-step4": "Une fois déverrouillé, cliquez sur le bouton du colis pour voir les détails de votre commande.",
     "create-package-step5": "Lorsque vous confirmez et créez le colis, la fenêtre de colis sera réinitialisée et votre commande sera transférée dans votre panier.",
 
-    "buyer-referral-program-step1":"Trouvez un produit dont vous pensez qu’il a un fort potentiel de vente.",
+    "buyer-referral-program-step1":"Trouvez un produit dont vous pensez avoir un fort potentiel de vente.",
     "buyer-referral-program-step2":"Ouvrez la page de détails du produit en cliquant dessus.",
     "buyer-referral-program-step3":"Appuyez sur le bouton de partage en haut à droite de la page.",
     "buyer-referral-program-step4":"Une fenêtre apparaîtra indiquant combien de profit vous gagnez par vente de ce produit.",
