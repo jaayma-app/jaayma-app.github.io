@@ -190,7 +190,7 @@
                         <i class='bx bx-error-circle'></i>
                         <h3 data-lang="steps-not-found">Steps not found</h3>
                         <p data-lang="request-not-found">The requested step guide could not be found.</p>
-                        <a href="help.html" class="back-button" data-lang="return">Return to Help Center</a>
+                        <a href="help.html" class="back-button" data-lang="back">Return to Help Center</a>
                     </div>
                 `;
                 document.getElementById('video-container').style.display = 'none';
