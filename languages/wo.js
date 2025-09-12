@@ -157,13 +157,19 @@ const wo = {
     "place-order-step3": "Bu nga fal, xët bu joxukaay dina ubbi, nga mana fayal xaraj Jaayma (ci gune 5% ci prii bu yépp).",
     "place-order-step4": "Bu ñu settantaloo sa fay, sa ordër dina sos boppam, di feeñ ci xët bu 'commandes' bi.",
 
-
     "create-package-step1": "Seetal benn artikuul walla benn produkt nga bëgg jënd.",
     "create-package-step2": "Bësal ci boton bu verd bu ‘package’ bi nekk ci ndeyjoor ndijoor bu suuf ci xët wi walla ci banqaasu produkt bi.\nDina lay yóbbu ci butik bi ngir sos sa package.",
     "create-package-step3": "Ci butik bi, sa package dina feeñ ci ndeyjoor ndijoor bu suuf ci xët butik bi. Dina ubbi suñu ndijoor bu yàgg, su bari bu ñu tànn yi agsi ci prii bu war (ngir feesal njàngat).",
     "create-package-step4": "Su ko ubbee, bësal ci boton bu package bi ngir gis benn benn ci sa ordër.",
     "create-package-step5": "Su ko seetlu te sos package bi, palanteer bu package bi dina tàggat, sa ordër dina yóbbu ci sa panier.",
 
+    "buyer-referral-program-step1":"Séen benn produkt nga xam ne am na lu tar ci jaay.",
+    "buyer-referral-program-step2":"Ubbi xëtu benn-bennal bi ci produkt bi ci bi nga bëss ci kow.",
+    "buyer-referral-program-step3":"Bëss ci boton Partage (Yónnee) bi ci kow ndijoor xëtu bi.",
+    "buyer-referral-program-step4":"Benn palanteer dina feeñal ngir wone ni naata nga jot ci benn jaay bu produkt bii.",
+    "buyer-referral-program-step5":"Ngir duggal ci programu referral bi, nga des telechargé nataali produkt yi ci boton wer gi bu ñu jël ci ndeyjoor.",
+    "buyer-referral-program-step6":"Bi nga telechargé, boton Partage bi dina am. Su nga bëss ci kow, dina duppi benn-bennal bi (ak sa linku referral) ci clipboard bi, te ngir nga fal platformu reseau social bu la neex.",
+    "buyer-referral-program-step7":"Ci app reseau social bi nga tànn, yónnee nataali produkt yi te paste benn-bennal bi. Sa yeneen ku bëss ci linku referral bi te jaay produkt, nga jot ci remise bi ñu wax ci boutique u jaaykat bi.",
     
     // Sellers
     'add-items': 'Naka la yokk luy bees?',

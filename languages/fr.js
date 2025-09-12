@@ -163,6 +163,13 @@ const fr = {
     "create-package-step4": "Une fois déverrouillé, cliquez sur le bouton du colis pour voir les détails de votre commande.",
     "create-package-step5": "Lorsque vous confirmez et créez le colis, la fenêtre de colis sera réinitialisée et votre commande sera transférée dans votre panier.",
 
+    "buyer-referral-program-step1":"Trouvez un produit dont vous pensez qu’il a un fort potentiel de vente.",
+    "buyer-referral-program-step2":"Ouvrez la page de détails du produit en cliquant dessus.",
+    "buyer-referral-program-step3":"Appuyez sur le bouton de partage en haut à droite de la page.",
+    "buyer-referral-program-step4":"Une fenêtre apparaîtra indiquant combien de profit vous gagnez par vente de ce produit.",
+    "buyer-referral-program-step5":"Pour rejoindre le programme de parrainage, commencez par télécharger les images du produit en cliquant sur le bouton vert de téléchargement à droite.",
+    "buyer-referral-program-step6":"Après le téléchargement, le bouton 'Partager' devient actif. En cliquant dessus, la description du produit (y compris votre lien de parrainage) sera copiée dans votre presse-papiers et vous pourrez choisir une plateforme de réseau social.",
+    "buyer-referral-program-step7":"Sur l’application de réseau social choisie, publiez les images du produit et collez la description. Chaque fois que quelqu’un clique sur votre lien de parrainage et effectue un achat, vous gagnez en réduction la remise indiquée dans la boutique du vendeur.",
     
     // Sellers
     'add-items': 'Comment ajouter de nouveaux articles?',
@@ -173,7 +180,7 @@ const fr = {
     'paypal-upload-auth-desc': 'Vérifiez votre compte pour les privilèges de vente',
     'paytech-upload-auth': "Comment obtenir les autorisations d'ajout avec PayTech?",
     'paytech-upload-auth-desc': 'Vérifiez votre compte pour les privilèges de vente',
-    'seller-payment': 'Comment être payé?',
+    'seller-payment': 'Comment me faire payer?',
     'seller-payment-desc': 'Configurez les paiements et retirez vos gains',
     "seller-payment-step1": "Complétez le processus de vérification de compte",
     "seller-payment-step2": "Ajoutez les informations de compte bancaire ou mobile money",
@@ -208,7 +215,7 @@ const fr = {
     'apply-orders-desc': 'Trouvez et postulez pour des opportunités de livraison',
     'perform-deliveries': 'Comment effectuer les livraisons de commandes?',
     'perform-deliveries-desc': 'Effectuez des livraisons en toute sécurité et efficacité',
-    'deliverer-payment': 'Comment être payé?',
+    'deliverer-payment': 'Comment me faire payer?',
     'deliverer-payment-desc': 'Processus de paiement pour les livraisons terminées',
     "deliverer-payment-step1": "Terminez la livraison et obtenez la confirmation de l’acheteur",
     "deliverer-payment-step2": "Soumettez le rapport de livraison complétée",

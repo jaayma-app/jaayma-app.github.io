@@ -133,8 +133,6 @@ const en = {
    'perform-paypal-payments-desc': 'Secure payment methods and transaction guides',
    'buyer-referral-program': 'How to enter the referral program?',
    'buyer-referral-program-desc': 'Get discounts by sharing articles leading to sales',
-   'seller-referral-program': 'How does the referral program work?',
-   'seller-referral-program-desc': 'Users help with sales and obtain discounts',
 
    "perform-paytech-payments-step1":"On the Payment page in Jaayma:\n- Pay with your selected payment method (Orange Money, Wave, Wizall, E-money).\n- Enter required details: First name, Last name, Phone number (must match the mobile wallet number).",
    "perform-paytech-payments-step2":"Click “Pay Now”.\n➡️ You are redirected to the PayTech payment terminal (web page).",
@@ -162,11 +160,21 @@ const en = {
    "create-package-step4": "Once unlocked, click on the package button to view the details of your order.",
    "create-package-step5": "When you confirm and create the package, the package dialog will reset and your order will be transferred to your cart.",
       
+   "buyer-referral-program-step1":"Find a product you think has strong sales potential.",
+   "buyer-referral-program-step2":"Open the product details page by clicking on it.",
+   "buyer-referral-program-step3":"Tap the Share button at the top right of the page.",
+   "buyer-referral-program-step4":"A window will appear showing how much profit you earn per sale of this product.",
+   "buyer-referral-program-step5":"To join the referral program, first download the product images by clicking the green download button on the right.",
+   "buyer-referral-program-step6":"After downloading, the 'Share' button becomes active. Clicking it will copy the product description (including your referral link) to your clipboard and let you choose a social media platform.",
+   "buyer-referral-program-step7":"On your chosen social media app, post the product images and paste the description. Each time someone clicks your referral link and makes a purchase, you earn the specified discount at the seller’s store.",
+
    // Sellers
    'add-items': 'How to add new items?',
    'add-items-desc': 'Add and manage your inventory on Jaayma',
    'manage-orders': 'How to manage Orders?',
    'manage-orders-desc': 'Track and manage your customer orders',
+   'seller-referral-program': 'How does the referral program work?',
+   'seller-referral-program-desc': 'Users help with sales and obtain discounts',
    'paypal-upload-auth': 'How to get upload authorizations with PayPal?',
    'paypal-upload-auth-desc': 'Verify your account for selling privileges',
    'paytech-upload-auth': 'How to get upload authorizations with PayTech?',
