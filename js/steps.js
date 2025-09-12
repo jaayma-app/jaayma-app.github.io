@@ -129,19 +129,19 @@
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-3'
             },
-            // 'seller-referral-program': {
-            //     title: 'seller-referral-program',
-            //     subtitle: 'seller-referral-program-desc',
-            //     steps: [
-            //         "perform-payments-step1",
-            //         "perform-payments-step2",
-            //         "perform-payments-step3",
-            //         "perform-payments-step4",
-            //         "perform-payments-step5",
-            //         "perform-payments-step6",
-            //     ],
-            //     videoUrl: 'https://www.youtube.com/embed/example-video-3'
-            // },
+            'seller-referral-program': {
+                title: 'seller-referral-program',
+                subtitle: 'seller-referral-program-desc',
+                steps: [
+                    "seller-referral-program-step1",
+                    "seller-referral-program-step2",
+                    "seller-referral-program-step3",
+                    "seller-referral-program-step4",
+                    "seller-referral-program-step5",
+                    "seller-referral-program-step6",
+                ],
+                videoUrl: 'https://www.youtube.com/embed/example-video-3'
+            },
             // 'apply-orders': {
             //     title: 'apply-orders',
             //     subtitle: 'apply-orders-desc',

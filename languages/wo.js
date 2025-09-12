@@ -221,6 +221,13 @@ const wo = {
     "add-items-step4": "Man nga yokk ay nataal ci bësal ci place-holder '+1'.",
     "add-items-step5": "Ci yennini, bësal ci boton 'Yokk' ngir taxawal sa produkt bu bees.",
 
+    "seller-referral-program-step1":"Duggëlal ci sa xëtu boutique bi ci Jaayma.",
+    "seller-referral-program-step2":"Bëss ci boton bu parrainage bi nekk ci kow ndijoor, ci suufu barra bi ñuy seet.",
+    "seller-referral-program-step3":"Benn palanteer dina ubbi te wone lista u klient yi amee remise ci sa boutique.",
+    "seller-referral-program-step4":"Benn-bennal remise bi mën nañu jëfandikoo ci bépp commande bu klient bi def.",
+    "seller-referral-program-step5":"Bu remise bi ñu jëfandikoo, prix final u klient bi dina ndimbal ndimbal.",
+    "seller-referral-program-step6":"Ci sa xëtu gestion commandes, dinga gis kàddu bu weesu ci remise bi ñu def ci commande bi.",
+
     // Deliverers
     'apply-orders': 'Comment postuler aux commandes?',
     'apply-orders-desc': 'Trouvez et postulez pour des opportunités de livraison',

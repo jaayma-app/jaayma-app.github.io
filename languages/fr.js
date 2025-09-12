@@ -221,6 +221,12 @@ const fr = {
     "add-items-step4": "Vous pouvez ajouter des images en cliquant sur l’espace réservé '+1'.",
     "add-items-step5": "Enfin, appuyez sur le bouton 'Ajouter' pour confirmer votre nouveau produit.",
 
+    "seller-referral-program-step1":"Accédez à la page de votre boutique dans Jaayma.",
+    "seller-referral-program-step2":"Cliquez sur le bouton de parrainage situé en haut à droite, juste en dessous de la barre de recherche.",
+    "seller-referral-program-step3":"Une fenêtre s’ouvrira affichant la liste des acheteurs qui ont obtenu des réductions dans votre boutique.",
+    "seller-referral-program-step4":"Chaque réduction gagnée peut être utilisée par un acheteur sur n’importe quelle commande qu’il passe.",
+    "seller-referral-program-step5":"Lorsqu’une réduction est appliquée, le prix final du client diminue automatiquement.",
+    "seller-referral-program-step6":"Sur votre page de gestion des commandes, vous verrez clairement le montant de la réduction appliqué à la commande.",
     
     // Deliverers
     'apply-orders': 'Comment postuler aux commandes?',

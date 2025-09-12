@@ -213,12 +213,20 @@ const en = {
    "manage-orders-step4":"Update order status (processing, packed, shipped)",
    "manage-orders-step5":"Communicate with buyers through messaging system",
    "manage-orders-step6":"Mark orders as completed once delivered",
+   
    "add-items-step1":"Click on the list icon next to the 'Inventory' text.",
    "add-items-step2":"A dropdown will appear. Click on 'Add new product'.",
    "add-items-step3":"The product page will open, where you can fill in the fields and provide detailed product information.",
    "add-items-step4":"Add images by clicking on the '+1' image placeholder.",
    "add-items-step5":"Finally, click the 'Add' button to confirm your new product.",
    
+   "seller-referral-program-step1":"Go to your store page in Jaayma.",
+   "seller-referral-program-step2":"Click on the referral button located at the top right corner, just below the search bar.",
+   "seller-referral-program-step3":"A window will open showing the list of buyers who have earned reductions in your store.",
+   "seller-referral-program-step4":"Each reduction earned can be applied by a buyer to any order they place.",
+   "seller-referral-program-step5":"When a reduction is applied, the client’s final price will automatically decrease.",
+   "seller-referral-program-step6":"On your order management page, you will clearly see the reduction amount applied to the order.",
+
    // Deliverers
    'apply-orders': 'How to apply to orders?',
    'apply-orders-desc': 'Find and apply for delivery opportunities',
