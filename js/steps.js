@@ -118,6 +118,17 @@
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-6'
             },
+            'seller-payment': {
+                title: 'seller-payment',
+                subtitle: 'seller-payment-desc',
+                steps: [
+                    "seller-payment-step1",
+                    "seller-payment-step2",
+                    "seller-payment-step3",
+                    "seller-payment-step4",
+                ],
+                videoUrl: 'https://www.youtube.com/embed/example-video-3'
+            },
             // 'seller-referral-program': {
             //     title: 'seller-referral-program',
             //     subtitle: 'seller-referral-program-desc',
