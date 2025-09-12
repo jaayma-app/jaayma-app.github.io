@@ -47,7 +47,7 @@
                     "perform-paypal-payments-step4",
                     "perform-paypal-payments-step5",
                     "perform-paypal-payments-step6",
-                    "perform-paypal-payments-step7",
+                    "perform-paypal-payments-step7", 
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-3'
             },

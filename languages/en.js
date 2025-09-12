@@ -141,7 +141,7 @@ const en = {
    "perform-paytech-payments-step5":"In the mobile money app or via USSD:\n- You may be asked to enter your PIN or approve the payment.\n- Confirm the amount and approve it.",
    "perform-paytech-payments-step6":"After successful payment:\n- PayTech confirms the payment.\n- You are redirected (or returned) to Jaayma.",
    "perform-paytech-payments-step7":"In Jaayma:\n- Your order is created automatically.\n- You receive a payment / order success message.",
-   
+
    "perform-paypal-payments-step1":"On the PayPal payment page in Jaayma:\n- Click on the PayPal button.",
    "perform-paypal-payments-step2":"You are redirected to the secure PayPal portal.",
    "perform-paypal-payments-step3":"On the PayPal page:\n- Log in with your email/phone and password (if not already logged in).\n- Review the payment details (amount, merchant, payment method).",
