@@ -139,7 +139,13 @@ const fr = {
     'buyer-referral-program-desc': 'Obtient des réductions en partageant des articles resultants à des ventes',
     'seller-referral-program': 'Comment fonctionne le programme de parrainage?',
     'seller-referral-program-desc': 'Les acheteurs aident dans la vente et obtiennent des réductions',
-    
+    'follow-orders': 'Comment suivre mes Colis?',
+    'follow-orders-desc': 'Suivez vos colis en temps reel.',
+
+    "follow-orders-step1": "Sur la page des commandes, vous avez accès aux détails des colis en cours.",
+    "follow-orders-step2": "Cliquez sur le bouton Google Maps à droite pour suivre votre colis et être informé de sa position en temps réel.",
+    "follow-orders-step3": "Vous êtes également informé du statut du colis à ce niveau.",
+
     "perform-paytech-payments-step1":"Sur la page de paiement dans Jaayma:\n- Payez avec votre méthode de paiement selectionée (Orange Money, Wave, Wizall, E-money).\n- Saisissez les informations requises : Prénom, Nom, Numéro de téléphone (doit correspondre au numéro lié à votre portefeuille mobile).",
     "perform-paytech-payments-step2":"Cliquez sur « Payer maintenant ».\n➡️ Vous êtes redirigé vers le terminal de paiement PayTech (page web).",
     "perform-paytech-payments-step3":"Sur le terminal PayTech:\n- Vous verrez un résumé de votre paiement (montant, méthode de paiement, informations personnelles).\n- Confirmez que les informations sont correctes.",

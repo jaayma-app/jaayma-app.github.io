@@ -51,6 +51,16 @@
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-3'
             },
+            'follow-orders': {
+                title: 'follow-orders',
+                subtitle: 'follow-orders-desc',
+                steps: [
+                    "follow-orders-step1",
+                    "follow-orders-step2",
+                    "follow-orders-step3",
+                ],
+                videoUrl: 'https://www.youtube.com/embed/example-video-3'
+            },
             'buyer-referral-program': {
                 title: 'buyer-referral-program',
                 subtitle: 'buyer-referral-program-desc',

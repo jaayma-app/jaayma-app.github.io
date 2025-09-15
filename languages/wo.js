@@ -139,6 +139,12 @@ const wo = {
     'buyer-referral-program-desc': 'Get discounts by sharing articles leading to sales',
     'seller-referral-program': 'How does the referral program work?',
     'seller-referral-program-desc': 'Users help with sales and obtain discounts',
+    'follow-orders': 'Naka lay tope coliyi?',
+    'follow-orders-desc': 'Toppalal coliyi ci jamono bi',
+
+    "follow-orders-step1": "Ci xët wu benn yi, ngeen am nañu yoon ci benn yi ñuy jël ay benn yu ñuy yónnee.",
+    "follow-orders-step2": "Bësal ci butoŋ Google Maps ci ndijoor ngir topp sa benn te xam bu nekk fu mu nekk ci jamono bi.",
+    "follow-orders-step3": "Ci feneen fii lañu la koy xamle itam ci xaalis bu benn bi.",
 
     "perform-paytech-payments-step1":"Ci xët bi ñu jëfandikoo ngir jëfandikoo Jaayma:\n- Fayal ak sa yoonu fay bi nga tann (Orange Money, Wave, Wizall, E-money).\n- Dugalal sa mbir yu laaj ñu: Turu jàngoro, Turu kër, ak telefon (war na melni bu ñu yokkal ci sa porte-monnaie mobile).",
     "perform-paytech-payments-step2":"Bësal « Pay Now ».\n➡️ Dina la yóbbu ci terminalu PayTech (xët bu web).",

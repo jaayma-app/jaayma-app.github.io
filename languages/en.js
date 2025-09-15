@@ -137,6 +137,12 @@ const en = {
    'perform-paypal-payments-desc': 'Secure payment methods and transaction guides',
    'buyer-referral-program': 'How to enter the referral program?',
    'buyer-referral-program-desc': 'Get discounts by sharing articles leading to sales',
+   'follow-orders': 'How to follow my Orders?',
+   'follow-orders-desc': 'Track your orders in real time',
+
+   "follow-orders-step1": "On the orders page, you can access the details of your ongoing packages.",
+   "follow-orders-step2": "Click on the Google Maps button on the right to track your package and get real-time location updates.",
+   "follow-orders-step3": "You will also be informed about the status of the package here.",
 
    "perform-paytech-payments-step1":"On the Payment page in Jaayma:\n- Pay with your selected payment method (Orange Money, Wave, Wizall, E-money).\n- Enter required details: First name, Last name, Phone number (must match the mobile wallet number).",
    "perform-paytech-payments-step2":"Click “Pay Now”.\n➡️ You are redirected to the PayTech payment terminal (web page).",
