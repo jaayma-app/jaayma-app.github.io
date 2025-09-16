@@ -10,6 +10,11 @@
                     "create-package-step4",
                     "create-package-step5",
                 ],
+                images: [
+                    'images/place-order/step1.jpg',
+                    'images/place-order/step2.jpg',
+                    'images/place-order/step3.jpg'
+                ],
                 videoUrl: 'https://www.youtube.com/embed/GDJIujgRkLc'
             },
             'place-order': {
@@ -20,6 +25,11 @@
                     "place-order-step2",
                     "place-order-step3",
                     "place-order-step4",
+                ],
+                images: [
+                    'images/place-order/step1.jpg',
+                    'images/place-order/step2.jpg',
+                    'images/place-order/step3.jpg'
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-2'
             },
@@ -35,6 +45,11 @@
                     "perform-paytech-payments-step6",
                     "perform-paytech-payments-step7",
                 ],
+                images: [
+                    'images/place-order/step1.jpg',
+                    'images/place-order/step2.jpg',
+                    'images/place-order/step3.jpg'
+                ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-3'
             },
             'perform-paypal-payments': {
@@ -49,6 +64,11 @@
                     "perform-paypal-payments-step6",
                     "perform-paypal-payments-step7", 
                 ],
+                images: [
+                    'images/place-order/step1.jpg',
+                    'images/place-order/step2.jpg',
+                    'images/place-order/step3.jpg'
+                ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-3'
             },
             'follow-orders': {
@@ -58,6 +78,11 @@
                     "follow-orders-step1",
                     "follow-orders-step2",
                     "follow-orders-step3",
+                ],
+                images: [
+                    'images/place-order/step1.jpg',
+                    'images/place-order/step2.jpg',
+                    'images/place-order/step3.jpg'
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-3'
             },
@@ -73,6 +98,11 @@
                     "buyer-referral-program-step6",
                     "buyer-referral-program-step7",
                 ],
+                images: [
+                    'images/place-order/step1.jpg',
+                    'images/place-order/step2.jpg',
+                    'images/place-order/step3.jpg'
+                ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-3'
             },
             'add-items': {
@@ -84,6 +114,11 @@
                     "add-items-step3",
                     "add-items-step4",
                     "add-items-step5",
+                ],
+                images: [
+                    'images/place-order/step1.jpg',
+                    'images/place-order/step2.jpg',
+                    'images/place-order/step3.jpg'
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-4'
             },
@@ -101,6 +136,11 @@
                     "manage-orders-step8",
                     "manage-orders-step9",
                 ],
+                images: [
+                    'images/place-order/step1.jpg',
+                    'images/place-order/step2.jpg',
+                    'images/place-order/step3.jpg'
+                ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-5'
             },
             'paytech-upload-auth': {
@@ -114,6 +154,11 @@
                     "paytech-upload-auth-step5",
                     "paytech-upload-auth-step6",
                     "paytech-upload-auth-step7",
+                ],
+                images: [
+                    'images/place-order/step1.jpg',
+                    'images/place-order/step2.jpg',
+                    'images/place-order/step3.jpg'
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-6'
             },
@@ -129,6 +174,11 @@
                     "paypal-upload-auth-step6",
                     "paypal-upload-auth-step7",
                 ],
+                images: [
+                    'images/place-order/step1.jpg',
+                    'images/place-order/step2.jpg',
+                    'images/place-order/step3.jpg'
+                ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-6'
             },
             'seller-payment': {
@@ -139,6 +189,11 @@
                     "seller-payment-step2",
                     "seller-payment-step3",
                     "seller-payment-step4",
+                ],
+                images: [
+                    'images/place-order/step1.jpg',
+                    'images/place-order/step2.jpg',
+                    'images/place-order/step3.jpg'
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-3'
             },
@@ -153,6 +208,11 @@
                     "seller-referral-program-step5",
                     "seller-referral-program-step6",
                 ],
+                images: [
+                    'images/place-order/step1.jpg',
+                    'images/place-order/step2.jpg',
+                    'images/place-order/step3.jpg'
+                ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-3'
             },
             'apply-orders': {
@@ -163,6 +223,11 @@
                     "apply-orders-step2",
                     "apply-orders-step3",
                     "apply-orders-step4",
+                ],
+                images: [
+                    'images/place-order/step1.jpg',
+                    'images/place-order/step2.jpg',
+                    'images/place-order/step3.jpg'
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-8'
             },
@@ -179,6 +244,11 @@
                     "perform-deliveries-step7",
                     "perform-deliveries-step8",
                 ],
+                images: [
+                    'images/place-order/step1.jpg',
+                    'images/place-order/step2.jpg',
+                    'images/place-order/step3.jpg'
+                ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-9'
             },
             'deliverer-payment': {
@@ -192,6 +262,11 @@
                     "deliverer-payment-step5",
                     "deliverer-payment-step6",
                     "deliverer-payment-step7",
+                ],
+                images: [
+                    'images/place-order/step1.jpg',
+                    'images/place-order/step2.jpg',
+                    'images/place-order/step3.jpg'
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-10'
             }
@@ -221,6 +296,7 @@
                     </div>
                 `;
                 document.getElementById('video-container').style.display = 'none';
+                document.getElementById('image-container').style.display = 'none';
                 applyLanguage();
                 return;
             }
@@ -240,6 +316,24 @@
             stepsHTML += '</ol>';
 
             document.getElementById('steps-content').innerHTML = stepsHTML;
+            
+            // Generate images HTML dynamically
+            let imagesHTML = '';
+            if (stepData.images && stepData.images.length > 0) {
+                stepData.images.forEach((imagePath, index) => {
+                    const stepNum = index + 1;
+                    imagesHTML += `
+                        <div class="image-item">
+                            <img src="${imagePath}" alt="Step ${stepNum} illustration" loading="lazy">
+                        </div>
+                    `;
+                });
+                document.querySelector('.image-scroll').innerHTML = imagesHTML;
+                document.getElementById('image-container').style.display = 'block';
+            } else {
+                // Hide image container if no images
+                document.getElementById('image-container').style.display = 'none';
+            }
             
             // Set video URL
             document.getElementById('tutorial-iframe').src = stepData.videoUrl;
