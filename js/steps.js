@@ -87,19 +87,22 @@
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-4'
             },
-            // 'manage-orders': {
-            //     title: 'manage-orders',
-            //     subtitle: 'manage-orders-desc',
-            //     steps: [
-            //         "manage-orders-step1",
-            //         "manage-orders-step2",
-            //         "manage-orders-step3",
-            //         "manage-orders-step4",
-            //         "manage-orders-step5",
-            //         "manage-orders-step6",
-            //     ],
-            //     videoUrl: 'https://www.youtube.com/embed/example-video-5'
-            // },
+            'manage-orders': {
+                title: 'manage-orders',
+                subtitle: 'manage-orders-desc',
+                steps: [
+                    "manage-orders-step1",
+                    "manage-orders-step2",
+                    "manage-orders-step3",
+                    "manage-orders-step4",
+                    "manage-orders-step5",
+                    "manage-orders-step6",
+                    "manage-orders-step7",
+                    "manage-orders-step8",
+                    "manage-orders-step9",
+                ],
+                videoUrl: 'https://www.youtube.com/embed/example-video-5'
+            },
             'paytech-upload-auth': {
                 title: 'paytech-upload-auth',
                 subtitle: 'paytech-upload-auth-desc',
@@ -152,32 +155,32 @@
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-3'
             },
-            // 'apply-orders': {
-            //     title: 'apply-orders',
-            //     subtitle: 'apply-orders-desc',
-            //     steps: [
-            //         "apply-orders-step1",
-            //         "apply-orders-step2",
-            //         "apply-orders-step3",
-            //         "apply-orders-step4",
-            //         "apply-orders-step5",
-            //         "apply-orders-step6",
-            //     ],
-            //     videoUrl: 'https://www.youtube.com/embed/example-video-8'
-            // },
-            // 'perform-deliveries': {
-            //     title: 'perform-deliveries',
-            //     subtitle: 'perform-deliveries-desc',
-            //     steps: [
-            //         "perform-deliveries-step1",
-            //         "perform-deliveries-step2",
-            //         "perform-deliveries-step3",
-            //         "perform-deliveries-step4",
-            //         "perform-deliveries-step5",
-            //         "perform-deliveries-step6",
-            //     ],
-            //     videoUrl: 'https://www.youtube.com/embed/example-video-9'
-            // },
+            'apply-orders': {
+                title: 'apply-orders',
+                subtitle: 'apply-orders-desc',
+                steps: [
+                    "apply-orders-step1",
+                    "apply-orders-step2",
+                    "apply-orders-step3",
+                    "apply-orders-step4",
+                ],
+                videoUrl: 'https://www.youtube.com/embed/example-video-8'
+            },
+            'perform-deliveries': {
+                title: 'perform-deliveries',
+                subtitle: 'perform-deliveries-desc',
+                steps: [
+                    "perform-deliveries-step1",
+                    "perform-deliveries-step2",
+                    "perform-deliveries-step3",
+                    "perform-deliveries-step4",
+                    "perform-deliveries-step5",
+                    "perform-deliveries-step6",
+                    "perform-deliveries-step7",
+                    "perform-deliveries-step8",
+                ],
+                videoUrl: 'https://www.youtube.com/embed/example-video-9'
+            },
             'deliverer-payment': {
                 title: 'deliverer-payment',
                 subtitle: 'deliverer-payment-desc',
