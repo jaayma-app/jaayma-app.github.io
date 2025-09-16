@@ -111,6 +111,13 @@ body {
     color: var(--secondary-color);
 }
 
+.hero h2 {
+    font-size: 3.3rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    color: var(--white);
+}
+
 .hero p {
     font-size: 1.5rem;
     opacity: 0.9;
