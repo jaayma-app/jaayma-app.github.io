@@ -62,20 +62,35 @@
             </section>
 
             <!-- Steps Content -->
-            <section class="steps-section">
+             <section class="steps-section">
                 <div id="steps-content" class="steps-content">
                     <!-- Steps will be loaded here dynamically -->
                 </div>
-
-                <!-- Video Container -->
-                <div id="video-container" class="video-container">
-                    <h3 data-lang="tutorial">Tutorial Video</h3>
-                    <iframe id="tutorial-iframe" src="" title="YouTube video player" frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                    </iframe>
+                
+                <!-- Image Container - Replaces Video Position -->
+                <div id="image-container" class="image-container">
+                    <h3 data-lang="gallery">Image Gallery</h3>
+                    <div class="image-scroll">
+                        <!-- Images will be loaded here dynamically -->
+                        <div class="image-item">
+                            <img src="path/to/image1.jpg" alt="Step illustration 1">
+                        </div>
+                        <div class="image-item">
+                            <img src="path/to/image2.jpg" alt="Step illustration 2">
+                        </div>
+                        <!-- Add more image-item divs as needed -->
+                    </div>
                 </div>
             </section>
+
+            <!-- Video Container - Now positioned below -->
+            <div id="video-container" class="video-container">
+                <h3 data-lang="tutorial">Tutorial Video</h3>
+                <iframe id="tutorial-iframe" src="" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+            </div>
         </div>
     </main>
 
