@@ -11,9 +11,11 @@
                     "create-package-step5",
                 ],
                 images: [
-                    'images/place-order/step1.jpg',
-                    'images/place-order/step2.jpg',
-                    'images/place-order/step3.jpg'
+                    'images/tutorial_create_package_1.png',
+                    'images/tutorial_create_package_2.png',
+                    'images/tutorial_create_package_3.png',
+                    'images/tutorial_create_package_4.png',
+                    'images/tutorial_create_package_5.png',
                 ],
                 videoUrl: 'https://www.youtube.com/embed/GDJIujgRkLc'
             },
