@@ -17,7 +17,7 @@
                     'images/tutorial_create_package_4.png',
                     'images/tutorial_create_package_5.png',
                 ],
-                videoUrl: 'https://www.youtube.com/embed/GDJIujgRkLc'
+                videoUrl: 'https://www.youtube.com/embed/9m0g9zm2nak'
             },
             'place-order': {
                 title: 'place-order',
