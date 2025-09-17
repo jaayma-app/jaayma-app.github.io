@@ -63,7 +63,9 @@
     grid-template-columns: 1fr 400px;
     gap: 2rem;
     align-items: start;
-    margin-bottom: 3rem; /* Add margin for video below */
+    margin-bottom: 3rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Steps Content */
@@ -73,6 +75,9 @@
     padding: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-left: 5px solid var(--main-color);
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0; /* Prevent overflow */
 }
 
 .steps-list {
@@ -233,7 +238,12 @@
 
 @media (max-width: 1200px) {
     .main-content {
-        padding: 2rem 5%;
+        padding: 2rem 3%;
+    }
+    
+    .steps-section {
+        grid-template-columns: 1fr 350px; /* Reduce image container width */
+        gap: 1.5rem;
     }
 
     .steps-list li::before {
@@ -253,6 +263,11 @@
     .main-content {
         padding: 2rem 3%;
     }
+    
+    .steps-section {
+        grid-template-columns: 1fr 300px; /* Further reduce image container width */
+        gap: 1.5rem;
+    }
 
     .steps-list li::before {
         width: 20px;
@@ -264,15 +279,23 @@
 }
 
 @media (max-width: 768px) {
+    .main-content {
+        padding: 1rem 3%; /* Reduce padding further */
+    }
+    
     .steps-section {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+        display: flex; /* Change from grid to flex for better control */
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
     }
     
     .image-container {
-        position: static;
-        aspect-ratio: 1.6/1;
-        order: 2;
+        position: static; /* Remove sticky positioning */
+        aspect-ratio: 2/1; /* Wider aspect ratio for mobile */
+        order: 2; /* Images second */
+        width: 100%;
+        padding: 1.5rem;
     }
 
     .image-item {
@@ -284,9 +307,11 @@
         position: static;
         order: 2;
     }
-    
+
     .steps-content {
-        padding: 1rem;
+        padding: 1.5rem;
+        order: 1; /* Steps first */
+        width: 100%;
     }
     
     .steps-list li {
@@ -315,6 +340,22 @@
         font-size: 1.1rem;
     }
     
+}
+
+/* Very Small Screens */
+@media (max-width: 480px) {
+    .steps-section {
+        gap: 1rem;
+    }
+    
+    .steps-content {
+        padding: 1rem;
+    }
+    
+    .image-container {
+        padding: 1rem;
+        aspect-ratio: 1.5/1; /* Even wider for very small screens */
+    }
 }
 
 /* Error Message */
