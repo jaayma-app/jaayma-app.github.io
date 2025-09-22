@@ -48,9 +48,14 @@
                     "perform-paytech-payments-step7",
                 ],
                 images: [
-                    'images/place-order/step1.jpg',
-                    'images/place-order/step2.jpg',
-                    'images/place-order/step3.jpg'
+                    'images/tutorial_test_payment_1.png',
+                    'images/tutorial_test_payment_2.png',
+                    'images/tutorial_test_payment_3.png',
+                    'images/tutorial_test_payment_4.png',
+                    'images/tutorial_test_payment_5.png',
+                    'images/tutorial_test_payment_6.png',
+                    'images/tutorial_test_payment_7.png',
+                    'images/tutorial_test_payment_8.png',
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-3'
             },
@@ -158,9 +163,14 @@
                     "paytech-upload-auth-step7",
                 ],
                 images: [
-                    'images/place-order/step1.jpg',
-                    'images/place-order/step2.jpg',
-                    'images/place-order/step3.jpg'
+                    'images/tutorial_test_payment_1.png',
+                    'images/tutorial_test_payment_2.png',
+                    'images/tutorial_test_payment_3.png',
+                    'images/tutorial_test_payment_4.png',
+                    'images/tutorial_test_payment_5.png',
+                    'images/tutorial_test_payment_6.png',
+                    'images/tutorial_test_payment_7.png',
+                    'images/tutorial_test_payment_8.png',
                 ],
                 videoUrl: 'https://www.youtube.com/embed/example-video-6'
             },
