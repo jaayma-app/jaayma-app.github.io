@@ -57,7 +57,7 @@
                     'images/tutorial_test_payment_7.png',
                     'images/tutorial_test_payment_8.png',
                 ],
-                videoUrl: 'https://www.youtube.com/embed/example-video-3'
+                videoUrl: 'https://www.youtube.com/embed/LSN672x_YAQ'
             },
             'perform-paypal-payments': {
                 title: 'perform-paypal-payments',
@@ -172,7 +172,7 @@
                     'images/tutorial_test_payment_7.png',
                     'images/tutorial_test_payment_8.png',
                 ],
-                videoUrl: 'https://www.youtube.com/embed/example-video-6'
+                videoUrl: 'https://www.youtube.com/embed/LSN672x_YAQ'
             },
             'paypal-upload-auth': {
                 title: 'paypal-upload-auth',
