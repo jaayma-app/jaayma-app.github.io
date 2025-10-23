@@ -33,7 +33,7 @@
                     'images/place-order/step2.jpg',
                     'images/place-order/step3.jpg'
                 ],
-                videoUrl: 'https://www.youtube.com/embed/example-video-2'
+                videoUrl: 'https://www.youtube.com/embed/JD9BjtNJsz8'
             },
             'perform-paytech-payments': {
                 title: 'perform-paytech-payments',
@@ -91,7 +91,7 @@
                     'images/place-order/step2.jpg',
                     'images/place-order/step3.jpg'
                 ],
-                videoUrl: 'https://www.youtube.com/embed/example-video-3'
+                videoUrl: 'https://www.youtube.com/embed/qvD5XecZoqY'
             },
             'buyer-referral-program': {
                 title: 'buyer-referral-program',
@@ -110,7 +110,7 @@
                     'images/place-order/step2.jpg',
                     'images/place-order/step3.jpg'
                 ],
-                videoUrl: 'https://www.youtube.com/embed/example-video-3'
+                videoUrl: 'https://www.youtube.com/embed/uUyJ8DDJGgM'
             },
             'add-items': {
                 title: 'add-items',
@@ -127,7 +127,7 @@
                     'images/place-order/step2.jpg',
                     'images/place-order/step3.jpg'
                 ],
-                videoUrl: 'https://www.youtube.com/embed/example-video-4'
+                videoUrl: 'https://www.youtube.com/embed/tRCLLbaIxSc'
             },
             'manage-orders': {
                 title: 'manage-orders',
@@ -148,7 +148,7 @@
                     'images/place-order/step2.jpg',
                     'images/place-order/step3.jpg'
                 ],
-                videoUrl: 'https://www.youtube.com/embed/example-video-5'
+                videoUrl: 'https://www.youtube.com/embed/n2HNRho12bY'
             },
             'paytech-upload-auth': {
                 title: 'paytech-upload-auth',
@@ -241,7 +241,7 @@
                     'images/place-order/step2.jpg',
                     'images/place-order/step3.jpg'
                 ],
-                videoUrl: 'https://www.youtube.com/embed/example-video-8'
+                videoUrl: 'https://www.youtube.com/embed/l3EhmNdwOYg'
             },
             'perform-deliveries': {
                 title: 'perform-deliveries',
@@ -261,7 +261,7 @@
                     'images/place-order/step2.jpg',
                     'images/place-order/step3.jpg'
                 ],
-                videoUrl: 'https://www.youtube.com/embed/example-video-9'
+                videoUrl: 'https://www.youtube.com/embed/zd2zgxfwD6o'
             },
             'deliverer-payment': {
                 title: 'deliverer-payment',
