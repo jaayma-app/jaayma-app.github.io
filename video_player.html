@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaayma Help Center - Steps</title>
+    <link href="images/logo.ico" rel="icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        main {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #000;
+        }
+
+        #tutorial-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <main class="main-content">
+        <div class="container">
+            <iframe 
+                id="tutorial-iframe" 
+                src=""
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </main>
+
+    <script>
+        // Steps data with video URLs
+        const stepsData = {
+            'create-package': {
+                videoUrl: 'https://www.youtube.com/embed/9m0g9zm2nak'
+            },
+            'place-order': {
+                videoUrl: 'https://www.youtube.com/embed/JD9BjtNJsz8'
+            },
+            'perform-paytech-payments': {
+                videoUrl: 'https://www.youtube.com/embed/LSN672x_YAQ'
+            },
+            'buyer_welcome': {
+                videoUrl: 'https://www.youtube.com/embed/FKPG_erCqfo'
+            },
+            'follow-orders': {
+                videoUrl: 'https://www.youtube.com/embed/qvD5XecZoqY'
+            },
+            'buyer-referral-program': {
+                videoUrl: 'https://www.youtube.com/embed/uUyJ8DDJGgM'
+            },
+            'add-items': {
+                videoUrl: 'https://www.youtube.com/embed/tRCLLbaIxSc'
+            },
+            'manage-orders': {
+                videoUrl: 'https://www.youtube.com/embed/n2HNRho12bY'
+            },
+            'seller_welcome': {
+                videoUrl: 'https://www.youtube.com/embed/PqxSgKSEQPg'
+            },
+            'deliverer_welcome': {
+                videoUrl: 'https://www.youtube.com/embed/_oyeOQZNGQc'
+            },
+            // 'seller-payment': {
+            //     videoUrl: 'https://www.youtube.com/embed/example-video-3'
+            // },
+            // 'seller-referral-program': {
+            //     videoUrl: 'https://www.youtube.com/embed/example-video-3'
+            // },
+            'apply-orders': {
+                videoUrl: 'https://www.youtube.com/embed/l3EhmNdwOYg'
+            },
+            'perform-deliveries': {
+                videoUrl: 'https://www.youtube.com/embed/zd2zgxfwD6o'
+            },
+            // 'deliverer-payment': {
+            //     videoUrl: 'https://www.youtube.com/embed/example-video-10'
+            // }
+        };
+
+        // Function to get URL parameter
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // Function to load video based on URL parameter
+        function loadVideo() {
+            const stepType = getUrlParameter('step');
+            const stepData = stepsData[stepType];
+            const container = document.getElementById('video-container');
+            const iframe = document.getElementById('tutorial-iframe');
+
+            if (!stepData) {
+                // Show error message if step type not found
+                container.innerHTML = `
+                    <div class="error-message">
+                        <i class='bx bx-error-circle'></i>
+                        <h3>Video not found</h3>
+                        <p>The requested video could not be found.</p>
+                        <a href="help.html" class="back-button">Return to Help Center</a>
+                    </div>
+                `;
+                return;
+            }
+
+            // Set video URL from step data
+            iframe.src = stepData.videoUrl;
+        }
+
+        // Load video when page loads
+        document.addEventListener('DOMContentLoaded', loadVideo);
+    </script>
+</body>
+</html>
