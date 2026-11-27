@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CHES – Écrivez-nous sur WhatsApp</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #eef3f0;
+    --ink: #0d2b22;
+    --muted: #4d6a5f;
+    --panel: #ffffff;
+    --line: #cfdcd5;
+    --brand: #0f5a43;
+    --wa: #25d366;
+    --wa-dark: #128c4a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0a1712;
+      --ink: #e6f2ec;
+      --muted: #9bb5a9;
+      --panel: #112620;
+      --line: #234238;
+      --brand: #7fd8b0;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.5;
+  }
+  main { width: 100%; max-width: 540px; }
+  .org { margin: 0 0 6px; color: var(--muted); font-size: .95rem; }
+  h1 {
+    font-size: clamp(2.2rem, 8.5vw, 3.3rem);
+    line-height: 1.04;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin: 0 0 12px;
+    color: var(--brand);
+  }
+  .lead { color: var(--muted); margin: 0 0 26px; font-size: 1.05rem; max-width: 46ch; }
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 22px;
+  }
+  fieldset { border: 0; margin: 0 0 18px; padding: 0; }
+  legend { font-weight: 600; margin-bottom: 10px; padding: 0; }
+  .options { display: flex; flex-wrap: wrap; gap: 8px; }
+  .options input { position: absolute; opacity: 0; pointer-events: none; }
+  .options label {
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-size: .95rem;
+    transition: background .15s, border-color .15s;
+  }
+  .options input:checked + label { background: var(--brand); border-color: var(--brand); color: #fff; }
+  @media (prefers-color-scheme: dark) {
+    .options input:checked + label { color: #0a1712; }
+  }
+  .options input:focus-visible + label { outline: 3px solid var(--wa); outline-offset: 2px; }
+  .field { margin-bottom: 18px; }
+  .field label { display: block; font-weight: 600; margin-bottom: 6px; }
+  .field input, .field textarea, .field select {
+    width: 100%;
+    font: inherit;
+    color: var(--ink);
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 11px 13px;
+  }
+  .field select option { color: #0d2b22; }
+  .field textarea { min-height: 120px; resize: vertical; }
+  .field input:focus-visible, .field textarea:focus-visible, .field select:focus-visible {
+    outline: 3px solid var(--wa); outline-offset: 1px;
+  }
+  .send {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    width: 100%;
+    font: inherit; font-weight: 600; font-size: 1.05rem;
+    color: #fff; background: var(--wa-dark);
+    border: 0; border-radius: 14px;
+    padding: 15px 18px; cursor: pointer;
+    transition: background .15s;
+  }
+  .send:hover { background: #0e7a3f; }
+  .send:focus-visible { outline: 3px solid var(--wa); outline-offset: 3px; }
+  .send svg { width: 22px; height: 22px; fill: currentColor; }
+  .note { color: var(--muted); font-size: .88rem; margin: 14px 0 0; text-align: center; }
+  footer { margin-top: 22px; color: var(--muted); font-size: .88rem; text-align: center; }
+  footer a { color: var(--brand); }
+</style>
+</head>
+<body>
+<main>
+  <p class="org">Coopérative d’Habitat Émergence Sociale</p>
+  <h1>Parlons de votre logement sur WhatsApp</h1>
+  <p class="lead">Choisissez votre demande, ajoutez votre nom et envoyez. WhatsApp s’ouvre avec votre message déjà rédigé.</p>
+
+  <div class="panel">
+    <fieldset>
+      <legend>Que souhaitez-vous ?</legend>
+      <div class="options">
+        <input type="radio" name="topic" id="t1" value="info" checked>
+        <label for="t1">Informations sur CHES</label>
+        <input type="radio" name="topic" id="t2" value="terrain">
+        <label for="t2">Un terrain</label>
+        <input type="radio" name="topic" id="t3" value="logement">
+        <label for="t3">Un logement (F3, F4, F5)</label>
+        <input type="radio" name="topic" id="t4" value="adhesion">
+        <label for="t4">Adhérer à CHES</label>
+        <input type="radio" name="topic" id="t5" value="autre">
+        <label for="t5">Autre question</label>
+      </div>
+    </fieldset>
+
+    <div class="field">
+      <label for="site">Site qui vous intéresse</label>
+      <select id="site">
+        <option value="">Pas de préférence</option>
+        <option>Mbour 4</option>
+        <option>Léne</option>
+        <option>Tougouny</option>
+        <option>Khinine</option>
+        <option>Thieo</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="name">Votre nom</label>
+      <input id="name" type="text" autocomplete="name" placeholder="Ex. : Awa Diop">
+    </div>
+
+    <div class="field">
+      <label for="msg">Votre message</label>
+      <textarea id="msg"></textarea>
+    </div>
+
+    <button class="send" id="send" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24s-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.78.97-.15.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.88 2.4 1 2.56c.12.17 1.73 2.64 4.2 3.7.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>
+      Envoyer sur WhatsApp
+    </button>
+    <p class="note">Vous serez redirigé vers WhatsApp pour envoyer votre message.</p>
+  </div>
+
+  <footer>
+    Du lundi au vendredi, 9h00 – 17h00 · <a href="https://ches-sai.sn/">ches-sai.sn</a>
+  </footer>
+</main>
+
+<script>
+  // ====== À MODIFIER ======
+  // Votre numéro WhatsApp : indicatif pays + numéro, chiffres uniquement (sans +, espaces ni tirets).
+  // Exemple : +221 76 600 86 02  ->  "221766008602"
+  const PHONE_NUMBER = "221766008602";
+  // ========================
+
+  const msgBox = document.getElementById("msg");
+  const nameBox = document.getElementById("name");
+  const siteBox = document.getElementById("site");
+  const topics = document.querySelectorAll('input[name="topic"]');
+  let edited = false; // devient true si le visiteur modifie lui-même le message
+
+  const templates = {
+    info: "Je souhaite avoir des informations sur CHES.",
+    terrain: "Je souhaite avoir des informations sur vos terrains disponibles{site}.",
+    logement: "Je souhaite avoir des informations sur vos logements (F3, F4, F5){site}.",
+    adhesion: "Je souhaite adhérer à CHES. Pouvez-vous m’expliquer la démarche ?",
+    autre: ""
+  };
+
+  function buildMessage() {
+    const topic = document.querySelector('input[name="topic"]:checked').value;
+    const site = siteBox.value ? " à " + siteBox.value : "";
+    return templates[topic].replace("{site}", site);
+  }
+
+  function refresh() {
+    if (edited) return;
+    msgBox.value = buildMessage();
+  }
+
+  topics.forEach(t => t.addEventListener("change", () => { edited = false; refresh(); }));
+  siteBox.addEventListener("change", refresh);
+  msgBox.addEventListener("input", () => { edited = true; });
+  refresh();
+
+  document.getElementById("send").addEventListener("click", () => {
+    const name = nameBox.value.trim();
+    let text = msgBox.value.trim() || "Je souhaite avoir des informations.";
+    const greeting = name ? "Bonjour, je suis " + name + ". " : "Bonjour, ";
+    text = greeting + (name ? "" : text.charAt(0).toLowerCase() + text.slice(1)) + (name ? text : "");
+    const url = "https://wa.me/" + PHONE_NUMBER + "?text=" + encodeURIComponent(text);
+    window.location.href = url;
+  });
+</script>
+</body>
+</html>
